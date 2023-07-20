@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>微信小程序</title>
-    <url>/2023/07/19/wxapp/</url>
-    <content><![CDATA[<h1 id="微信小程序"><a href="#微信小程序" class="headerlink" title="微信小程序"></a>微信小程序</h1><h2 id="1-组件"><a href="#1-组件" class="headerlink" title="1.组件"></a>1.组件</h2><h3 id="1-常用的视图容器类组件"><a href="#1-常用的视图容器类组件" class="headerlink" title="1.常用的视图容器类组件"></a>1.常用的视图容器类组件</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717203405826.png" alt="image-20230717203405826"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717205357428.png" alt="image-20230717205357428"></p>
-<p>可以给scroll-view 标签添加scroll-y、scroll-x属性开启滚动效果，但是需要给scroll-view元素设置高度</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717205408751.png" alt="image-20230717205408751"></p>
-<img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717211454673.png" alt="image-20230717211454673" style="zoom: 33%;" />
-
-<h3 id="2-常用的基础内容组件"><a href="#2-常用的基础内容组件" class="headerlink" title="2.常用的基础内容组件"></a>2.常用的基础内容组件</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717212833335.png" alt="image-20230717212833335"></p>
-<p>text标签添加user-select属性可以设置文本选中复制</p>
-<p>rich-text 标签的nodes属性可以渲染HTML标签</p>
-<h3 id="3-其它常用组件"><a href="#3-其它常用组件" class="headerlink" title="3.其它常用组件"></a>3.其它常用组件</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717214454229.png" alt="image-20230717214454229"></p>
-<p>&#x2F; 为根目录</p>
-<h2 id="2-API"><a href="#2-API" class="headerlink" title="2.API"></a>2.API</h2><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717220004407.png" alt="image-20230717220004407"></p>
-<h2 id="3-WXML模板语法"><a href="#3-WXML模板语法" class="headerlink" title="3.WXML模板语法"></a>3.WXML模板语法</h2><h3 id="1-数据绑定"><a href="#1-数据绑定" class="headerlink" title="1.数据绑定"></a>1.数据绑定</h3><p>动态绑定内容：声明数据在.js文件的date节点下，可以通过插值表达式”双大括号”语法渲染到页面中</p>
-<p>动态绑定属性：在属性值中使用插值表达式语法渲染内容</p>
-<h3 id="2-事件绑定"><a href="#2-事件绑定" class="headerlink" title="2.事件绑定"></a>2.事件绑定</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718123123822.png" alt="image-20230718123123822"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718123616557.png" alt="image-20230718123616557"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718124815551.png" alt="image-20230718124815551"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718125629987.png" alt="image-20230718125629987"></p>
-<p>在事件处理函数中可以通过 event.target.dataset.参数名 拿到参数</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718130352934.png" alt="image-20230718130352934"></p>
-<h3 id="3-条件渲染"><a href="#3-条件渲染" class="headerlink" title="3.条件渲染"></a>3.条件渲染</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718132404577.png" alt="image-20230718132404577"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718132815561.png" alt="image-20230718132815561"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718133417903.png" alt="image-20230718133417903"></p>
-<p>vx:if 动态创建删除元素</p>
-<p>hidden 给元素设置样式控制显示与隐藏</p>
-<h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2>]]></content>
-  </entry>
-  <entry>
     <title>CAD 操作快捷键</title>
     <url>/2023/07/19/cad/</url>
     <content><![CDATA[<h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>op 进入 option、选项功能，或空白右击，</p>
@@ -84,5 +54,35 @@
 <p>点击反选–shilft + 鼠标左键</p>
 <h3 id="匹配-快捷键-ma"><a href="#匹配-快捷键-ma" class="headerlink" title="匹配 - 快捷键 ma"></a>匹配 - 快捷键 ma</h3><p>快速复制目标样式到选择的元素上</p>
 <h3 id="点-快捷键-po"><a href="#点-快捷键-po" class="headerlink" title="点 - 快捷键 po"></a>点 - 快捷键 po</h3><h3 id="重生成模型-快捷键-re"><a href="#重生成模型-快捷键-re" class="headerlink" title="重生成模型 - 快捷键 re"></a>重生成模型 - 快捷键 re</h3><h3 id="多段线操作-快捷键-pe"><a href="#多段线操作-快捷键-pe" class="headerlink" title="多段线操作 - 快捷键 pe"></a>多段线操作 - 快捷键 pe</h3><h3 id="打断-快捷键-br-1"><a href="#打断-快捷键-br-1" class="headerlink" title="打断 - 快捷键 br"></a>打断 - 快捷键 br</h3><h3 id="合并-快捷键-j"><a href="#合并-快捷键-j" class="headerlink" title="合并 - 快捷键 j"></a>合并 - 快捷键 j</h3><h3 id="定距等分-快捷键-me"><a href="#定距等分-快捷键-me" class="headerlink" title="定距等分 - 快捷键 me"></a>定距等分 - 快捷键 me</h3><h3 id="定数等分-快捷键-div"><a href="#定数等分-快捷键-div" class="headerlink" title="定数等分 - 快捷键 div"></a>定数等分 - 快捷键 div</h3><h3 id="修订云线-快捷键-revc"><a href="#修订云线-快捷键-revc" class="headerlink" title="修订云线 - 快捷键 revc"></a>修订云线 - 快捷键 revc</h3><h3 id="射线-快捷键-ray"><a href="#射线-快捷键-ray" class="headerlink" title="射线 - 快捷键 ray"></a>射线 - 快捷键 ray</h3><h3 id="填充-快捷键-h"><a href="#填充-快捷键-h" class="headerlink" title="填充 - 快捷键 h"></a>填充 - 快捷键 h</h3><h3 id="绘图次序-快捷键-dr"><a href="#绘图次序-快捷键-dr" class="headerlink" title="绘图次序 - 快捷键 dr"></a>绘图次序 - 快捷键 dr</h3>]]></content>
+  </entry>
+  <entry>
+    <title>微信小程序</title>
+    <url>/2023/07/19/wxapp/</url>
+    <content><![CDATA[<h1 id="微信小程序"><a href="#微信小程序" class="headerlink" title="微信小程序"></a>微信小程序</h1><h2 id="1-组件"><a href="#1-组件" class="headerlink" title="1.组件"></a>1.组件</h2><h3 id="1-常用的视图容器类组件"><a href="#1-常用的视图容器类组件" class="headerlink" title="1.常用的视图容器类组件"></a>1.常用的视图容器类组件</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717203405826.png" alt="image-20230717203405826"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717205357428.png" alt="image-20230717205357428"></p>
+<p>可以给scroll-view 标签添加scroll-y、scroll-x属性开启滚动效果，但是需要给scroll-view元素设置高度</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717205408751.png" alt="image-20230717205408751"></p>
+<img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717211454673.png" alt="image-20230717211454673" style="zoom: 33%;" />
+
+<h3 id="2-常用的基础内容组件"><a href="#2-常用的基础内容组件" class="headerlink" title="2.常用的基础内容组件"></a>2.常用的基础内容组件</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717212833335.png" alt="image-20230717212833335"></p>
+<p>text标签添加user-select属性可以设置文本选中复制</p>
+<p>rich-text 标签的nodes属性可以渲染HTML标签</p>
+<h3 id="3-其它常用组件"><a href="#3-其它常用组件" class="headerlink" title="3.其它常用组件"></a>3.其它常用组件</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717214454229.png" alt="image-20230717214454229"></p>
+<p>&#x2F; 为根目录</p>
+<h2 id="2-API"><a href="#2-API" class="headerlink" title="2.API"></a>2.API</h2><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230717220004407.png" alt="image-20230717220004407"></p>
+<h2 id="3-WXML模板语法"><a href="#3-WXML模板语法" class="headerlink" title="3.WXML模板语法"></a>3.WXML模板语法</h2><h3 id="1-数据绑定"><a href="#1-数据绑定" class="headerlink" title="1.数据绑定"></a>1.数据绑定</h3><p>动态绑定内容：声明数据在.js文件的date节点下，可以通过插值表达式”双大括号”语法渲染到页面中</p>
+<p>动态绑定属性：在属性值中使用插值表达式语法渲染内容</p>
+<h3 id="2-事件绑定"><a href="#2-事件绑定" class="headerlink" title="2.事件绑定"></a>2.事件绑定</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718123123822.png" alt="image-20230718123123822"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718123616557.png" alt="image-20230718123616557"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718124815551.png" alt="image-20230718124815551"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718125629987.png" alt="image-20230718125629987"></p>
+<p>在事件处理函数中可以通过 event.target.dataset.参数名 拿到参数</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718130352934.png" alt="image-20230718130352934"></p>
+<h3 id="3-条件渲染"><a href="#3-条件渲染" class="headerlink" title="3.条件渲染"></a>3.条件渲染</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718132404577.png" alt="image-20230718132404577"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718132815561.png" alt="image-20230718132815561"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718133417903.png" alt="image-20230718133417903"></p>
+<p>vx:if 动态创建删除元素</p>
+<p>hidden 给元素设置样式控制显示与隐藏</p>
+<h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2>]]></content>
   </entry>
 </search>

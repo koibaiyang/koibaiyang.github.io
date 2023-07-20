@@ -1,0 +1,153 @@
+/* 自定义butterfly样式表 */
+
+/* 页脚背景色透明 */
+#footer {
+  background-color: transparent;
+}
+
+/* 文章 侧边图片 透明度设置 */
+.post-bg {
+  opacity: 0.85;
+}
+
+/* 文章背景与文字颜色*/
+/* .recent-post-item {
+  background: #bb856625 !important;
+  color: whitesmoke
+} */
+
+/* 文章标题的颜色 */
+ /* .article-title{
+  color: antiquewhite !important;
+}  */
+
+/* 页脚 分页背景 */
+.page-number {
+  background: #665543 !important;
+}
+
+/* 分页 选中背景 */
+.page-number.current{
+  background: #36313d !important;
+}
+
+/* 根配置 */
+:root {
+  /* 按钮背景 */
+  --btn-bg: #9d87a2;
+  --btn-hover-color: #68537a;
+  /* 卡片背景 */
+  --card-bg: #bb856645;
+  /* 文字颜色 */
+  --font-color: antiquewhite;
+  /* nav 展开背景 */
+  --sidebar-bg: #bb856670;
+  /* 滚动条颜色 */
+  --scrollbar-color: #59462d;
+  /* 标题颜色 */
+  --text-highlight-color: antiquewhite;
+  /* 文字悬停颜色 */
+  --text-bg-hover: #68537a90;
+  /* 目录标题颜色 */
+  --toc-link-color: antiquewhite;
+}
+
+/* 选中文字背景 */
+*::selection {
+  background: #534b6380;
+  color: #f7f7e1;
+}
+
+/* nav a连接hover */
+#nav .site-page:not(.child):after{
+  background-color: #aa89c6;
+}
+
+#nav .menus_items .menus_item {
+  padding: 0 12px 0 12px !important;
+}
+
+#nav .menus_items .menus_item:first-child {
+  padding: 0 12px 0 24px !important;
+}
+
+#nav .menus_items .menus_item:last-child {
+  padding: 0 0 0 12px !important;
+}
+
+#nav .menus_items .menus_item:hover a {
+  color: #aa89c6 !important;
+}
+
+/* 文字目录 active */
+#aside-content #card-toc .toc-content .toc-link.active {
+  background: #aa89c635;
+}
+
+/* 文字目录 hover */
+#aside-content #card-toc .toc-content .toc-link:hover {
+  color: #aa89c6;
+}
+
+/* GitHub按钮 */
+#aside-content .card-info #card-info-btn{
+  border-radius: 3px;
+}
+
+/* nav栏背景 */
+#page-header.nav-fixed #nav{
+  background: #5b4a2a95;
+}
+
+/* 文字标题hover */
+#recent-posts > .recent-post-item >.recent-post-info > .article-title:hover {
+  color: #aa89c6;
+}
+
+.site-data > a:hover div {
+  color: #aa89c6 !important;
+}
+
+.avatar-img img:hover {
+  -webkit-transform: scale(1.1) !important;
+  -moz-transform: scale(1.1) !important;
+  -o-transform: scale(1.1) !important;
+  -ms-transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
+}
+
+/* 播放器 背景 */
+.aplayer{
+  background: #685036 !important;
+  border-radius: 10px !important;
+}
+
+.aplayer-info{
+  background: #ddaad699 !important;
+}
+
+.aplayer-miniswitcher{
+  background: #aa89c699 !important;
+}
+
+.aplayer .aplayer-list ol li.aplayer-list-light {
+  background: #68537a90 !important;
+}
+
+.aplayer-list-cur {
+  display: none !important;
+}
+
+.aplayer .aplayer-list ol li {
+  color: antiquewhite !important;
+  background: #bb856625 !important;
+  border: none !important;
+}
+
+.aplayer .aplayer-list ol li .aplayer-list-author{
+  color: antiquewhite !important;
+}
+
+.aplayer .aplayer-list ol li .aplayer-list-index{
+  color: antiquewhite !important;
+}

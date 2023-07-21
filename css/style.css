@@ -93,8 +93,16 @@
 }
 
 /* 文字目录 hover */
-#aside-content #card-toc .toc-content .toc-link:hover {
-  color: #aa89c6;
+#aside-content #card-toc .toc-content .toc-link:hover{
+  color: #aa89c6 !important;
+}
+
+#aside-content .aside-list > .aside-list-item .content > .title:hover, #aside-content .aside-list > .aside-list-item .content > .comment:hover {
+  color: #aa89c6 !important;
+}
+
+#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap,#aside-content .aside-list > .aside-list-item .content > time, #aside-content .aside-list > .aside-list-item .content > .name {
+  color: #a38b8b !important;
 }
 
 /* GitHub按钮 */

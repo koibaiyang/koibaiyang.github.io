@@ -183,7 +183,3 @@
 #local-search .search-dialog .local-search-box input{
   border: 2px solid antiquewhite !important;
 }
-
-#container #wrapper .login-top-wrap.default #strategies .livere-logo-top {
-  display: none !important;
-}

@@ -37,7 +37,7 @@
   --btn-bg: #9d87a2;
   --btn-hover-color: #68537a;
   /* 卡片背景 */
-  --card-bg: #bb856645;
+  --card-bg: #685036;
   /* 文字颜色 */
   --font-color: antiquewhite;
   /* nav 展开背景 */
@@ -57,6 +57,7 @@
   /* 分割线 */
   --hr-border: antiquewhite;
   --hr-before-color: #ce9c80;
+  --mark-bg: ;
 }
 
 /* 选中文字背景 */
@@ -182,4 +183,29 @@
 
 #local-search .search-dialog .local-search-box input{
   border: 2px solid antiquewhite !important;
+}
+
+#page-header {
+  background-color: transparent !important;
+}
+
+#web_bg {
+  background: url(https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/1689742458623.jpg) !important;
+  background-size: cover !important;
+}
+
+#aside-content .card-announcement .item-headline i {
+  color: #c1b5c4 !important;
+}
+
+.iconfont {
+  font-size: 17px !important;
+}
+
+#page-header:not(.not-top-img):before {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%) !important;
+}
+
+#page-header.full_page:before {
+  background: transparent !important;
 }

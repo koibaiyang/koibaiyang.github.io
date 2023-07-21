@@ -50,6 +50,13 @@
   --text-bg-hover: #68537a90;
   /* 目录标题颜色 */
   --toc-link-color: antiquewhite;
+  /* 搜索背景 */
+  --search-bg: #bb856680;
+  /* 搜索 a列表文字颜色 */
+  --search-a-color: antiquewhite;
+  /* 分割线 */
+  --hr-border: antiquewhite;
+  --hr-before-color: #ce9c80;
 }
 
 /* 选中文字背景 */
@@ -168,3 +175,15 @@
 #page-header {
   background-image: none !important;
 } */
+
+.search-dialog .search-nav {
+  color: antiquewhite !important;
+}
+
+#local-search .search-dialog .local-search-box input{
+  border: 2px solid antiquewhite;
+}
+
+#container #wrapper .login-top-wrap.default #strategies .livere-logo-top {
+  display: none !important;
+}

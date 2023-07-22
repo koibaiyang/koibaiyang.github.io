@@ -1,6 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>openlayers</title>
+    <url>/2023/07/23/openlayers/</url>
+    <content><![CDATA[<p>OpenLayers 页面</p>
+<h2 id="OpenLayers基础学习"><a href="#OpenLayers基础学习" class="headerlink" title="OpenLayers基础学习"></a>OpenLayers基础学习</h2><p>–快捷 <a href="https://openlayers.org/">OpenLayers官网</a> </p>
+<h3 id="WebGIS简介"><a href="#WebGIS简介" class="headerlink" title="WebGIS简介"></a>WebGIS简介</h3><ul>
+<li><p>GIS的核心概念：</p>
+<p>GIS（Geographic Information System）是一种用于存储、分析、管理和展示地理数据的计算机系统。以下是 GIS 中的一些核心概念：</p>
+<ol>
+<li>坐标系：地理数据通常以某种坐标系的形式存储，如经纬度坐标系或投影坐标系。</li>
+<li>地理数据：GIS 中的数据是具有地理上的位置信息的数据，如地图、地形、道路、建筑物、人口数据等。</li>
+<li>地图投影：地图投影是将三维地球表示为二维地图的过程。</li>
+<li>叠加分析：叠加分析是在一张地图上查看多个图层的分析，以探究其相互关系。</li>
+<li>空间分析：空间分析是指使用地理数据分析空间关系，如距离、面积和方位等。</li>
+<li>地理信息数据库：GIS 的核心是地理信息数据库，用于存储和管理地理数据。</li>
+<li>可视化：GIS 的目的之一是提供可视化，以方便人们更好地理解地理数据。</li>
+</ol>
+</li>
+<li><p>地图组成结构</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722230958233.png" alt="image-20230722230958233"></p>
+</li>
+<li><p>Openlayers的核心概念:</p>
+<p>1、一张<code>Map</code>是由很多<code>Layer</code>图层组成的。</p>
+<p>2、一个<code>Layer</code>对应一个<code>Source</code>矢量数据源</p>
+<p>3、一个<code>Source</code>由很多<code>Feature</code>组成</p>
+<p>4、<code>Feature</code>是<code>Geometry</code>和<code>Style</code>组成</p>
+</li>
+</ul>
+<h3 id="初始化地图"><a href="#初始化地图" class="headerlink" title="初始化地图"></a>初始化地图</h3><ul>
+<li><p>引入 OpenLayers 框架</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://lib.baomitu.com/ol3/4.6.5/ol.css&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://lib.baomitu.com/ol3/4.6.5/ol.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置高德地图source</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> gaode = <span class="keyword">new</span> ol.<span class="property">layer</span>.<span class="title class_">Tile</span>(&#123;</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&#x27;高德地图&#x27;</span>,</span><br><span class="line">        <span class="attr">source</span>: <span class="keyword">new</span> ol.<span class="property">source</span>.<span class="title function_">XYZ</span>(&#123;</span><br><span class="line">          <span class="attr">url</span>: <span class="string">&#x27;http://wprd0&#123;1-4&#125;.is.autonavi.com/appmaptile?lang=zh_cn&amp;size=1&amp;style=7&amp;x=&#123;x&#125;&amp;y=&#123;y&#125;&amp;z=&#123;z&#125;&#x27;</span>,</span><br><span class="line">          <span class="attr">wrapX</span>: <span class="literal">false</span>,</span><br><span class="line">        &#125;),</span><br><span class="line">      &#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>初始化地图</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> map = <span class="keyword">new</span> ol.<span class="title class_">Map</span>(&#123;</span><br><span class="line">        <span class="attr">target</span>: <span class="string">&#x27;map&#x27;</span>, <span class="comment">// 绑定到 map 元素上</span></span><br><span class="line">        <span class="attr">layers</span>: [gaode], <span class="comment">// 设置高德图层</span></span><br><span class="line">        <span class="attr">view</span>: <span class="keyword">new</span> ol.<span class="title class_">View</span>(&#123; <span class="comment">// 初始化</span></span><br><span class="line">          <span class="attr">center</span>: [<span class="number">114.3</span>, <span class="number">30.5</span>],</span><br><span class="line">          <span class="attr">zoom</span>: <span class="number">12</span>,</span><br><span class="line">          <span class="attr">projection</span>: <span class="string">&#x27;EPSG:4326&#x27;</span>, <span class="comment">// EPSG:4326 的经纬度范围是：经度范围在 -180° 到 180° 之间，纬度范围在 -90° 到 90° 之间。</span></span><br><span class="line">        &#125;),</span><br><span class="line">      &#125;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="拓展-EPSG-4326和-EPSG-3857的区别"><a href="#拓展-EPSG-4326和-EPSG-3857的区别" class="headerlink" title="拓展*EPSG:4326和 EPSG:3857的区别"></a>拓展*EPSG:4326和 EPSG:3857的区别</h4><p>EPSG:4326 和 EPSG:3857 是两个常用的坐标参考系代码，用于在 GIS 中表示地理位置。它们的主要区别如下：</p>
+<ul>
+<li>EPSG:4326 表示一个地理坐标系，使用经纬度来表示地理位置，通常用于地理位置的显示和制图。</li>
+<li>EPSG:3857 表示一个 Web 墨卡托坐标系，使用平面墨卡托投影来表示地理位置。</li>
+</ul>
+<p>因此，两个坐标系的主要区别在于它们使用的坐标系统不同：EPSG:4326 使用的是经纬度，而 EPSG:3857 使用的是平面墨卡托投影。</p>
+<p>EPSG:3857 在在线地图中被广泛使用，因为它能够在 Web 地图上提供更高的精度和更好的分辨率。然而，EPSG:4326 在网络上传输地理位置信息时被更多地使用，因为它使用的是标准的地理坐标系。</p>
+<p>总的来说，选择使用哪个坐标系取决于你的应用需求：如果需要高精度和分辨率，选择 EPSG:3857；如果需要标准的地理坐标系，选择 EPSG:4326</p>
+</li>
+</ul>
+<h3 id="地图控件"><a href="#地图控件" class="headerlink" title="地图控件"></a>地图控件</h3><ul>
+<li><p><em>视图跳转控件</em></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000324181.png" alt="image-20230723000324181"></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//视图跳转控件</span></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">ZoomToExtent</span> = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">ZoomToExtent</span>(&#123;</span><br><span class="line">        <span class="attr">extent</span>: [<span class="number">110</span>, <span class="number">30</span>, <span class="number">160</span>, <span class="number">30</span>],</span><br><span class="line">  &#125;)</span><br><span class="line">map.<span class="title function_">addControl</span>(<span class="title class_">ZoomToExtent</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>放大缩小控件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000628737.png" alt="image-20230723000628737"></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 放大缩小控件</span></span><br><span class="line"><span class="keyword">const</span> zoomslider = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">ZoomSlider</span>()</span><br><span class="line">map.<span class="title function_">addControl</span>(zoomslider)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>全屏控件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000902601.png" alt="image-20230723000902601"></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//全屏控件</span></span><br><span class="line"><span class="keyword">const</span> fullScreen = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">FullScreen</span>()</span><br><span class="line">map.<span class="title function_">addControl</span>(fullScreen)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h2><h2 id="高德-API-调用"><a href="#高德-API-调用" class="headerlink" title="高德 API 调用"></a>高德 API 调用</h2><h2 id="Vue3-整合-Openlayers"><a href="#Vue3-整合-Openlayers" class="headerlink" title="Vue3 整合 Openlayers"></a>Vue3 整合 Openlayers</h2>]]></content>
+      <categories>
+        <category>GIS</category>
+      </categories>
+      <tags>
+        <tag>OpenLayers</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PicGo + GitHub 搭建个人图床</title>
     <url>/2023/07/20/picgo/</url>
     <content><![CDATA[<h2 id="1-GitHub-创建图床仓库"><a href="#1-GitHub-创建图床仓库" class="headerlink" title="1. GitHub 创建图床仓库"></a>1. GitHub 创建图床仓库</h2><ul>
@@ -54,6 +123,303 @@
       </categories>
       <tags>
         <tag>图床搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>xcxkf</title>
+    <url>/2023/07/23/xcxkf/</url>
+    <content><![CDATA[<hr>
+<p>小程序基础</p>
+<hr>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h3 id="常用的视图容器类组件"><a href="#常用的视图容器类组件" class="headerlink" title="常用的视图容器类组件"></a>常用的视图容器类组件</h3><h4 id="view"><a href="#view" class="headerlink" title="view"></a>view</h4><ul>
+<li>普通视图区域</li>
+<li>类似于HTML中的 div，是一个块级元素</li>
+<li>常用于来实现页面的布局效果</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;view class=&quot;container1&quot;&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    AA</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    BB</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    CC</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722204557299.png" alt="image-20230722204557299"></p>
+<h4 id="scroll-view"><a href="#scroll-view" class="headerlink" title="scroll-view"></a>scroll-view</h4><ul>
+<li>可滚动的视图区域</li>
+<li>常用来实现滚动列表效果</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;scroll-view scroll-y class=&quot;container2&quot;&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    A</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    B</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    C</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">&lt;/scroll-view&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722204837686.png" alt="image-20230722204837686"></p>
+<p>可以给 scroll-view 标签添加 scroll-y、scroll-x 属性开启滚动效果，但是需要给 scroll-view 元素设置高度</p>
+<h4 id="swiper和swiper-item"><a href="#swiper和swiper-item" class="headerlink" title="swiper和swiper-item"></a>swiper和swiper-item</h4><ul>
+<li>轮播图组件和轮播图 item 组件</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;swiper class=&quot;swiper-container&quot; indicator-dots indicator-color=&quot;gray&quot; indicator-active-color=&quot;white&quot; autoplay interval=&quot;2500&quot; circular&gt;</span><br><span class="line">  &lt;swiper-item&gt;</span><br><span class="line">    &lt;view&gt;</span><br><span class="line">      A</span><br><span class="line">    &lt;/view&gt;</span><br><span class="line">  &lt;/swiper-item&gt;</span><br><span class="line">  &lt;swiper-item&gt;</span><br><span class="line">    &lt;view&gt;</span><br><span class="line">      B</span><br><span class="line">    &lt;/view&gt;</span><br><span class="line">  &lt;/swiper-item&gt;</span><br><span class="line">  &lt;swiper-item&gt;</span><br><span class="line">    &lt;view&gt;</span><br><span class="line">      C</span><br><span class="line">    &lt;/view&gt;</span><br><span class="line">  &lt;/swiper-item&gt;</span><br><span class="line">&lt;/swiper&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722205119915.png" alt="image-20230722205119915"></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>indicator-dots</td>
+<td>boolean</td>
+<td>false</td>
+<td>是否显示面板之时点</td>
+</tr>
+<tr>
+<td>indicator-color</td>
+<td>color</td>
+<td>rgba(0,0,0,.3)</td>
+<td>指示点颜色</td>
+</tr>
+<tr>
+<td>indicator-active-color</td>
+<td>color</td>
+<td>#000000</td>
+<td>当前指示点的颜色</td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>boolean</td>
+<td>false</td>
+<td>是否自动切换</td>
+</tr>
+<tr>
+<td>interval</td>
+<td>number</td>
+<td>5000</td>
+<td>自动切换时间间隔</td>
+</tr>
+<tr>
+<td>circular</td>
+<td>boolean</td>
+<td>false</td>
+<td>是否衔接滑动</td>
+</tr>
+</tbody></table>
+<h3 id="常用的基础内容组件"><a href="#常用的基础内容组件" class="headerlink" title="常用的基础内容组件"></a>常用的基础内容组件</h3><ul>
+<li><p>text</p>
+<p>文本组件</p>
+<p>类似于HTML中的span标签，是一个行内元素</p>
+<p>text 标签添加 user-select 属性可以设置文本选中复制</p>
+</li>
+<li><p>rich-text</p>
+<p>富文本组件</p>
+<p>支持把 HTML 字符串渲染为 WXML 结构</p>
+<p>rich-text 标签的 nodes 属性可以渲染 HTML 标签</p>
+</li>
+</ul>
+<h3 id="其它常用组件"><a href="#其它常用组件" class="headerlink" title="其它常用组件"></a>其它常用组件</h3><ul>
+<li><p>button </p>
+<p>按钮组件</p>
+<p>功能比HTML中的button按钮丰富</p>
+<p>通过open-type属性可以调用微信提供的各种功能（客服、转发、获取用户授权、获取用户信息等）</p>
+</li>
+<li><p>image</p>
+<p>图片组件</p>
+<p>默认宽度 300px 、高度240px</p>
+</li>
+<li><p>navigator</p>
+<p>网页导航组件</p>
+<p>类似于 HTML 中的 a 链接</p>
+</li>
+</ul>
+<p>在小程序开发文件中 &#x2F; 为根目录</p>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="事件监听API"><a href="#事件监听API" class="headerlink" title="事件监听API"></a>事件监听API</h3><ul>
+<li>特点：以 on 开头，用来监听某些事件的触发</li>
+<li>如：wx.onWindowResize(function cb)监听窗口尺寸的变化</li>
+</ul>
+<h3 id="同步API"><a href="#同步API" class="headerlink" title="同步API"></a>同步API</h3><ul>
+<li>特点1：以Sync结尾的API都是同步API</li>
+<li>特点2：同步API的执行结果，可以通过函数返回值直接获取，如果执行错误会抛出异常</li>
+<li>如：wx.setStorageSync(‘key’, ‘value’)向本地存储中写入内容</li>
+</ul>
+<h3 id="异步API"><a href="#异步API" class="headerlink" title="异步API"></a>异步API</h3><ul>
+<li>特点：类似于jQuery中的$.ajax(options)函数，需要通过sucess、fail、complete接受调用的结果</li>
+<li>如：wx.request()发起的网络请求，通过success回调函数接收数据</li>
+</ul>
+<h2 id="WXML-模板语法"><a href="#WXML-模板语法" class="headerlink" title="WXML 模板语法"></a>WXML 模板语法</h2><h3 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h3><p>动态绑定内容：声明数据在.js 文件的 date 节点下，可以通过插值表达式”双大括号”语法渲染到页面中</p>
+<p>动态绑定属性：在属性值中使用插值表达式语法渲染内容</p>
+<h3 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h3><ul>
+<li><p>小程序中常用的事件</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>绑定方式</th>
+<th>事件描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tap</td>
+<td>bindtap或bind:tap</td>
+<td>手指触摸后马上离开，类似于click事件</td>
+</tr>
+<tr>
+<td>input</td>
+<td>bindinput或bind:input</td>
+<td>文本框的输入事件</td>
+</tr>
+<tr>
+<td>change</td>
+<td>bindchange或bind:change</td>
+<td>状态改变时触发</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>事件对象的属性列表</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type</td>
+<td>String</td>
+<td>事件类型</td>
+</tr>
+<tr>
+<td>timeStamp</td>
+<td>Integer</td>
+<td>页面打开到触发事件所经过的毫秒数</td>
+</tr>
+<tr>
+<td>target</td>
+<td>Object</td>
+<td>触发事件的组件的一些属性值集合</td>
+</tr>
+<tr>
+<td>currentTarget</td>
+<td>Object</td>
+<td>当前组件的一些属性值集合</td>
+</tr>
+<tr>
+<td>detail</td>
+<td>Object</td>
+<td>额外的信息</td>
+</tr>
+<tr>
+<td>touches</td>
+<td>Array</td>
+<td>触摸事件，当前停留在屏幕中触摸点信息的数组</td>
+</tr>
+<tr>
+<td>changedTouches</td>
+<td>Array</td>
+<td>触摸事件，当前变化的触摸点信息的数组</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718124815551.png" alt="image-20230718124815551"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718125629987.png" alt="image-20230718125629987"></p>
+<ul>
+<li>在事件处理函数中可以通过 event.target.dataset.参数名 拿到参数</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718130352934.png" alt="image-20230718130352934"></p>
+<h3 id="条件渲染"><a href="#条件渲染" class="headerlink" title="条件渲染"></a>条件渲染</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718132404577.png" alt="image-20230718132404577"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718132815561.png" alt="image-20230718132815561"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718133417903.png" alt="image-20230718133417903"></p>
+<p>vx:if 动态创建删除元素</p>
+<p>hidden 给元素设置样式控制显示与隐藏</p>
+<h3 id="列表渲染"><a href="#列表渲染" class="headerlink" title="列表渲染"></a>列表渲染</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722205418019.png" alt="image-20230722205418019"></p>
+<ul>
+<li>wx:for-index、wx:for-item 属性可以指定 index索引名称和 item 项的名称</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722210113746.png" alt="image-20230722210113746"></p>
+<ul>
+<li>指定key时，不需要要插值语法</li>
+</ul>
+<h2 id="WXSS-模版样式"><a href="#WXSS-模版样式" class="headerlink" title="WXSS 模版样式"></a>WXSS 模版样式</h2><ul>
+<li><p>WXSS (WeiXin Style Sheets)是一套样式语言，用于美化 WXML 的组件样式，类似于网页开发中的 CSS</p>
+</li>
+<li><p>WXSS 具有 CSS 大部分特性，同时，WXSS 还对 CSS 进行了扩充以及修改，以适应微信小程序的开发。</p>
+<p>与 CSS 相比，WXSS 扩展的特性有：</p>
+<ul>
+<li><p>rpx 尺寸单位</p>
+<p>rpx 的实现原理非常简单：鉴于不同设备屏幕的大小不同，为了实现屏幕的自动适配，rpx 把所有设备的屏幕，在宽度上等分为 750 份（即：当前屏幕的总宽度为 750rpx）</p>
+<p>如：在 iPhone6 上，屏幕宽度为375px，共有 750 个物理像素，等分为 750rpx。则： 2rpx &#x3D; 1px </p>
+</li>
+<li><p>@import 样式导入</p>
+<p>@import 后跟需要导入的外联样式表的相对路径</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@import: &quot;/common/common.wxss&quot;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>app.wxss中的样式为全局样式，作用于每一个页面。</p>
+<p>在页面的 .wxss 文件中定义的样式为局部样式，只作用于当前页面。</p>
+<p>①当局部样式和全局样式冲突时，根据就近原则，局部样式会覆盖全局样式</p>
+<p>②当局部样式的权重大于或等于全局样式的权重时，才会覆盖全局的样式</p>
+</li>
+</ul>
+<h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><p>小程序根目录下的 app.json 文件是小程序的全局配置文件。常用的配置项如下：</p>
+<p>① pages（记录当前小程序所有页面的存放路径）</p>
+<p>② windowl（全局设置小程序窗口的外观）</p>
+<p>③ tabBarl（设置小程序底部的 tabBar 效果）</p>
+<p>④ stylel（是否启用新版的组件样式）</p>
+<h3 id="小程序窗口的组成部分"><a href="#小程序窗口的组成部分" class="headerlink" title="小程序窗口的组成部分"></a><strong>小程序窗口的组成部分</strong></h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722223202337.png" alt="image-20230722223202337"></p>
+<h3 id="window节点常用配置项"><a href="#window节点常用配置项" class="headerlink" title="window节点常用配置项"></a>window节点常用配置项</h3><table>
+<thead>
+<tr>
+<th><strong>属性名</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>默认值</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>navigationBarTitleText</td>
+<td>String</td>
+<td>字符串</td>
+<td>导航栏标题文字内容</td>
+</tr>
+<tr>
+<td>navigationBarBackgroundColor</td>
+<td>HexColor</td>
+<td>#000000</td>
+<td>导航栏背景颜色，如 #000000</td>
+</tr>
+<tr>
+<td>navigationBarTextStyle</td>
+<td>String</td>
+<td>white</td>
+<td>导航栏标题颜色，<strong>仅支持 black &#x2F; white</strong></td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>HexColor</td>
+<td>#ffffff</td>
+<td>窗口的背景色</td>
+</tr>
+<tr>
+<td>backgroundTextStyle</td>
+<td>String</td>
+<td>dark</td>
+<td>下拉 loading 的样式，仅支持 dark &#x2F; light</td>
+</tr>
+<tr>
+<td>enablePullDownRefresh</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否全局开启下拉刷新</td>
+</tr>
+<tr>
+<td>onReachBottomDistance</td>
+<td>Number</td>
+<td>50</td>
+<td>页面上拉触底事件触发时距页面底部距离，单位为px</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
       </tags>
   </entry>
 </search>

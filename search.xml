@@ -1,6 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>openlayers</title>
+    <url>/2023/07/23/openlayers/</url>
+    <content><![CDATA[<p>OpenLayers 页面</p>
+<h2 id="OpenLayers-基础学习"><a href="#OpenLayers-基础学习" class="headerlink" title="OpenLayers 基础学习"></a>OpenLayers 基础学习</h2><p>–快捷 <a href="https://openlayers.org/">OpenLayers 官网</a></p>
+<h3 id="WebGIS-简介"><a href="#WebGIS-简介" class="headerlink" title="WebGIS 简介"></a>WebGIS 简介</h3><ul>
+<li><p>GIS 的核心概念：</p>
+<p>GIS（Geographic Information System）是一种用于存储、分析、管理和展示地理数据的计算机系统。以下是 GIS 中的一些核心概念：</p>
+<ol>
+<li>坐标系：地理数据通常以某种坐标系的形式存储，如经纬度坐标系或投影坐标系。</li>
+<li>地理数据：GIS 中的数据是具有地理上的位置信息的数据，如地图、地形、道路、建筑物、人口数据等。</li>
+<li>地图投影：地图投影是将三维地球表示为二维地图的过程。</li>
+<li>叠加分析：叠加分析是在一张地图上查看多个图层的分析，以探究其相互关系。</li>
+<li>空间分析：空间分析是指使用地理数据分析空间关系，如距离、面积和方位等。</li>
+<li>地理信息数据库：GIS 的核心是地理信息数据库，用于存储和管理地理数据。</li>
+<li>可视化：GIS 的目的之一是提供可视化，以方便人们更好地理解地理数据。</li>
+</ol>
+</li>
+<li><p>地图组成结构</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722230958233.png" alt="image-20230722230958233"></p>
+</li>
+<li><p>Openlayers 的核心概念:</p>
+<p>1、一张<code>Map</code>是由很多<code>Layer</code>图层组成的。</p>
+<p>2、一个<code>Layer</code>对应一个<code>Source</code>矢量数据源</p>
+<p>3、一个<code>Source</code>由很多<code>Feature</code>组成</p>
+<p>4、<code>Feature</code>是<code>Geometry</code>和<code>Style</code>组成</p>
+</li>
+</ul>
+<h3 id="初始化地图"><a href="#初始化地图" class="headerlink" title="初始化地图"></a>初始化地图</h3><ul>
+<li><p>引入 OpenLayers 框架</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://lib.baomitu.com/ol3/4.6.5/ol.css&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://lib.baomitu.com/ol3/4.6.5/ol.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置高德地图 source</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> gaode = <span class="keyword">new</span> ol.<span class="property">layer</span>.<span class="title class_">Tile</span>(&#123;</span><br><span class="line">  <span class="attr">title</span>: <span class="string">&#x27;高德地图&#x27;</span>,</span><br><span class="line">  <span class="attr">source</span>: <span class="keyword">new</span> ol.<span class="property">source</span>.<span class="title function_">XYZ</span>(&#123;</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;http://wprd0&#123;1-4&#125;.is.autonavi.com/appmaptile?lang=zh_cn&amp;size=1&amp;style=7&amp;x=&#123;x&#125;&amp;y=&#123;y&#125;&amp;z=&#123;z&#125;&#x27;</span>,</span><br><span class="line">    <span class="attr">wrapX</span>: <span class="literal">false</span>,</span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>初始化地图</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> map = <span class="keyword">new</span> ol.<span class="title class_">Map</span>(&#123;</span><br><span class="line">  <span class="attr">target</span>: <span class="string">&#x27;map&#x27;</span>, <span class="comment">// 绑定到 map 元素上</span></span><br><span class="line">  <span class="attr">layers</span>: [gaode], <span class="comment">// 设置高德图层</span></span><br><span class="line">  <span class="attr">view</span>: <span class="keyword">new</span> ol.<span class="title class_">View</span>(&#123;</span><br><span class="line">    <span class="comment">// 初始化</span></span><br><span class="line">    <span class="attr">center</span>: [<span class="number">114.3</span>, <span class="number">30.5</span>],</span><br><span class="line">    <span class="attr">zoom</span>: <span class="number">12</span>,</span><br><span class="line">    <span class="attr">projection</span>: <span class="string">&#x27;EPSG:4326&#x27;</span>, <span class="comment">// EPSG:4326 的经纬度范围是：经度范围在 -180° 到 180° 之间，纬度范围在 -90° 到 90° 之间。</span></span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="拓展-EPSG-4326-和-EPSG-3857-的区别"><a href="#拓展-EPSG-4326-和-EPSG-3857-的区别" class="headerlink" title="拓展*EPSG:4326 和 EPSG:3857 的区别"></a>拓展*EPSG:4326 和 EPSG:3857 的区别</h4><p>EPSG:4326 和 EPSG:3857 是两个常用的坐标参考系代码，用于在 GIS 中表示地理位置。它们的主要区别如下：</p>
+<ul>
+<li>EPSG:4326 表示一个地理坐标系，使用经纬度来表示地理位置，通常用于地理位置的显示和制图。</li>
+<li>EPSG:3857 表示一个 Web 墨卡托坐标系，使用平面墨卡托投影来表示地理位置。</li>
+</ul>
+<p>因此，两个坐标系的主要区别在于它们使用的坐标系统不同：EPSG:4326 使用的是经纬度，而 EPSG:3857 使用的是平面墨卡托投影。</p>
+<p>EPSG:3857 在在线地图中被广泛使用，因为它能够在 Web 地图上提供更高的精度和更好的分辨率。然而，EPSG:4326 在网络上传输地理位置信息时被更多地使用，因为它使用的是标准的地理坐标系。</p>
+<p>总的来说，选择使用哪个坐标系取决于你的应用需求：如果需要高精度和分辨率，选择 EPSG:3857；如果需要标准的地理坐标系，选择 EPSG:4326</p>
+</li>
+</ul>
+<h3 id="地图控件"><a href="#地图控件" class="headerlink" title="地图控件"></a>地图控件</h3><ul>
+<li><p><em>视图跳转控件</em></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000324181.png" alt="image-20230723000324181"></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//视图跳转控件</span></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">ZoomToExtent</span> = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">ZoomToExtent</span>(&#123;</span><br><span class="line">  <span class="attr">extent</span>: [<span class="number">110</span>, <span class="number">30</span>, <span class="number">160</span>, <span class="number">30</span>],</span><br><span class="line">&#125;)</span><br><span class="line">map.<span class="title function_">addControl</span>(<span class="title class_">ZoomToExtent</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>放大缩小控件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000628737.png" alt="image-20230723000628737"></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 放大缩小控件</span></span><br><span class="line"><span class="keyword">const</span> zoomslider = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">ZoomSlider</span>()</span><br><span class="line">map.<span class="title function_">addControl</span>(zoomslider)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>全屏控件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000902601.png" alt="image-20230723000902601"></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//全屏控件</span></span><br><span class="line"><span class="keyword">const</span> fullScreen = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">FullScreen</span>()</span><br><span class="line">map.<span class="title function_">addControl</span>(fullScreen)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h2><h2 id="高德-API-调用"><a href="#高德-API-调用" class="headerlink" title="高德 API 调用"></a>高德 API 调用</h2><h2 id="Vue3-整合-Openlayers"><a href="#Vue3-整合-Openlayers" class="headerlink" title="Vue3 整合 Openlayers"></a>Vue3 整合 Openlayers</h2>]]></content>
+      <categories>
+        <category>gis</category>
+      </categories>
+      <tags>
+        <tag>OpenLayers</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小程序开发</title>
     <url>/2023/07/23/xcxkf/</url>
     <content><![CDATA[<hr>
@@ -351,75 +420,6 @@
       </categories>
       <tags>
         <tag>图床搭建</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>openlayers</title>
-    <url>/2023/07/23/openlayers/</url>
-    <content><![CDATA[<p>OpenLayers 页面</p>
-<h2 id="OpenLayers-基础学习"><a href="#OpenLayers-基础学习" class="headerlink" title="OpenLayers 基础学习"></a>OpenLayers 基础学习</h2><p>–快捷 <a href="https://openlayers.org/">OpenLayers 官网</a></p>
-<h3 id="WebGIS-简介"><a href="#WebGIS-简介" class="headerlink" title="WebGIS 简介"></a>WebGIS 简介</h3><ul>
-<li><p>GIS 的核心概念：</p>
-<p>GIS（Geographic Information System）是一种用于存储、分析、管理和展示地理数据的计算机系统。以下是 GIS 中的一些核心概念：</p>
-<ol>
-<li>坐标系：地理数据通常以某种坐标系的形式存储，如经纬度坐标系或投影坐标系。</li>
-<li>地理数据：GIS 中的数据是具有地理上的位置信息的数据，如地图、地形、道路、建筑物、人口数据等。</li>
-<li>地图投影：地图投影是将三维地球表示为二维地图的过程。</li>
-<li>叠加分析：叠加分析是在一张地图上查看多个图层的分析，以探究其相互关系。</li>
-<li>空间分析：空间分析是指使用地理数据分析空间关系，如距离、面积和方位等。</li>
-<li>地理信息数据库：GIS 的核心是地理信息数据库，用于存储和管理地理数据。</li>
-<li>可视化：GIS 的目的之一是提供可视化，以方便人们更好地理解地理数据。</li>
-</ol>
-</li>
-<li><p>地图组成结构</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722230958233.png" alt="image-20230722230958233"></p>
-</li>
-<li><p>Openlayers 的核心概念:</p>
-<p>1、一张<code>Map</code>是由很多<code>Layer</code>图层组成的。</p>
-<p>2、一个<code>Layer</code>对应一个<code>Source</code>矢量数据源</p>
-<p>3、一个<code>Source</code>由很多<code>Feature</code>组成</p>
-<p>4、<code>Feature</code>是<code>Geometry</code>和<code>Style</code>组成</p>
-</li>
-</ul>
-<h3 id="初始化地图"><a href="#初始化地图" class="headerlink" title="初始化地图"></a>初始化地图</h3><ul>
-<li><p>引入 OpenLayers 框架</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://lib.baomitu.com/ol3/4.6.5/ol.css&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://lib.baomitu.com/ol3/4.6.5/ol.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置高德地图 source</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> gaode = <span class="keyword">new</span> ol.<span class="property">layer</span>.<span class="title class_">Tile</span>(&#123;</span><br><span class="line">  <span class="attr">title</span>: <span class="string">&#x27;高德地图&#x27;</span>,</span><br><span class="line">  <span class="attr">source</span>: <span class="keyword">new</span> ol.<span class="property">source</span>.<span class="title function_">XYZ</span>(&#123;</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;http://wprd0&#123;1-4&#125;.is.autonavi.com/appmaptile?lang=zh_cn&amp;size=1&amp;style=7&amp;x=&#123;x&#125;&amp;y=&#123;y&#125;&amp;z=&#123;z&#125;&#x27;</span>,</span><br><span class="line">    <span class="attr">wrapX</span>: <span class="literal">false</span>,</span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>初始化地图</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> map = <span class="keyword">new</span> ol.<span class="title class_">Map</span>(&#123;</span><br><span class="line">  <span class="attr">target</span>: <span class="string">&#x27;map&#x27;</span>, <span class="comment">// 绑定到 map 元素上</span></span><br><span class="line">  <span class="attr">layers</span>: [gaode], <span class="comment">// 设置高德图层</span></span><br><span class="line">  <span class="attr">view</span>: <span class="keyword">new</span> ol.<span class="title class_">View</span>(&#123;</span><br><span class="line">    <span class="comment">// 初始化</span></span><br><span class="line">    <span class="attr">center</span>: [<span class="number">114.3</span>, <span class="number">30.5</span>],</span><br><span class="line">    <span class="attr">zoom</span>: <span class="number">12</span>,</span><br><span class="line">    <span class="attr">projection</span>: <span class="string">&#x27;EPSG:4326&#x27;</span>, <span class="comment">// EPSG:4326 的经纬度范围是：经度范围在 -180° 到 180° 之间，纬度范围在 -90° 到 90° 之间。</span></span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<h4 id="拓展-EPSG-4326-和-EPSG-3857-的区别"><a href="#拓展-EPSG-4326-和-EPSG-3857-的区别" class="headerlink" title="拓展*EPSG:4326 和 EPSG:3857 的区别"></a>拓展*EPSG:4326 和 EPSG:3857 的区别</h4><p>EPSG:4326 和 EPSG:3857 是两个常用的坐标参考系代码，用于在 GIS 中表示地理位置。它们的主要区别如下：</p>
-<ul>
-<li>EPSG:4326 表示一个地理坐标系，使用经纬度来表示地理位置，通常用于地理位置的显示和制图。</li>
-<li>EPSG:3857 表示一个 Web 墨卡托坐标系，使用平面墨卡托投影来表示地理位置。</li>
-</ul>
-<p>因此，两个坐标系的主要区别在于它们使用的坐标系统不同：EPSG:4326 使用的是经纬度，而 EPSG:3857 使用的是平面墨卡托投影。</p>
-<p>EPSG:3857 在在线地图中被广泛使用，因为它能够在 Web 地图上提供更高的精度和更好的分辨率。然而，EPSG:4326 在网络上传输地理位置信息时被更多地使用，因为它使用的是标准的地理坐标系。</p>
-<p>总的来说，选择使用哪个坐标系取决于你的应用需求：如果需要高精度和分辨率，选择 EPSG:3857；如果需要标准的地理坐标系，选择 EPSG:4326</p>
-</li>
-</ul>
-<h3 id="地图控件"><a href="#地图控件" class="headerlink" title="地图控件"></a>地图控件</h3><ul>
-<li><p><em>视图跳转控件</em></p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000324181.png" alt="image-20230723000324181"></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//视图跳转控件</span></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">ZoomToExtent</span> = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">ZoomToExtent</span>(&#123;</span><br><span class="line">  <span class="attr">extent</span>: [<span class="number">110</span>, <span class="number">30</span>, <span class="number">160</span>, <span class="number">30</span>],</span><br><span class="line">&#125;)</span><br><span class="line">map.<span class="title function_">addControl</span>(<span class="title class_">ZoomToExtent</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>放大缩小控件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000628737.png" alt="image-20230723000628737"></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 放大缩小控件</span></span><br><span class="line"><span class="keyword">const</span> zoomslider = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">ZoomSlider</span>()</span><br><span class="line">map.<span class="title function_">addControl</span>(zoomslider)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>全屏控件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000902601.png" alt="image-20230723000902601"></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//全屏控件</span></span><br><span class="line"><span class="keyword">const</span> fullScreen = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">FullScreen</span>()</span><br><span class="line">map.<span class="title function_">addControl</span>(fullScreen)</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h2><h2 id="高德-API-调用"><a href="#高德-API-调用" class="headerlink" title="高德 API 调用"></a>高德 API 调用</h2><h2 id="Vue3-整合-Openlayers"><a href="#Vue3-整合-Openlayers" class="headerlink" title="Vue3 整合 Openlayers"></a>Vue3 整合 Openlayers</h2>]]></content>
-      <categories>
-        <category>gis</category>
-      </categories>
-      <tags>
-        <tag>OpenLayers</tag>
       </tags>
   </entry>
 </search>

@@ -217,3 +217,31 @@
 #page-header.full_page:before {
   background: transparent !important;
 }
+
+#page-header.not-top-img #nav {
+  background: rgba(0,0,0,0.2);
+}
+
+.article-sort-item:before {
+  border: 3px solid #aa89c6 !important;
+}
+
+.article-sort-title:before {
+  border: 5px solid #aa89c6 !important;
+}
+
+.article-sort {
+  border-left: 2px solid #e7a9f37d !important;
+}
+
+.article-sort-title:after {
+  background: #e7a9f37d !important;
+}
+
+.article-sort-item-time {
+  color: #a38b8b !important;
+}
+
+.article-sort-item-title:hover {
+  color: #aa89c6 !important;
+}

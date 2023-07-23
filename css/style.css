@@ -10,17 +10,6 @@
   opacity: 0.85;
 }
 
-/* 文章背景与文字颜色*/
-/* .recent-post-item {
-  background: #bb856625 !important;
-  color: whitesmoke
-} */
-
-/* 文章标题的颜色 */
- /* .article-title{
-  color: antiquewhite !important;
-}  */
-
 /* 页脚 分页背景 */
 .page-number {
   background: #665543 !important;
@@ -168,23 +157,6 @@
   color: antiquewhite !important;
 }
 
-
-
-
-/* 全屏背景 */
-/* #body-wrap {
-  background: url(https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/1689742458623.png);
-  background-size: cover;
-}
-
-#page-header {
-  background-color: transparent !important;
-}
-
-#page-header {
-  background-image: none !important;
-} */
-
 .search-dialog .search-nav {
   color: antiquewhite !important;
 }
@@ -244,4 +216,8 @@
 
 .article-sort-item-title:hover {
   color: #aa89c6 !important;
+}
+
+.aplayer.aplayer-fixed .aplayer-lrc {
+  text-shadow: -1px -1px 0 #aa89c6 !important;
 }

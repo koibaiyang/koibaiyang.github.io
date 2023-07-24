@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>openlayers</title>
-    <url>/koi/openlayers/</url>
+    <url>/openlayers/</url>
     <content><![CDATA[<p>OpenLayers 页面</p>
 <h2 id="OpenLayers-基础学习"><a href="#OpenLayers-基础学习" class="headerlink" title="OpenLayers 基础学习"></a>OpenLayers 基础学习</h2><p>–快捷 <a href="https://openlayers.org/">OpenLayers 官网</a></p>
 <h3 id="WebGIS-简介"><a href="#WebGIS-简介" class="headerlink" title="WebGIS 简介"></a>WebGIS 简介</h3><ul>
@@ -71,7 +71,7 @@
   </entry>
   <entry>
     <title>PicGo + GitHub 搭建个人图床</title>
-    <url>/koi/picgo/</url>
+    <url>/picgo/</url>
     <content><![CDATA[<h2 id="1-GitHub-创建图床仓库"><a href="#1-GitHub-创建图床仓库" class="headerlink" title="1. GitHub 创建图床仓库"></a>1. GitHub 创建图床仓库</h2><ul>
 <li><p>使用你的 GitHub 账号创建一个图床仓库</p>
 <p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720214539444.png" alt="image-20230720214539444"></p>
@@ -127,7 +127,7 @@
   </entry>
   <entry>
     <title>小程序开发</title>
-    <url>/koi/xcxkf/</url>
+    <url>/xcxkf/</url>
     <content><![CDATA[<hr>
 <p>小程序基础</p>
 <hr>

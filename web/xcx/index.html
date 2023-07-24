@@ -1,0 +1,745 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>小程序开发 | koiのblog</title><meta name="author" content="koi白羊"><meta name="copyright" content="koi白羊"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="小程序基础  组件常用的视图容器类组件view 普通视图区域 类似于HTML中的 div，是一个块级元素 常用于来实现页面的布局效果  1234567891011&lt;view class&#x3D;&quot;container1&quot;&gt;  &lt;view&gt;    AA  &lt;&#x2F;view&gt;  &lt;view&gt;    BB  &lt;&#x2F;view&gt;  &lt;vi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小程序开发">
+<meta property="og:url" content="https://lcgy.gitee.io/koi/web/xcx/index.html">
+<meta property="og:site_name" content="koiのblog">
+<meta property="og:description" content="小程序基础  组件常用的视图容器类组件view 普通视图区域 类似于HTML中的 div，是一个块级元素 常用于来实现页面的布局效果  1234567891011&lt;view class&#x3D;&quot;container1&quot;&gt;  &lt;view&gt;    AA  &lt;&#x2F;view&gt;  &lt;view&gt;    BB  &lt;&#x2F;view&gt;  &lt;vi">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/qq_pic_merged_1689754554008.jpg">
+<meta property="article:published_time" content="2023-07-24T15:55:26.000Z">
+<meta property="article:modified_time" content="2023-07-24T16:17:03.056Z">
+<meta property="article:author" content="koi白羊">
+<meta property="article:tag" content="miniapps">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/qq_pic_merged_1689754554008.jpg"><link rel="shortcut icon" href="/koi/img/favicon.png"><link rel="canonical" href="https://lcgy.gitee.io/koi/web/xcx/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/koi/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/koi/',
+  algolia: undefined,
+  localSearch: {"path":"/koi/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":20,"languages":{"author":"作者: koi白羊","link":"链接: ","source":"来源: koiのblog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '小程序开发',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-07-25 00:17:03'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="//at.alicdn.com/t/c/font_4176728_k6jwhxts0i9.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/1686997552436%20(1).png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/koi/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/koi/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/koi/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/koi/"><i class="fa-fw iconfont icon-a-bijibenbiji"></i><span> 随记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-kaifa"></i><span> 前端</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/koi/web/html"><i class="fa-fw iconfont icon-html"></i><span> HTML</span></a></li><li><a class="site-page child" href="/koi/web/css"><i class="fa-fw iconfont icon-css"></i><span> CSS</span></a></li><li><a class="site-page child" href="/koi/web/js"><i class="fa-fw iconfont icon-javascript"></i><span> JavaScript</span></a></li><li><a class="site-page child" href="/koi/web/ts"><i class="fa-fw iconfont icon-typescript"></i><span> TypeScript</span></a></li><li><a class="site-page child" href="/koi/web/axios"><i class="fa-fw iconfont icon-aJax"></i><span> axios</span></a></li><li><a class="site-page child" href="/koi/web/vue"><i class="fa-fw iconfont icon-vue"></i><span> vue</span></a></li><li><a class="site-page child" href="/koi/web/react"><i class="fa-fw iconfont icon-react"></i><span> React</span></a></li><li><a class="site-page child" href="/koi/web/xcx"><i class="fa-fw iconfont icon-xiaochengxu"></i><span> 小程序</span></a></li><li><a class="site-page child" href="/koi/web/nodejs"><i class="fa-fw iconfont icon-node-js"></i><span> NodeJs</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-GISguankong"></i><span> GIS</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/koi/gis/arcgis"><i class="fa-fw iconfont icon-fuwudiqiu"></i><span> ArcGIS</span></a></li><li><a class="site-page child" href="/koi/gis/jsapi"><i class="fa-fw iconfont icon-api"></i><span> JSAPI</span></a></li><li><a class="site-page child" href="/koi/gis/sql"><i class="fa-fw iconfont icon-mysql"></i><span> SQL</span></a></li><li><a class="site-page child" href="/koi/gis/cesium"><i class="fa-fw iconfont icon-icon-tianqueCesium"></i><span> Cesium</span></a></li><li><a class="site-page child" href="/koi/gis/openlayers"><i class="fa-fw iconfont icon-layer"></i><span> OpenLayers</span></a></li><li><a class="site-page child" href="/koi/gis/webgl"><i class="fa-fw iconfont icon-ditu"></i><span> WebGL</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-a-business-icon-AlibabacomOnlineTradeShow"></i><span> CAD</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/koi/cad/quickly"><i class="fa-fw iconfont icon-quick"></i><span> 快捷键</span></a></li><li><a class="site-page child" href="/koi/cad/autocad"><i class="fa-fw iconfont icon-sheji"></i><span> AutoCAD</span></a></li><li><a class="site-page child" href="/koi/cad/sketchup"><i class="fa-fw iconfont icon-d"></i><span> SketchUp</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-xiangmu1"></i><span> 项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/koi/project/xtx"><i class="fa-fw iconfont icon-23"></i><span> 小兔鲜电商网站</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/koi/archives/"><i class="fa-fw iconfont icon-shijianzhou"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/koi/categories/"><i class="fa-fw iconfont icon-fenlei"></i><span> 分类</span></a></li><li><a class="site-page child" href="/koi/tags/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page child" href="/koi/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/koi/about/"><i class="fa-fw iconfont icon-about"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/qq_pic_merged_1689754554008.jpg')"><nav id="nav"><span id="blog-info"><a href="/koi/" title="koiのblog"><span class="site-name">koiのblog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/koi/"><i class="fa-fw iconfont icon-a-bijibenbiji"></i><span> 随记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-kaifa"></i><span> 前端</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/koi/web/html"><i class="fa-fw iconfont icon-html"></i><span> HTML</span></a></li><li><a class="site-page child" href="/koi/web/css"><i class="fa-fw iconfont icon-css"></i><span> CSS</span></a></li><li><a class="site-page child" href="/koi/web/js"><i class="fa-fw iconfont icon-javascript"></i><span> JavaScript</span></a></li><li><a class="site-page child" href="/koi/web/ts"><i class="fa-fw iconfont icon-typescript"></i><span> TypeScript</span></a></li><li><a class="site-page child" href="/koi/web/axios"><i class="fa-fw iconfont icon-aJax"></i><span> axios</span></a></li><li><a class="site-page child" href="/koi/web/vue"><i class="fa-fw iconfont icon-vue"></i><span> vue</span></a></li><li><a class="site-page child" href="/koi/web/react"><i class="fa-fw iconfont icon-react"></i><span> React</span></a></li><li><a class="site-page child" href="/koi/web/xcx"><i class="fa-fw iconfont icon-xiaochengxu"></i><span> 小程序</span></a></li><li><a class="site-page child" href="/koi/web/nodejs"><i class="fa-fw iconfont icon-node-js"></i><span> NodeJs</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-GISguankong"></i><span> GIS</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/koi/gis/arcgis"><i class="fa-fw iconfont icon-fuwudiqiu"></i><span> ArcGIS</span></a></li><li><a class="site-page child" href="/koi/gis/jsapi"><i class="fa-fw iconfont icon-api"></i><span> JSAPI</span></a></li><li><a class="site-page child" href="/koi/gis/sql"><i class="fa-fw iconfont icon-mysql"></i><span> SQL</span></a></li><li><a class="site-page child" href="/koi/gis/cesium"><i class="fa-fw iconfont icon-icon-tianqueCesium"></i><span> Cesium</span></a></li><li><a class="site-page child" href="/koi/gis/openlayers"><i class="fa-fw iconfont icon-layer"></i><span> OpenLayers</span></a></li><li><a class="site-page child" href="/koi/gis/webgl"><i class="fa-fw iconfont icon-ditu"></i><span> WebGL</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-a-business-icon-AlibabacomOnlineTradeShow"></i><span> CAD</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/koi/cad/quickly"><i class="fa-fw iconfont icon-quick"></i><span> 快捷键</span></a></li><li><a class="site-page child" href="/koi/cad/autocad"><i class="fa-fw iconfont icon-sheji"></i><span> AutoCAD</span></a></li><li><a class="site-page child" href="/koi/cad/sketchup"><i class="fa-fw iconfont icon-d"></i><span> SketchUp</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-xiangmu1"></i><span> 项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/koi/project/xtx"><i class="fa-fw iconfont icon-23"></i><span> 小兔鲜电商网站</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/koi/archives/"><i class="fa-fw iconfont icon-shijianzhou"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/koi/categories/"><i class="fa-fw iconfont icon-fenlei"></i><span> 分类</span></a></li><li><a class="site-page child" href="/koi/tags/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page child" href="/koi/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/koi/about/"><i class="fa-fw iconfont icon-about"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">小程序开发</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-24T15:55:26.000Z" title="发表于 2023-07-24 23:55:26">2023-07-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-24T16:17:03.056Z" title="更新于 2023-07-25 00:17:03">2023-07-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>8分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="小程序开发"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>小程序基础</p>
+<hr>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h3 id="常用的视图容器类组件"><a href="#常用的视图容器类组件" class="headerlink" title="常用的视图容器类组件"></a>常用的视图容器类组件</h3><h4 id="view"><a href="#view" class="headerlink" title="view"></a>view</h4><ul>
+<li>普通视图区域</li>
+<li>类似于HTML中的 div，是一个块级元素</li>
+<li>常用于来实现页面的布局效果</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;view class=&quot;container1&quot;&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    AA</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    BB</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    CC</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722204557299.png" alt="image-20230722204557299"></p>
+<h4 id="scroll-view"><a href="#scroll-view" class="headerlink" title="scroll-view"></a>scroll-view</h4><ul>
+<li>可滚动的视图区域</li>
+<li>常用来实现滚动列表效果</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;scroll-view scroll-y class=&quot;container2&quot;&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    A</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    B</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    C</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">&lt;/scroll-view&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722204837686.png" alt="image-20230722204837686"></p>
+<p>可以给 scroll-view 标签添加 scroll-y、scroll-x 属性开启滚动效果，但是需要给 scroll-view 元素设置高度</p>
+<h4 id="swiper和swiper-item"><a href="#swiper和swiper-item" class="headerlink" title="swiper和swiper-item"></a>swiper和swiper-item</h4><ul>
+<li>轮播图组件和轮播图 item 组件</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;swiper class=&quot;swiper-container&quot; indicator-dots indicator-color=&quot;gray&quot; indicator-active-color=&quot;white&quot; autoplay interval=&quot;2500&quot; circular&gt;</span><br><span class="line">  &lt;swiper-item&gt;</span><br><span class="line">    &lt;view&gt;</span><br><span class="line">      A</span><br><span class="line">    &lt;/view&gt;</span><br><span class="line">  &lt;/swiper-item&gt;</span><br><span class="line">  &lt;swiper-item&gt;</span><br><span class="line">    &lt;view&gt;</span><br><span class="line">      B</span><br><span class="line">    &lt;/view&gt;</span><br><span class="line">  &lt;/swiper-item&gt;</span><br><span class="line">  &lt;swiper-item&gt;</span><br><span class="line">    &lt;view&gt;</span><br><span class="line">      C</span><br><span class="line">    &lt;/view&gt;</span><br><span class="line">  &lt;/swiper-item&gt;</span><br><span class="line">&lt;/swiper&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722205119915.png" alt="image-20230722205119915"></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>indicator-dots</td>
+<td>boolean</td>
+<td>false</td>
+<td>是否显示面板之时点</td>
+</tr>
+<tr>
+<td>indicator-color</td>
+<td>color</td>
+<td>rgba(0,0,0,.3)</td>
+<td>指示点颜色</td>
+</tr>
+<tr>
+<td>indicator-active-color</td>
+<td>color</td>
+<td>#000000</td>
+<td>当前指示点的颜色</td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>boolean</td>
+<td>false</td>
+<td>是否自动切换</td>
+</tr>
+<tr>
+<td>interval</td>
+<td>number</td>
+<td>5000</td>
+<td>自动切换时间间隔</td>
+</tr>
+<tr>
+<td>circular</td>
+<td>boolean</td>
+<td>false</td>
+<td>是否衔接滑动</td>
+</tr>
+</tbody></table>
+<h3 id="常用的基础内容组件"><a href="#常用的基础内容组件" class="headerlink" title="常用的基础内容组件"></a>常用的基础内容组件</h3><ul>
+<li><p>text</p>
+<p>文本组件</p>
+<p>类似于HTML中的span标签，是一个行内元素</p>
+<p>text 标签添加 user-select 属性可以设置文本选中复制</p>
+</li>
+<li><p>rich-text</p>
+<p>富文本组件</p>
+<p>支持把 HTML 字符串渲染为 WXML 结构</p>
+<p>rich-text 标签的 nodes 属性可以渲染 HTML 标签</p>
+</li>
+</ul>
+<h3 id="其它常用组件"><a href="#其它常用组件" class="headerlink" title="其它常用组件"></a>其它常用组件</h3><ul>
+<li><p>button </p>
+<p>按钮组件</p>
+<p>功能比HTML中的button按钮丰富</p>
+<p>通过open-type属性可以调用微信提供的各种功能（客服、转发、获取用户授权、获取用户信息等）</p>
+</li>
+<li><p>image</p>
+<p>图片组件</p>
+<p>默认宽度 300px 、高度240px</p>
+</li>
+<li><p>navigator</p>
+<p>网页导航组件</p>
+<p>类似于 HTML 中的 a 链接</p>
+</li>
+</ul>
+<p>在小程序开发文件中 &#x2F; 为根目录</p>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="事件监听API"><a href="#事件监听API" class="headerlink" title="事件监听API"></a>事件监听API</h3><ul>
+<li>特点：以 on 开头，用来监听某些事件的触发</li>
+<li>如：wx.onWindowResize(function cb)监听窗口尺寸的变化</li>
+</ul>
+<h3 id="同步API"><a href="#同步API" class="headerlink" title="同步API"></a>同步API</h3><ul>
+<li>特点1：以Sync结尾的API都是同步API</li>
+<li>特点2：同步API的执行结果，可以通过函数返回值直接获取，如果执行错误会抛出异常</li>
+<li>如：wx.setStorageSync(‘key’, ‘value’)向本地存储中写入内容</li>
+</ul>
+<h3 id="异步API"><a href="#异步API" class="headerlink" title="异步API"></a>异步API</h3><ul>
+<li>特点：类似于jQuery中的$.ajax(options)函数，需要通过sucess、fail、complete接受调用的结果</li>
+<li>如：wx.request()发起的网络请求，通过success回调函数接收数据</li>
+</ul>
+<h2 id="WXML-模板语法"><a href="#WXML-模板语法" class="headerlink" title="WXML 模板语法"></a>WXML 模板语法</h2><h3 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h3><p>动态绑定内容：声明数据在.js 文件的 date 节点下，可以通过插值表达式”双大括号”语法渲染到页面中</p>
+<p>动态绑定属性：在属性值中使用插值表达式语法渲染内容</p>
+<h3 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h3><ul>
+<li><p>小程序中常用的事件</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>绑定方式</th>
+<th>事件描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tap</td>
+<td>bindtap或bind:tap</td>
+<td>手指触摸后马上离开，类似于click事件</td>
+</tr>
+<tr>
+<td>input</td>
+<td>bindinput或bind:input</td>
+<td>文本框的输入事件</td>
+</tr>
+<tr>
+<td>change</td>
+<td>bindchange或bind:change</td>
+<td>状态改变时触发</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>事件对象的属性列表</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type</td>
+<td>String</td>
+<td>事件类型</td>
+</tr>
+<tr>
+<td>timeStamp</td>
+<td>Integer</td>
+<td>页面打开到触发事件所经过的毫秒数</td>
+</tr>
+<tr>
+<td>target</td>
+<td>Object</td>
+<td>触发事件的组件的一些属性值集合</td>
+</tr>
+<tr>
+<td>currentTarget</td>
+<td>Object</td>
+<td>当前组件的一些属性值集合</td>
+</tr>
+<tr>
+<td>detail</td>
+<td>Object</td>
+<td>额外的信息</td>
+</tr>
+<tr>
+<td>touches</td>
+<td>Array</td>
+<td>触摸事件，当前停留在屏幕中触摸点信息的数组</td>
+</tr>
+<tr>
+<td>changedTouches</td>
+<td>Array</td>
+<td>触摸事件，当前变化的触摸点信息的数组</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718124815551.png" alt="image-20230718124815551"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718125629987.png" alt="image-20230718125629987"></p>
+<ul>
+<li>在事件处理函数中可以通过 event.target.dataset.参数名 拿到参数</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718130352934.png" alt="image-20230718130352934"></p>
+<h3 id="条件渲染"><a href="#条件渲染" class="headerlink" title="条件渲染"></a>条件渲染</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718132404577.png" alt="image-20230718132404577"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718132815561.png" alt="image-20230718132815561"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230718133417903.png" alt="image-20230718133417903"></p>
+<p>vx:if 动态创建删除元素</p>
+<p>hidden 给元素设置样式控制显示与隐藏</p>
+<h3 id="列表渲染"><a href="#列表渲染" class="headerlink" title="列表渲染"></a>列表渲染</h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722205418019.png" alt="image-20230722205418019"></p>
+<ul>
+<li>wx:for-index、wx:for-item 属性可以指定 index索引名称和 item 项的名称</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722210113746.png" alt="image-20230722210113746"></p>
+<ul>
+<li>指定key时，不需要要插值语法</li>
+</ul>
+<h2 id="WXSS-模版样式"><a href="#WXSS-模版样式" class="headerlink" title="WXSS 模版样式"></a>WXSS 模版样式</h2><ul>
+<li><p>WXSS (WeiXin Style Sheets)是一套样式语言，用于美化 WXML 的组件样式，类似于网页开发中的 CSS</p>
+</li>
+<li><p>WXSS 具有 CSS 大部分特性，同时，WXSS 还对 CSS 进行了扩充以及修改，以适应微信小程序的开发。</p>
+<p>与 CSS 相比，WXSS 扩展的特性有：</p>
+<ul>
+<li><p>rpx 尺寸单位</p>
+<p>rpx 的实现原理非常简单：鉴于不同设备屏幕的大小不同，为了实现屏幕的自动适配，rpx 把所有设备的屏幕，在宽度上等分为 750 份（即：当前屏幕的总宽度为 750rpx）</p>
+<p>如：在 iPhone6 上，屏幕宽度为375px，共有 750 个物理像素，等分为 750rpx。则： 2rpx &#x3D; 1px </p>
+</li>
+<li><p>@import 样式导入</p>
+<p>@import 后跟需要导入的外联样式表的相对路径</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import: &quot;/common/common.wxss&quot;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>app.wxss中的样式为全局样式，作用于每一个页面。</p>
+<p>在页面的 .wxss 文件中定义的样式为局部样式，只作用于当前页面。</p>
+<p>①当局部样式和全局样式冲突时，根据就近原则，局部样式会覆盖全局样式</p>
+<p>②当局部样式的权重大于或等于全局样式的权重时，才会覆盖全局的样式</p>
+</li>
+</ul>
+<h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><p>小程序根目录下的 app.json 文件是小程序的全局配置文件。常用的配置项如下：</p>
+<p>① pages（记录当前小程序所有页面的存放路径）</p>
+<p>② windowl（全局设置小程序窗口的外观）</p>
+<p>③ tabBarl（设置小程序底部的 tabBar 效果）</p>
+<p>④ stylel（是否启用新版的组件样式）</p>
+<h3 id="小程序窗口的组成部分"><a href="#小程序窗口的组成部分" class="headerlink" title="小程序窗口的组成部分"></a><strong>小程序窗口的组成部分</strong></h3><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722223202337.png" alt="image-20230722223202337"></p>
+<h3 id="window节点常用配置项"><a href="#window节点常用配置项" class="headerlink" title="window节点常用配置项"></a>window节点常用配置项</h3><table>
+<thead>
+<tr>
+<th><strong>属性名</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>默认值</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>navigationBarTitleText</td>
+<td>String</td>
+<td>字符串</td>
+<td>导航栏标题文字内容</td>
+</tr>
+<tr>
+<td>navigationBarBackgroundColor</td>
+<td>HexColor</td>
+<td>#000000</td>
+<td>导航栏背景颜色，如 #000000</td>
+</tr>
+<tr>
+<td>navigationBarTextStyle</td>
+<td>String</td>
+<td>white</td>
+<td>导航栏标题颜色，<code>仅支持 black / white</code></td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>HexColor</td>
+<td>#ffffff</td>
+<td>窗口的背景色</td>
+</tr>
+<tr>
+<td>backgroundTextStyle</td>
+<td>String</td>
+<td>dark</td>
+<td>下拉 loading 的样式，仅支持 dark &#x2F; light</td>
+</tr>
+<tr>
+<td>enablePullDownRefresh</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否全局开启下拉刷新</td>
+</tr>
+<tr>
+<td>onReachBottomDistance</td>
+<td>Number</td>
+<td>50</td>
+<td>页面上拉触底事件触发时距页面底部距离，单位为px</td>
+</tr>
+</tbody></table>
+<h3 id="tabBar"><a href="#tabBar" class="headerlink" title="tabBar"></a><strong>tabBar</strong></h3><ul>
+<li><p>tabBar 是移动端应用常见的页面效果，用于实现多页面的快速切换。小程序中通常将其分为：底部 tabBar，顶部 tabBar</p>
+</li>
+<li><p><code>tabBar中只能配置最少 2 个、最多 5 个 tab 页签</code>，当渲染顶部 tabBar 时，不显示 icon，只显示文本</p>
+</li>
+<li><p>组成部分</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723185305005.png" alt="image-20230723185305005"></p>
+</li>
+<li><p><strong>tabBar</strong>节点的配置项（在 app.json 中，与 window 节点平级）</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>必填</strong></th>
+<th><strong>默认值</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>position</td>
+<td>String</td>
+<td>否</td>
+<td>bottom</td>
+<td>tabBar 的位置，仅支持 bottom&#x2F;top</td>
+</tr>
+<tr>
+<td>borderStyle</td>
+<td>String</td>
+<td>否</td>
+<td>black</td>
+<td>tabBar 上边框的颜色，仅支持 black&#x2F;white</td>
+</tr>
+<tr>
+<td>color</td>
+<td>HexColor</td>
+<td>否</td>
+<td></td>
+<td>tab 上文字的默认（未选中）颜色</td>
+</tr>
+<tr>
+<td>selectedColor</td>
+<td>HexColor</td>
+<td>否</td>
+<td></td>
+<td>tab 上的文字选中时的颜色</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>HexColor</td>
+<td>否</td>
+<td></td>
+<td>tabBar 的背景色</td>
+</tr>
+<tr>
+<td><code>list  </code></td>
+<td>Array</td>
+<td><code>是 </code></td>
+<td></td>
+<td>tab 页签的列表，  最少 2  个、最多  5 个 tab</td>
+</tr>
+</tbody></table>
+<p><code>tab项的路由要配置到pages节点上面，防止页面不显示</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723191019206.png" alt="image-20230723191019206"></p>
+</li>
+<li><p><strong>每个</strong> <strong>tab</strong> <strong>项的配置选项</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>必填</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>pagePath  </code></td>
+<td>String</td>
+<td><code>是 </code></td>
+<td>页面路径，页面必须在 pages  中预先定义</td>
+</tr>
+<tr>
+<td><code>text  </code></td>
+<td>String</td>
+<td><code>是</code></td>
+<td>tab 上显示的文字</td>
+</tr>
+<tr>
+<td>iconPath</td>
+<td>String</td>
+<td>.  否</td>
+<td>未选中时的图标路径；当 postion 为 top 时，不显示 icon</td>
+</tr>
+<tr>
+<td>selectedIconPath</td>
+<td>String</td>
+<td>否</td>
+<td>选中时的图标路径；当 postion 为 top 时，不显示 icon</td>
+</tr>
+</tbody></table>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723191817708.png" alt="image-20230723191817708"></p>
+</li>
+</ul>
+<h2 id="页面配置"><a href="#页面配置" class="headerlink" title="页面配置"></a>页面配置</h2><ul>
+<li><p>每个页面都有自己的 .json 配置文件，用来对当前页面的窗口外观、页面效果等进行配置。</p>
+</li>
+<li><p>页面配置中常用的配置项</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>默认值</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>navigationBarBackgroundColor</td>
+<td>HexColor</td>
+<td>#000000</td>
+<td>当前页面导航栏背景颜色，如 #000000</td>
+</tr>
+<tr>
+<td>navigationBarTextStyle</td>
+<td>String</td>
+<td>white</td>
+<td>当前页面导航栏标题颜色，仅支持 black &#x2F; white</td>
+</tr>
+<tr>
+<td>navigationBarTitleText</td>
+<td>String</td>
+<td></td>
+<td>当前页面导航栏标题文字内容</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>HexColor</td>
+<td>#ffffff</td>
+<td>当前页面窗口的背景色</td>
+</tr>
+<tr>
+<td>backgroundTextStyle</td>
+<td>String</td>
+<td>dark</td>
+<td>当前页面下拉 loading 的样式，仅支持 dark &#x2F; light</td>
+</tr>
+<tr>
+<td><code>enablePullDownRefresh</code></td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否为当前页面开启下拉刷新的效果</td>
+</tr>
+<tr>
+<td>onReachBottomDistance</td>
+<td>Number</td>
+<td>50</td>
+<td>页面上拉触底事件触发时距页面底部距离，单位为 px</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h2 id="网络数据请求"><a href="#网络数据请求" class="headerlink" title="网络数据请求"></a>网络数据请求</h2><h3 id="请求限制"><a href="#请求限制" class="headerlink" title="请求限制"></a>请求限制</h3><ul>
+<li>只能请求 HTTPS 类型的接口</li>
+<li>必须将接口的域名添加到信任列表中</li>
+</ul>
+<h3 id="配置-request-合法域名"><a href="#配置-request-合法域名" class="headerlink" title="配置 request 合法域名"></a>配置 request 合法域名</h3><p>配置步骤：登录微信小程序管理后台 -&gt; 开发 -&gt; 开发设置 -&gt; 服务器域名 -&gt; 修改 request 合法域名</p>
+<p>①<code>域名只支持 https 协议</code></p>
+<p>②域名不能使用 IP 地址或 localhost</p>
+<p>③域名必须经过 ICP 备案</p>
+<p>④服务器域名一个月内最多可申请 5 次修改</p>
+<h3 id="GET-请求"><a href="#GET-请求" class="headerlink" title="GET 请求"></a>GET 请求</h3><p>调用微信小程序提供的 wx.request() 方法，可以发起 GET 数据请求，示例代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">wx.<span class="title function_">request</span>(&#123;</span><br><span class="line">     <span class="attr">url</span>: <span class="string">&#x27;https://applet-base-api-t.itheima.net/api/get&#x27;</span>,</span><br><span class="line">     <span class="attr">data</span>: &#123;</span><br><span class="line">       <span class="attr">name</span>: <span class="string">&#x27;zs&#x27;</span>,</span><br><span class="line">       <span class="attr">age</span>: <span class="number">20</span></span><br><span class="line">     &#125;,</span><br><span class="line">     <span class="attr">method</span>: <span class="string">&quot;GET&quot;</span>,</span><br><span class="line">     <span class="attr">success</span>: <span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">       <span class="variable language_">console</span>.<span class="title function_">log</span>(result);</span><br><span class="line">     &#125;,</span><br><span class="line">   &#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="POST-请求"><a href="#POST-请求" class="headerlink" title="POST 请求"></a>POST 请求</h3><p>调用微信小程序提供的 wx.request() 方法，可以发起 POST数据请求，示例代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">wx.<span class="title function_">request</span>(&#123;</span><br><span class="line">     <span class="attr">url</span>: <span class="string">&#x27;https://applet-base-api-t.itheima.net/api/post&#x27;</span>,</span><br><span class="line">     <span class="attr">data</span>: &#123;</span><br><span class="line">       <span class="attr">name</span>: <span class="string">&#x27;ls&#x27;</span>,</span><br><span class="line">       <span class="attr">gender</span>: <span class="string">&#x27;男&#x27;</span></span><br><span class="line">     &#125;,</span><br><span class="line">     <span class="attr">method</span>: <span class="string">&quot;POST&quot;</span>,</span><br><span class="line">     <span class="attr">success</span>: <span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">       <span class="variable language_">console</span>.<span class="title function_">log</span>(result.<span class="property">data</span>);</span><br><span class="line">     &#125;,</span><br><span class="line">   &#125;)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>监听页面加载就触发 GET 和 POST 请求</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">onLoad</span>(<span class="params">options</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">getInfo</span>()</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">postInfo</span>()</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="跳过-request-合法域名校验"><a href="#跳过-request-合法域名校验" class="headerlink" title="跳过 request 合法域名校验"></a><strong>跳过</strong> <strong>request</strong> 合法域名校验</h3><ul>
+<li><p>仅限在开发与调试阶段使用！</p>
+</li>
+<li><p>在微信开发者工具中，临时开启「开发环境不校验请求域名、TLS 版本及 HTTPS 证书」选项，跳过 request 合法域名的校验。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723214815866.png" alt="image-20230723214815866"></p>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://lcgy.gitee.io/koi">koi白羊</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://lcgy.gitee.io/koi/web/xcx/">https://lcgy.gitee.io/koi/web/xcx/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://lcgy.gitee.io/koi" target="_blank">koiのblog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/koi/tags/miniapps/">miniapps</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/qq_pic_merged_1689754554008.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/koi/web/nodejs/" title="NodeJs"><img class="cover" src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/qq_pic_merged_1689754554008.jpg" onerror="onerror=null;src='/koi/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">NodeJs</div></div></a></div><div class="next-post pull-right"><a href="/koi/web/react/" title="React"><img class="cover" src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/qq_pic_merged_1689754554008.jpg" onerror="onerror=null;src='/koi/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">React</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81ODc0OC8zNTIxMA=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/1686997552436%20(1).png" onerror="this.onerror=null;this.src='/koi/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">koi白羊</div><div class="author-info__description">我的博客</div></div><div class="card-info-data site-data is-center"><a href="/koi/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/koi/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/koi/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/koibaiyang"><i class="fab fa-github"></i><span>关注</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/1689847085213_temp_qrcode_share_9993.png" target="_blank" title="QQ"><i class="iconfont icon-QQ"></i></a><a class="social-icon" href="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/mmqrcode1689847263539.png" target="_blank" title="微信"><i class="iconfont icon-weixin"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6"><span class="toc-text">组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E8%A7%86%E5%9B%BE%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%BB%84%E4%BB%B6"><span class="toc-text">常用的视图容器类组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#view"><span class="toc-text">view</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#scroll-view"><span class="toc-text">scroll-view</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#swiper%E5%92%8Cswiper-item"><span class="toc-text">swiper和swiper-item</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9%E7%BB%84%E4%BB%B6"><span class="toc-text">常用的基础内容组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E5%AE%83%E5%B8%B8%E7%94%A8%E7%BB%84%E4%BB%B6"><span class="toc-text">其它常用组件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#API"><span class="toc-text">API</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%ACAPI"><span class="toc-text">事件监听API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5API"><span class="toc-text">同步API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%82%E6%AD%A5API"><span class="toc-text">异步API</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WXML-%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95"><span class="toc-text">WXML 模板语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A"><span class="toc-text">数据绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A"><span class="toc-text">事件绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93"><span class="toc-text">条件渲染</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93"><span class="toc-text">列表渲染</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WXSS-%E6%A8%A1%E7%89%88%E6%A0%B7%E5%BC%8F"><span class="toc-text">WXSS 模版样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE"><span class="toc-text">全局配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AA%97%E5%8F%A3%E7%9A%84%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="toc-text">小程序窗口的组成部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#window%E8%8A%82%E7%82%B9%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E9%A1%B9"><span class="toc-text">window节点常用配置项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tabBar"><span class="toc-text">tabBar</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE"><span class="toc-text">页面配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E8%AF%B7%E6%B1%82"><span class="toc-text">网络数据请求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B7%E6%B1%82%E9%99%90%E5%88%B6"><span class="toc-text">请求限制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-request-%E5%90%88%E6%B3%95%E5%9F%9F%E5%90%8D"><span class="toc-text">配置 request 合法域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GET-%E8%AF%B7%E6%B1%82"><span class="toc-text">GET 请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#POST-%E8%AF%B7%E6%B1%82"><span class="toc-text">POST 请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%B3%E8%BF%87-request-%E5%90%88%E6%B3%95%E5%9F%9F%E5%90%8D%E6%A0%A1%E9%AA%8C"><span class="toc-text">跳过 request 合法域名校验</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/koi/tools/picgo/" title="PicGo+GitHub搭建个人图床"><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/qq_pic_merged_1689754554008.jpg" onerror="this.onerror=null;this.src='/koi/img/404.jpg'" alt="PicGo+GitHub搭建个人图床"/></a><div class="content"><a class="title" href="/koi/tools/picgo/" title="PicGo+GitHub搭建个人图床">PicGo+GitHub搭建个人图床</a><time datetime="2023-07-24T16:03:38.000Z" title="发表于 2023-07-25 00:03:38">2023-07-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/koi/cad/quickly/" title="CAD操作快捷键"><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/qq_pic_merged_1689754554008.jpg" onerror="this.onerror=null;this.src='/koi/img/404.jpg'" alt="CAD操作快捷键"/></a><div class="content"><a class="title" href="/koi/cad/quickly/" title="CAD操作快捷键">CAD操作快捷键</a><time datetime="2023-07-24T16:01:49.000Z" title="发表于 2023-07-25 00:01:49">2023-07-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/koi/gis/openlayers/" title="OpenLayers"><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/qq_pic_merged_1689754554008.jpg" onerror="this.onerror=null;this.src='/koi/img/404.jpg'" alt="OpenLayers"/></a><div class="content"><a class="title" href="/koi/gis/openlayers/" title="OpenLayers">OpenLayers</a><time datetime="2023-07-24T15:59:38.000Z" title="发表于 2023-07-24 23:59:38">2023-07-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/koi/web/nodejs/" title="NodeJs"><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/qq_pic_merged_1689754554008.jpg" onerror="this.onerror=null;this.src='/koi/img/404.jpg'" alt="NodeJs"/></a><div class="content"><a class="title" href="/koi/web/nodejs/" title="NodeJs">NodeJs</a><time datetime="2023-07-24T15:57:41.000Z" title="发表于 2023-07-24 23:57:41">2023-07-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/koi/web/xcx/" title="小程序开发"><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/qq_pic_merged_1689754554008.jpg" onerror="this.onerror=null;this.src='/koi/img/404.jpg'" alt="小程序开发"/></a><div class="content"><a class="title" href="/koi/web/xcx/" title="小程序开发">小程序开发</a><time datetime="2023-07-24T15:55:26.000Z" title="发表于 2023-07-24 23:55:26">2023-07-24</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By koi白羊</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/koi/js/utils.js"></script><script src="/koi/js/main.js"></script><script src="/koi/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="8575471527" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/koi/js/search/local-search.js"></script></div></div></body></html>

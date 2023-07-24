@@ -70,6 +70,62 @@
       </tags>
   </entry>
   <entry>
+    <title>PicGo + GitHub 搭建个人图床</title>
+    <url>/koi/picgo/</url>
+    <content><![CDATA[<h2 id="1-GitHub-创建图床仓库"><a href="#1-GitHub-创建图床仓库" class="headerlink" title="1. GitHub 创建图床仓库"></a>1. GitHub 创建图床仓库</h2><ul>
+<li><p>使用你的 GitHub 账号创建一个图床仓库</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720214539444.png" alt="image-20230720214539444"></p>
+<p>*注意仓库设置公开</p>
+</li>
+<li><p>复制图床仓库的路径</p>
+<p>koibaiyang&#x2F;demo</p>
+</li>
+</ul>
+<h2 id="2-下载安装-PicGo"><a href="#2-下载安装-PicGo" class="headerlink" title="2.下载安装 PicGo"></a>2.下载安装 PicGo</h2><ul>
+<li><p><a href="https://github.com/Molunerfinn/PicGo/releases">PicGo 下载地址</a>下载对应的应用程序并安装</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720215412958.png" alt="image-20230720215412958"></p>
+</li>
+</ul>
+<h2 id="3-配置-GitHub-图床设置"><a href="#3-配置-GitHub-图床设置" class="headerlink" title="3.配置 GitHub 图床设置"></a>3.配置 GitHub <strong>图床设置</strong></h2><ul>
+<li><p>在 GitHub 账户上新建一个 token，在 settings&#x2F;developer settings 目录下新建一个 token</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720221210439.png" alt="image-20230720221210439"></p>
+</li>
+<li><p>设置 token 的名称和有效时长 → 选择 repo 这一项 → 创建 token</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720221625707.png" alt="image-20230720221625707"></p>
+</li>
+<li><p>复制你的 token</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720222049480.png" alt="image-20230720222049480"></p>
+</li>
+<li><p>打开刚刚下载好的应用程序，在图床设置里找到 GitHub 并添加一个图床</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720220242316.png" alt="image-20230720220242316"></p>
+</li>
+<li><p>设置对应的配置</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">可以使用 https://cdn.jsdelivr.net/gh</span><br><span class="line">拼接你的仓库路径 koibaiyang/demo ，设置CDN加速</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720225922939.png" alt="image-20230720225922939"></p>
+</li>
+<li><p>设置完成，已经可以使用 PicGo 图床上传图片，转换为在线链接</p>
+</li>
+</ul>
+<h2 id="4-设置-Typora-快速上传偏好"><a href="#4-设置-Typora-快速上传偏好" class="headerlink" title="4.设置 Typora 快速上传偏好"></a>4.设置 Typora 快速上传偏好</h2><ul>
+<li><p>打开 Typora 的偏好设置 ，选择 PicGo 上传服务设定</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720224157081.png" alt="image-20230720224157081"></p>
+</li>
+<li><p>完成后就可以快捷上传文档里的本地图片并自动转换成在线地址</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720230821697.png" alt="image-20230720230821697"></p>
+</li>
+<li><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720230904282.png" alt="image-20230720230904282"></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>tool</category>
+      </categories>
+      <tags>
+        <tag>图床搭建</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小程序开发</title>
     <url>/koi/xcxkf/</url>
     <content><![CDATA[<hr>
@@ -364,62 +420,6 @@
       </categories>
       <tags>
         <tag>小程序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PicGo + GitHub 搭建个人图床</title>
-    <url>/koi/picgo/</url>
-    <content><![CDATA[<h2 id="1-GitHub-创建图床仓库"><a href="#1-GitHub-创建图床仓库" class="headerlink" title="1. GitHub 创建图床仓库"></a>1. GitHub 创建图床仓库</h2><ul>
-<li><p>使用你的 GitHub 账号创建一个图床仓库</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720214539444.png" alt="image-20230720214539444"></p>
-<p>*注意仓库设置公开</p>
-</li>
-<li><p>复制图床仓库的路径</p>
-<p>koibaiyang&#x2F;demo</p>
-</li>
-</ul>
-<h2 id="2-下载安装-PicGo"><a href="#2-下载安装-PicGo" class="headerlink" title="2.下载安装 PicGo"></a>2.下载安装 PicGo</h2><ul>
-<li><p><a href="https://github.com/Molunerfinn/PicGo/releases">PicGo 下载地址</a>下载对应的应用程序并安装</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720215412958.png" alt="image-20230720215412958"></p>
-</li>
-</ul>
-<h2 id="3-配置-GitHub-图床设置"><a href="#3-配置-GitHub-图床设置" class="headerlink" title="3.配置 GitHub 图床设置"></a>3.配置 GitHub <strong>图床设置</strong></h2><ul>
-<li><p>在 GitHub 账户上新建一个 token，在 settings&#x2F;developer settings 目录下新建一个 token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720221210439.png" alt="image-20230720221210439"></p>
-</li>
-<li><p>设置 token 的名称和有效时长 → 选择 repo 这一项 → 创建 token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720221625707.png" alt="image-20230720221625707"></p>
-</li>
-<li><p>复制你的 token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720222049480.png" alt="image-20230720222049480"></p>
-</li>
-<li><p>打开刚刚下载好的应用程序，在图床设置里找到 GitHub 并添加一个图床</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720220242316.png" alt="image-20230720220242316"></p>
-</li>
-<li><p>设置对应的配置</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">可以使用 https://cdn.jsdelivr.net/gh</span><br><span class="line">拼接你的仓库路径 koibaiyang/demo ，设置CDN加速</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720225922939.png" alt="image-20230720225922939"></p>
-</li>
-<li><p>设置完成，已经可以使用 PicGo 图床上传图片，转换为在线链接</p>
-</li>
-</ul>
-<h2 id="4-设置-Typora-快速上传偏好"><a href="#4-设置-Typora-快速上传偏好" class="headerlink" title="4.设置 Typora 快速上传偏好"></a>4.设置 Typora 快速上传偏好</h2><ul>
-<li><p>打开 Typora 的偏好设置 ，选择 PicGo 上传服务设定</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720224157081.png" alt="image-20230720224157081"></p>
-</li>
-<li><p>完成后就可以快捷上传文档里的本地图片并自动转换成在线地址</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720230821697.png" alt="image-20230720230821697"></p>
-</li>
-<li><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720230904282.png" alt="image-20230720230904282"></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>tool</category>
-      </categories>
-      <tags>
-        <tag>图床搭建</tag>
       </tags>
   </entry>
 </search>

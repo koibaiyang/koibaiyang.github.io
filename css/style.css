@@ -221,3 +221,7 @@
 .aplayer.aplayer-fixed .aplayer-lrc {
   text-shadow: -1px -1px 0 #aa89c6 !important;
 }
+
+#article-container.post-content li::marker {
+  color: #c4a7fa !important;
+}

@@ -1,75 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CAD操作快捷键</title>
-    <url>/cad/quickly/</url>
-    <content><![CDATA[<h2 id="1-入门"><a href="#1-入门" class="headerlink" title="1 入门"></a>1 入门</h2><h3 id="1-1-前言"><a href="#1-1-前言" class="headerlink" title="1.1 前言"></a>1.1 前言</h3><p>op 进入 option、选项功能，或空白右击，</p>
-<p>z+空格+e+空格 图形回到正中央</p>
-<h3 id="1-2-直线-快捷键-L"><a href="#1-2-直线-快捷键-L" class="headerlink" title="1.2 直线 - 快捷键 L"></a><strong>1.2 直线 - 快捷键 L</strong></h3><p><strong>定长直线正交</strong>（F8）–L + 空格 + 点一下确定起始点 + 输入数字 + 移动鼠标（横向或纵向）+ 空格结束</p>
-<p><strong>直线中点处直线的绘制</strong><br>前提：对象捕捉（F3）（打开对象捕捉然后右键设置对象捕捉设置的中点），–点绘图中直线+鼠标移至中点处+小三角出现+直线操作</p>
-<p><strong>直线绘制封闭图形</strong> –C 自动封闭图形（选中直线两端点绘制）</p>
-<h3 id="1-3-圆-快捷键-C"><a href="#1-3-圆-快捷键-C" class="headerlink" title="1.3 .圆 - 快捷键 C"></a><strong>1.3 .圆 - 快捷键 C</strong></h3><p><strong>R 定直径的圆</strong> –C+空格+输入半径+空格</p>
-<p>**D 定半径的圆 ** –C+空格+d+空格+输入半径+空格</p>
-<p><strong>（同心圆）</strong>打开对象捕捉设置圆心 –C+空格+输入 d+空格+输入直径+空格</p>
-<p><strong>2P 以已知线段为直径的圆</strong> –C+空格+输入 2p 或选择两点+空格+选择线段两点</p>
-<p><strong>T 与两条相交直线相切的圆</strong>（任选半径）–C+空格+输入 T+制定切点+输入半径+空格</p>
-<p><strong>3P(外切圆)</strong> 三角形的外切圆–C+空格+输入 3p 或选择三点+空格+选择图形三条线任意位置</p>
-<p><strong>tan（内切圆）</strong>三角形的内切圆–C+空格+输入 3p+输入 tan+空格+选择线段+重复输入 tan 和选择</p>
-<h3 id="1-4-圆弧-快捷键-ARC"><a href="#1-4-圆弧-快捷键-ARC" class="headerlink" title="1.4 圆弧 - 快捷键 ARC"></a><strong>1.4 圆弧 - 快捷键 ARC</strong></h3><p><strong>三个点绘制圆弧</strong>–arc+空格+选择三点</p>
-<p>二个点加半径绘制圆弧–arc+空格+e+空格（为了选择端点）+选择点+r+空格（为了选择半径）+输入半径</p>
-<p><font color=red>注意：<strong>圆弧始终为逆时针旋转</strong></font></p>
-<h3 id="1-5-多段线-快捷键-PL"><a href="#1-5-多段线-快捷键-PL" class="headerlink" title="1.5 多段线 - 快捷键 PL"></a><strong>1.5 多段线 - 快捷键 PL</strong></h3><p><strong>多段线绘制圆弧</strong>–先点击多段线+L+空格+确定起始点+a+空格快捷键：R 半径 D 切换圆弧弧度方向</p>
-<p><strong>多条线段合并成多段线</strong>–PE+空格+M 全选中+空格+y+空格+合并+空格空格<br>多线段宽度选择 PE+空格+W</p>
-<p><font color=red>多段线可以设置宽度</font>(练习：用多段线绘制一个箭头)</p>
-<h3 id="1-6-多边形-快捷键-POL"><a href="#1-6-多边形-快捷键-POL" class="headerlink" title="1.6 多边形 - 快捷键 POL"></a><strong>1.6 多边形 - 快捷键 POL</strong></h3><p><strong>指定中心点的多边形</strong>–POL+边数+中心点+半径（内接&#x2F;外切）</p>
-<p><strong>指定边的多边形</strong>–POL+空格+E+空格+先绘制一个有形状的多边形+输入边长+空格</p>
-<h3 id="1-7-移动-快捷键-M-和-复制-快捷键-CO"><a href="#1-7-移动-快捷键-M-和-复制-快捷键-CO" class="headerlink" title="1.7 移动 - 快捷键 M 和 复制 - 快捷键 CO"></a><strong>1.7 移动 - 快捷键 M 和 复制 - 快捷键 CO</strong></h3><p><strong>移动</strong>：m+空格+选中对象+空格+选基点+移动鼠标+点一下</p>
-<p><strong>复制</strong>：co+空格+选中对象+空格+选基点+移动鼠标+点一下(模式可以选择可复制多个 也可选择只复制一次)</p>
-<h3 id="1-8-拉伸-快捷键-S"><a href="#1-8-拉伸-快捷键-S" class="headerlink" title="1.8 拉伸 - 快捷键 S"></a><strong>1.8 拉伸 - 快捷键 S</strong></h3><p>s+空格+选中对象+空格+输入+空格</p>
-<h3 id="1-9-旋转-快捷键-RO"><a href="#1-9-旋转-快捷键-RO" class="headerlink" title="1.9 旋转 - 快捷键 RO"></a><strong>1.9 旋转 - 快捷键 RO</strong></h3><p><strong>复制对象进行旋转</strong>：ro+空格+选中对象+空格+选中基点+c+空格</p>
-<p><strong>参照图形进行旋转</strong>：ro+空格+选中对象+空格+选中基点+r+空格+选中参照</p>
-<h3 id="1-10-镜像-快捷键-MI-和-缩放-快捷键-SC-、对齐缩放-AL"><a href="#1-10-镜像-快捷键-MI-和-缩放-快捷键-SC-、对齐缩放-AL" class="headerlink" title="1.10 镜像 - 快捷键 MI 和 缩放 - 快捷键 SC 、对齐缩放 - AL"></a><strong>1.10 镜像 - 快捷键 MI 和 缩放 - 快捷键 SC 、对齐缩放 - AL</strong></h3><p><strong>镜像</strong>：mi+空格+选中对象+空格+找镜像线(点两下)+空格+直接空格(默认不删除源图像)<br>缩放</p>
-<p><strong>缩放</strong>：sc+空格+选中对象+指定基点+空格+比例因子+空格</p>
-<p><strong>参照缩放</strong>：sc+空格+选中对象+空格+选中基点(顶点位置)+空格+r+选中参照 1+选中参照 2+鼠标移动</p>
-<p>**<font color=red>对齐缩放</font>**（AL）：al+空格+指定第一个源点+指定第一个目标点+指定第二个源点+指定第二个目标点+点击是否缩放+空格(空格默认不锁放)</p>
-<h3 id="1-11-修剪-快捷键-TR-和-延申-快捷键-EX"><a href="#1-11-修剪-快捷键-TR-和-延申-快捷键-EX" class="headerlink" title="1.11 修剪 - 快捷键 TR 和 延申 - 快捷键 EX"></a><strong>1.11 修剪 - 快捷键 TR 和 延申 - 快捷键 EX</strong></h3><p><strong>修剪</strong>：tr+空格+选择基线+空格+需要修剪的线段</p>
-<p><strong>延伸</strong>：ex+空格+选择基线+空格+需要延伸对象+空格</p>
-<p>快速修剪和延申（不需要选择基线）<br>tr+空格+空格<br>ex+空格+空格</p>
-<h3 id="1-12-圆角-快捷键-F-和-倒角-快捷键-CHA"><a href="#1-12-圆角-快捷键-F-和-倒角-快捷键-CHA" class="headerlink" title="1.12 圆角 - 快捷键 F 和 倒角 - 快捷键 CHA"></a><strong>1.12 圆角 - 快捷键 F 和 倒角 - 快捷键 CHA</strong></h3><p><strong>圆角</strong>：f+空格+r+点击两条直线</p>
-<p><strong>倒角</strong>：cha+第一个倒角距离+空格+第二个倒角距离+空格+点击两条直线</p>
-<p>延申为一个角：f+空格+r+输入 0+点击两条直线 或者 cha+d+空格+空格+点击两条直线</p>
-<h3 id="1-13-样条曲线"><a href="#1-13-样条曲线" class="headerlink" title="1.13 样条曲线"></a>1.13 样条曲线</h3><p>样条曲线拟合</p>
-<p>样条曲线控制点</p>
-<h3 id="1-14-阵列"><a href="#1-14-阵列" class="headerlink" title="1.14 阵列"></a>1.14 阵列</h3><p>环形阵列</p>
-<p>矩形阵列</p>
-<p><font color=red>路径阵列</font></p>
-<h3 id="1-15-参数化"><a href="#1-15-参数化" class="headerlink" title="1.15 参数化"></a>1.15 参数化</h3><p>先点击的图形不动，后点击的图形变动</p>
-<p>ctrl 1 快速打开特性面板</p>
-<p>先将图像大概绘制出来,再添加约束</p>
-<h2 id="2-绘图练习"><a href="#2-绘图练习" class="headerlink" title="2 绘图练习"></a>2 绘图练习</h2><h3 id="2-1-偏移-快捷键-o"><a href="#2-1-偏移-快捷键-o" class="headerlink" title="2.1 偏移 - 快捷键 o"></a>2.1 偏移 - 快捷键 o</h3><h3 id="2-2-分解-快捷键-x"><a href="#2-2-分解-快捷键-x" class="headerlink" title="2.2 分解 - 快捷键 x"></a>2.2 分解 - 快捷键 x</h3><p>先选择对象，在输入 x 分解对象</p>
-<h3 id="2-3-绘制与圆相切的直线-tan"><a href="#2-3-绘制与圆相切的直线-tan" class="headerlink" title="2.3 绘制与圆相切的直线 tan"></a>2.3 绘制与圆相切的直线 tan</h3><p>L 空格 tan 选择与圆的切点</p>
-<h3 id="2-4-打断-快捷键-br"><a href="#2-4-打断-快捷键-br" class="headerlink" title="2.4 打断 - 快捷键 br"></a>2.4 打断 - 快捷键 br</h3><h3 id="2-5-构造线-快捷键-xl"><a href="#2-5-构造线-快捷键-xl" class="headerlink" title="2.5 构造线 - 快捷键 xl"></a>2.5 构造线 - 快捷键 xl</h3><p>可以设置角度辅助画图</p>
-<h2 id="3-进阶"><a href="#3-进阶" class="headerlink" title="3 进阶"></a>3 进阶</h2><h3 id="3-1-选择"><a href="#3-1-选择" class="headerlink" title="3.1 选择"></a>3.1 选择</h3><p>从左上开始选择为包选，从右下开始选择为全选，</p>
-<p>点击选择</p>
-<p>点击反选–shilft + 鼠标左键</p>
-<h3 id="3-2-匹配-快捷键-ma"><a href="#3-2-匹配-快捷键-ma" class="headerlink" title="3.2 匹配 - 快捷键 ma"></a>3.2 匹配 - 快捷键 ma</h3><p>快速复制目标样式到选择的元素上</p>
-<h3 id="3-3-点-快捷键-po"><a href="#3-3-点-快捷键-po" class="headerlink" title="3.3 点 - 快捷键 po"></a>3.3 点 - 快捷键 po</h3><h3 id="3-4-重生成模型-快捷键-re"><a href="#3-4-重生成模型-快捷键-re" class="headerlink" title="3.4 重生成模型 - 快捷键 re"></a>3.4 重生成模型 - 快捷键 re</h3><h3 id="3-5-多段线操作-快捷键-pe"><a href="#3-5-多段线操作-快捷键-pe" class="headerlink" title="3.5 多段线操作 - 快捷键 pe"></a>3.5 多段线操作 - 快捷键 pe</h3><h3 id="3-6-打断-快捷键-br"><a href="#3-6-打断-快捷键-br" class="headerlink" title="3.6 打断 - 快捷键 br"></a>3.6 打断 - 快捷键 br</h3><h3 id="3-7-合并-快捷键-j"><a href="#3-7-合并-快捷键-j" class="headerlink" title="3.7 合并 - 快捷键 j"></a>3.7 合并 - 快捷键 j</h3><h3 id="3-8-定距等分-快捷键-me"><a href="#3-8-定距等分-快捷键-me" class="headerlink" title="3.8 定距等分 - 快捷键 me"></a>3.8 定距等分 - 快捷键 me</h3><h3 id="3-9-定数等分-快捷键-div"><a href="#3-9-定数等分-快捷键-div" class="headerlink" title="3.9 定数等分 - 快捷键 div"></a>3.9 定数等分 - 快捷键 div</h3><h3 id="3-10-修订云线-快捷键-revc"><a href="#3-10-修订云线-快捷键-revc" class="headerlink" title="3.10 修订云线 - 快捷键 revc"></a>3.10 修订云线 - 快捷键 revc</h3><h3 id="3-11-射线-快捷键-ray"><a href="#3-11-射线-快捷键-ray" class="headerlink" title="3.11 射线 - 快捷键 ray"></a>3.11 射线 - 快捷键 ray</h3><h3 id="3-12-填充-快捷键-h"><a href="#3-12-填充-快捷键-h" class="headerlink" title="3.12 填充 - 快捷键 h"></a>3.12 填充 - 快捷键 h</h3><h3 id="3-13-绘图次序-快捷键-dr"><a href="#3-13-绘图次序-快捷键-dr" class="headerlink" title="3.13 绘图次序 - 快捷键 dr"></a>3.13 绘图次序 - 快捷键 dr</h3>]]></content>
-      <categories>
-        <category>cad</category>
-      </categories>
-      <tags>
-        <tag>CAD</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Axios</title>
-    <url>/web/axios/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>web</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CSS</title>
     <url>/web/css/</url>
     <content><![CDATA[<p><code>CSS 基础</code></p>
@@ -317,14 +248,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript</title>
-    <url>/web/js/</url>
-    <content><![CDATA[<h2 id="前端-javascript-学习"><a href="#前端-javascript-学习" class="headerlink" title="前端 javascript 学习"></a>前端 javascript 学习</h2>]]></content>
-      <tags>
-        <tag>web</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>React</title>
     <url>/web/react/</url>
     <content><![CDATA[]]></content>
@@ -333,11 +256,11 @@
       </tags>
   </entry>
   <entry>
-    <title>NodeJs</title>
-    <url>/web/nodejs/</url>
-    <content><![CDATA[]]></content>
+    <title>JavaScript</title>
+    <url>/web/js/</url>
+    <content><![CDATA[<h2 id="前端-javascript-学习"><a href="#前端-javascript-学习" class="headerlink" title="前端 javascript 学习"></a>前端 javascript 学习</h2>]]></content>
       <tags>
-        <tag>NodeJS</tag>
+        <tag>web</tag>
       </tags>
   </entry>
   <entry>
@@ -349,11 +272,27 @@
       </tags>
   </entry>
   <entry>
+    <title>NodeJs</title>
+    <url>/web/nodejs/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>NodeJS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vue</title>
     <url>/web/vue/</url>
     <content><![CDATA[]]></content>
       <tags>
         <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Axios</title>
+    <url>/web/axios/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>web</tag>
       </tags>
   </entry>
   <entry>
@@ -782,7 +721,7 @@
 <td>backgroundColor</td>
 <td>HexColor</td>
 <td>#ffffff</td>
-<td>当前页面窗口的背景色</td>
+<td>当前下拉页面窗口的背景色</td>
 </tr>
 <tr>
 <td>backgroundTextStyle</td>
@@ -831,12 +770,272 @@
 <p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723214815866.png" alt="image-20230723214815866"></p>
 </li>
 </ul>
+<h2 id="页面导航"><a href="#页面导航" class="headerlink" title="页面导航"></a>页面导航</h2><p>页面导航指的是页面之间的<code>相互跳转</code></p>
+<h3 id="声明式导航"><a href="#声明式导航" class="headerlink" title="声明式导航"></a><strong>声明式导航</strong></h3><ul>
+<li><p>使用 <code>&lt;navigator&gt;</code>组件跳转到指定的页面</p>
+<p>url 属性 表示要跳转的页面的地址，<code>必须以 / 开头</code></p>
+<p>open-type 表示跳转的方式，默认值为navigate，值可以为 switchTab（导航到tabBar页面）、navigate（导航到其他页面）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;navigator url=&quot;/pages/contact/contact&quot; open-type=&quot;switchTab&quot;&gt;</span><br><span class="line">    导航到关于页面</span><br><span class="line">&lt;/navigator&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>后退导航使用 <code>&lt;navigator&gt;</code> 需要指定 open-type 属性值必须是 navigateBack和delta 属性值是数字（表示后退的层级，默认值为1）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;navigator url=&quot;/pages/share/share&quot;&gt;</span><br><span class="line">    导航到分享页面</span><br><span class="line">&lt;/navigator&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="编程式导航"><a href="#编程式导航" class="headerlink" title="编程式导航"></a><strong>编程式导航</strong></h3><ul>
+<li><p><strong>导航到</strong> <strong>tabBar</strong> <strong>页面</strong></p>
+<p><code>调用 wx.switchTab(Object object) </code>方法，可以跳转到 tabBar 页面。其中 Object 参数对象的属性列表如下：</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>是否必选</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>url</td>
+<td>string</td>
+<td>是</td>
+<td>需要跳转的 tabBar 页面的路径，路径后不能带参数</td>
+</tr>
+<tr>
+<td>success</td>
+<td>function</td>
+<td>否</td>
+<td>接口调用成功的回调函数</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody></table>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;button bindtap=&quot;gotoMessage&quot;&gt;导航到消息页&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">gotoMessage()&#123;</span><br><span class="line">    wx.switchTab(&#123;</span><br><span class="line">      url: &#x27;/pages/message/message&#x27;,</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p><strong>导航到非</strong> <strong>tabBar</strong> <strong>页面</strong></p>
+<p><code>调用 wx.navigateTo(Object object) 方法</code>，可以跳转到非 tabBar 的页面。其中 Object 参数对象的属性列表如下：</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>是否必选</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>url</td>
+<td>string</td>
+<td>是</td>
+<td>需要跳转到的非 tabBar 页面的路径，路径后可以带参数</td>
+</tr>
+<tr>
+<td>success</td>
+<td>function</td>
+<td>否</td>
+<td>接口调用成功的回调函数</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody></table>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;button bindtap=&quot;gotoShare&quot;&gt;导航到分享页&lt;/button&gt;</span><br><span class="line"></span><br><span class="line"> gotoShare () &#123;</span><br><span class="line">    wx.navigateTo(&#123;</span><br><span class="line">      url: &#x27;/pages/share/share&#x27;,</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p><strong>后退导航</strong></p>
+<p><code>调用 wx.navigateBack(Object object) 方法</code>，可以返回上一页面或多级页面。其中 Object 参数对象可选的属性列表如下：</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>默认值</strong></th>
+<th><strong>是否必选</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>delta</td>
+<td>number</td>
+<td>1</td>
+<td>否</td>
+<td>返回的页面数，如果 delta 大于现有页面数，则返回到首页</td>
+</tr>
+<tr>
+<td>success</td>
+<td>function</td>
+<td></td>
+<td>否</td>
+<td>接口调用成功的回调函数</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>function</td>
+<td></td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>function</td>
+<td></td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="导航传参"><a href="#导航传参" class="headerlink" title="导航传参"></a>导航传参</h3><p>在声明式或编程式导航的url参数后拼接参数，然后在导航页的onloading事件中以option参数接受传递的参数</p>
+<ul>
+<li><p>参数与路径之间使用 ? 分隔</p>
+</li>
+<li><p>参数键与参数值用 &#x3D; 相连</p>
+</li>
+<li><p>不同参数用 &amp; 分隔</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//声明式导航</span><br><span class="line">&lt;navigator url=&quot;/pages/share/share?name=zs&amp;age=20&quot;&gt;</span><br><span class="line">    导航到分享页面</span><br><span class="line">&lt;/navigator&gt;</span><br><span class="line"></span><br><span class="line">//编程式导航</span><br><span class="line">&lt;button bindtap=&quot;gotoShare&quot;&gt;导航到分享页&lt;/button&gt;</span><br><span class="line"> gotoShare () &#123;</span><br><span class="line">    wx.navigateTo(&#123;</span><br><span class="line">      url: &#x27;/pages/share/share?name=ls&amp;gender=男&#x27;,</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  </span><br><span class="line"> //接受参数</span><br><span class="line">    onLoad(options) &#123;</span><br><span class="line">    this.setData(&#123;</span><br><span class="line">      query: options</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230728113145185.png" alt="image-20230728113145185"></p>
+<h2 id="页面事件"><a href="#页面事件" class="headerlink" title="页面事件"></a>页面事件</h2><h3 id="下拉刷新"><a href="#下拉刷新" class="headerlink" title="下拉刷新"></a>下拉刷新</h3><p>下拉刷新是移动端的专有名词，指的是通过手指在屏幕上的下拉滑动操作，从而<strong>重新加载页面数据</strong>的行为。</p>
+<ul>
+<li>将 enablePullDownRefresh 设置为 true 启用下拉刷新</li>
+<li>通过 onPullDownRefresh() 函数即可监听当前页面的下拉刷新事件</li>
+<li>处理完成后，调用 wx.stopPullDownRefresh() 可以停止当前页面的下拉刷新。</li>
+</ul>
+<h3 id="上拉触底"><a href="#上拉触底" class="headerlink" title="上拉触底"></a>上拉触底</h3><p>上拉触底是移动端的专有名词，通过手指在屏幕上的上拉滑动操作，从而<strong>加载更多数据</strong>的行为。</p>
+<ul>
+<li>通过 onReachBottom() 函数即可监听当前页面的上拉触底事件</li>
+<li>可以在全局或页面的 .json 配置文件中，通过 onReachBottomDistance 属性来配置上拉触底的距离(大小为像素，如50)</li>
+</ul>
+<h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><p>生命周期（Life Cycle）是指一个对象从创建 -&gt; 运行 -&gt; 销毁的整个阶段，强调的是一个时间段</p>
+<h3 id="小程序中的生命周期"><a href="#小程序中的生命周期" class="headerlink" title="小程序中的生命周期"></a>小程序中的生命周期</h3><ul>
+<li>应用生命周期：特指小程序从启动 -&gt; 运行 -&gt; 销毁的过程</li>
+<li>页面生命周期：特指小程序中，每个页面的加载 -&gt; 渲染 -&gt; 销毁的过程</li>
+</ul>
+<h3 id="生命周期函数"><a href="#生命周期函数" class="headerlink" title="生命周期函数"></a>生命周期函数</h3><p>是由小程序框架提供的内置函数，会伴随着生命周期，<code>自动按次序执行</code></p>
+<ul>
+<li><p>应用生命周期函数: 在 app.js 中进行声明</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title class_">App</span>(&#123;</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onLaunch</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">      </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 当小程序启动，或从后台进入前台显示，会触发 onShow</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onShow</span>: <span class="keyword">function</span> (<span class="params">options</span>) &#123;</span><br><span class="line">      </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 当小程序从前台进入后台，会触发 onHide</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onHide</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">      </span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>页面生命周期函数: 在页面的 .js 文件中进行声明</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Page</span>(&#123;</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面加载</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onLoad</span>: <span class="keyword">function</span> (<span class="params">options</span>) &#123;</span><br><span class="line">    </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面初次渲染完成</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onReady</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面显示</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onShow</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面隐藏</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onHide</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面卸载</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onUnload</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    </span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="WXS"><a href="#WXS" class="headerlink" title="WXS"></a>WXS</h2><p>WXS（WeiXin Script）是小程序独有的一套脚本语言，结合 WXML，可以构建出页面的结构,典型应用场景就是“过滤器”。</p>
+<ul>
+<li><p>①wxs 有自己的数据类型</p>
+<p>number 数值类型、string 字符串类型、boolean 布尔类型、object 对象类型、</p>
+<p>function 函数类型、array 数组类型、  date 日期类型、   regexp 正则</p>
+<p>②wxs 不支持类似于 ES6 及以上的语法形式</p>
+<p>不支持：let、const、解构赋值、展开运算符、箭头函数、对象属性简写、etc…</p>
+<p><code>支持：var 定义变量、普通 function 函数等类似于 ES5 的语法</code></p>
+<p>③wxs<code> 遵循 CommonJS 规范</code></p>
+<p>module 对象</p>
+<p>require() 函数</p>
+<p>module.exports 对象</p>
+</li>
+</ul>
+<h3 id="内嵌-wxs-脚本"><a href="#内嵌-wxs-脚本" class="headerlink" title="内嵌 wxs 脚本"></a><strong>内嵌</strong> <strong>wxs</strong> <strong>脚本</strong></h3><p>wxs 代码可以编写在 wxml 文件中的 <wxs> 标签内，须提供 module 属性，用来指定当前 wxs 的模块名称</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;view&gt;</span><br><span class="line">  &#123;&#123;m1.toUpper(name)&#125;&#125;</span><br><span class="line">&lt;/view&gt;</span><br><span class="line"></span><br><span class="line">&lt;wxs module=&quot;m1&quot;&gt;</span><br><span class="line">  module.exports.toUpper = function(str) &#123;</span><br><span class="line">    return str.toUpperCase()</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/wxs&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="外联的-wxs-脚本"><a href="#外联的-wxs-脚本" class="headerlink" title="外联的 wxs 脚本"></a><strong>外联的</strong> <strong>wxs</strong> <strong>脚本</strong></h3><img src="C:\Users\MyJc9\AppData\Roaming\Typora\typora-user-images\image-20230731215832612.png" alt="image-20230731215832612" style="zoom:80%;" />
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;view&gt;</span><br><span class="line">  &#123;&#123;m2.toLower(country)&#125;&#125;</span><br><span class="line">&lt;/view&gt;</span><br><span class="line"></span><br><span class="line">&lt;wxs src=&quot;../../utils/tools.wxs&quot; module=&quot;m2&quot;/&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="⭐"><a href="#⭐" class="headerlink" title="⭐"></a>⭐</h3><p>wxs 典型的应用场景就是“过滤器”，经常配合 Mustache 语法进行使用</p>
+<p>但是，在 wxs 中定义的函数<code>不能作为组件的事件回调函数</code>，如</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;button bindtap=&quot;m2.toLower&quot; &gt;按钮&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>web</category>
       </categories>
       <tags>
         <tag>miniapps</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CAD操作快捷键</title>
+    <url>/cad/quickly/</url>
+    <content><![CDATA[<h2 id="1-入门"><a href="#1-入门" class="headerlink" title="1 入门"></a>1 入门</h2><h3 id="1-1-前言"><a href="#1-1-前言" class="headerlink" title="1.1 前言"></a>1.1 前言</h3><p>op 进入 option、选项功能，或空白右击，</p>
+<p>z+空格+e+空格 图形回到正中央</p>
+<h3 id="1-2-直线-快捷键-L"><a href="#1-2-直线-快捷键-L" class="headerlink" title="1.2 直线 - 快捷键 L"></a><strong>1.2 直线 - 快捷键 L</strong></h3><p><strong>定长直线正交</strong>（F8）–L + 空格 + 点一下确定起始点 + 输入数字 + 移动鼠标（横向或纵向）+ 空格结束</p>
+<p><strong>直线中点处直线的绘制</strong><br>前提：对象捕捉（F3）（打开对象捕捉然后右键设置对象捕捉设置的中点），–点绘图中直线+鼠标移至中点处+小三角出现+直线操作</p>
+<p><strong>直线绘制封闭图形</strong> –C 自动封闭图形（选中直线两端点绘制）</p>
+<h3 id="1-3-圆-快捷键-C"><a href="#1-3-圆-快捷键-C" class="headerlink" title="1.3 .圆 - 快捷键 C"></a><strong>1.3 .圆 - 快捷键 C</strong></h3><p><strong>R 定直径的圆</strong> –C+空格+输入半径+空格</p>
+<p>**D 定半径的圆 ** –C+空格+d+空格+输入半径+空格</p>
+<p><strong>（同心圆）</strong>打开对象捕捉设置圆心 –C+空格+输入 d+空格+输入直径+空格</p>
+<p><strong>2P 以已知线段为直径的圆</strong> –C+空格+输入 2p 或选择两点+空格+选择线段两点</p>
+<p><strong>T 与两条相交直线相切的圆</strong>（任选半径）–C+空格+输入 T+制定切点+输入半径+空格</p>
+<p><strong>3P(外切圆)</strong> 三角形的外切圆–C+空格+输入 3p 或选择三点+空格+选择图形三条线任意位置</p>
+<p><strong>tan（内切圆）</strong>三角形的内切圆–C+空格+输入 3p+输入 tan+空格+选择线段+重复输入 tan 和选择</p>
+<h3 id="1-4-圆弧-快捷键-ARC"><a href="#1-4-圆弧-快捷键-ARC" class="headerlink" title="1.4 圆弧 - 快捷键 ARC"></a><strong>1.4 圆弧 - 快捷键 ARC</strong></h3><p><strong>三个点绘制圆弧</strong>–arc+空格+选择三点</p>
+<p>二个点加半径绘制圆弧–arc+空格+e+空格（为了选择端点）+选择点+r+空格（为了选择半径）+输入半径</p>
+<p><font color=red>注意：<strong>圆弧始终为逆时针旋转</strong></font></p>
+<h3 id="1-5-多段线-快捷键-PL"><a href="#1-5-多段线-快捷键-PL" class="headerlink" title="1.5 多段线 - 快捷键 PL"></a><strong>1.5 多段线 - 快捷键 PL</strong></h3><p><strong>多段线绘制圆弧</strong>–先点击多段线+L+空格+确定起始点+a+空格快捷键：R 半径 D 切换圆弧弧度方向</p>
+<p><strong>多条线段合并成多段线</strong>–PE+空格+M 全选中+空格+y+空格+合并+空格空格<br>多线段宽度选择 PE+空格+W</p>
+<p><font color=red>多段线可以设置宽度</font>(练习：用多段线绘制一个箭头)</p>
+<h3 id="1-6-多边形-快捷键-POL"><a href="#1-6-多边形-快捷键-POL" class="headerlink" title="1.6 多边形 - 快捷键 POL"></a><strong>1.6 多边形 - 快捷键 POL</strong></h3><p><strong>指定中心点的多边形</strong>–POL+边数+中心点+半径（内接&#x2F;外切）</p>
+<p><strong>指定边的多边形</strong>–POL+空格+E+空格+先绘制一个有形状的多边形+输入边长+空格</p>
+<h3 id="1-7-移动-快捷键-M-和-复制-快捷键-CO"><a href="#1-7-移动-快捷键-M-和-复制-快捷键-CO" class="headerlink" title="1.7 移动 - 快捷键 M 和 复制 - 快捷键 CO"></a><strong>1.7 移动 - 快捷键 M 和 复制 - 快捷键 CO</strong></h3><p><strong>移动</strong>：m+空格+选中对象+空格+选基点+移动鼠标+点一下</p>
+<p><strong>复制</strong>：co+空格+选中对象+空格+选基点+移动鼠标+点一下(模式可以选择可复制多个 也可选择只复制一次)</p>
+<h3 id="1-8-拉伸-快捷键-S"><a href="#1-8-拉伸-快捷键-S" class="headerlink" title="1.8 拉伸 - 快捷键 S"></a><strong>1.8 拉伸 - 快捷键 S</strong></h3><p>s+空格+选中对象+空格+输入+空格</p>
+<h3 id="1-9-旋转-快捷键-RO"><a href="#1-9-旋转-快捷键-RO" class="headerlink" title="1.9 旋转 - 快捷键 RO"></a><strong>1.9 旋转 - 快捷键 RO</strong></h3><p><strong>复制对象进行旋转</strong>：ro+空格+选中对象+空格+选中基点+c+空格</p>
+<p><strong>参照图形进行旋转</strong>：ro+空格+选中对象+空格+选中基点+r+空格+选中参照</p>
+<h3 id="1-10-镜像-快捷键-MI-和-缩放-快捷键-SC-、对齐缩放-AL"><a href="#1-10-镜像-快捷键-MI-和-缩放-快捷键-SC-、对齐缩放-AL" class="headerlink" title="1.10 镜像 - 快捷键 MI 和 缩放 - 快捷键 SC 、对齐缩放 - AL"></a><strong>1.10 镜像 - 快捷键 MI 和 缩放 - 快捷键 SC 、对齐缩放 - AL</strong></h3><p><strong>镜像</strong>：mi+空格+选中对象+空格+找镜像线(点两下)+空格+直接空格(默认不删除源图像)<br>缩放</p>
+<p><strong>缩放</strong>：sc+空格+选中对象+指定基点+空格+比例因子+空格</p>
+<p><strong>参照缩放</strong>：sc+空格+选中对象+空格+选中基点(顶点位置)+空格+r+选中参照 1+选中参照 2+鼠标移动</p>
+<p>**<font color=red>对齐缩放</font>**（AL）：al+空格+指定第一个源点+指定第一个目标点+指定第二个源点+指定第二个目标点+点击是否缩放+空格(空格默认不锁放)</p>
+<h3 id="1-11-修剪-快捷键-TR-和-延申-快捷键-EX"><a href="#1-11-修剪-快捷键-TR-和-延申-快捷键-EX" class="headerlink" title="1.11 修剪 - 快捷键 TR 和 延申 - 快捷键 EX"></a><strong>1.11 修剪 - 快捷键 TR 和 延申 - 快捷键 EX</strong></h3><p><strong>修剪</strong>：tr+空格+选择基线+空格+需要修剪的线段</p>
+<p><strong>延伸</strong>：ex+空格+选择基线+空格+需要延伸对象+空格</p>
+<p>快速修剪和延申（不需要选择基线）<br>tr+空格+空格<br>ex+空格+空格</p>
+<h3 id="1-12-圆角-快捷键-F-和-倒角-快捷键-CHA"><a href="#1-12-圆角-快捷键-F-和-倒角-快捷键-CHA" class="headerlink" title="1.12 圆角 - 快捷键 F 和 倒角 - 快捷键 CHA"></a><strong>1.12 圆角 - 快捷键 F 和 倒角 - 快捷键 CHA</strong></h3><p><strong>圆角</strong>：f+空格+r+点击两条直线</p>
+<p><strong>倒角</strong>：cha+第一个倒角距离+空格+第二个倒角距离+空格+点击两条直线</p>
+<p>延申为一个角：f+空格+r+输入 0+点击两条直线 或者 cha+d+空格+空格+点击两条直线</p>
+<h3 id="1-13-样条曲线"><a href="#1-13-样条曲线" class="headerlink" title="1.13 样条曲线"></a>1.13 样条曲线</h3><p>样条曲线拟合</p>
+<p>样条曲线控制点</p>
+<h3 id="1-14-阵列"><a href="#1-14-阵列" class="headerlink" title="1.14 阵列"></a>1.14 阵列</h3><p>环形阵列</p>
+<p>矩形阵列</p>
+<p><font color=red>路径阵列</font></p>
+<h3 id="1-15-参数化"><a href="#1-15-参数化" class="headerlink" title="1.15 参数化"></a>1.15 参数化</h3><p>先点击的图形不动，后点击的图形变动</p>
+<p>ctrl 1 快速打开特性面板</p>
+<p>先将图像大概绘制出来,再添加约束</p>
+<h2 id="2-绘图练习"><a href="#2-绘图练习" class="headerlink" title="2 绘图练习"></a>2 绘图练习</h2><h3 id="2-1-偏移-快捷键-o"><a href="#2-1-偏移-快捷键-o" class="headerlink" title="2.1 偏移 - 快捷键 o"></a>2.1 偏移 - 快捷键 o</h3><h3 id="2-2-分解-快捷键-x"><a href="#2-2-分解-快捷键-x" class="headerlink" title="2.2 分解 - 快捷键 x"></a>2.2 分解 - 快捷键 x</h3><p>先选择对象，在输入 x 分解对象</p>
+<h3 id="2-3-绘制与圆相切的直线-tan"><a href="#2-3-绘制与圆相切的直线-tan" class="headerlink" title="2.3 绘制与圆相切的直线 tan"></a>2.3 绘制与圆相切的直线 tan</h3><p>L 空格 tan 选择与圆的切点</p>
+<h3 id="2-4-打断-快捷键-br"><a href="#2-4-打断-快捷键-br" class="headerlink" title="2.4 打断 - 快捷键 br"></a>2.4 打断 - 快捷键 br</h3><h3 id="2-5-构造线-快捷键-xl"><a href="#2-5-构造线-快捷键-xl" class="headerlink" title="2.5 构造线 - 快捷键 xl"></a>2.5 构造线 - 快捷键 xl</h3><p>可以设置角度辅助画图</p>
+<h2 id="3-进阶"><a href="#3-进阶" class="headerlink" title="3 进阶"></a>3 进阶</h2><h3 id="3-1-选择"><a href="#3-1-选择" class="headerlink" title="3.1 选择"></a>3.1 选择</h3><p>从左上开始选择为包选，从右下开始选择为全选，</p>
+<p>点击选择</p>
+<p>点击反选–shilft + 鼠标左键</p>
+<h3 id="3-2-匹配-快捷键-ma"><a href="#3-2-匹配-快捷键-ma" class="headerlink" title="3.2 匹配 - 快捷键 ma"></a>3.2 匹配 - 快捷键 ma</h3><p>快速复制目标样式到选择的元素上</p>
+<h3 id="3-3-点-快捷键-po"><a href="#3-3-点-快捷键-po" class="headerlink" title="3.3 点 - 快捷键 po"></a>3.3 点 - 快捷键 po</h3><h3 id="3-4-重生成模型-快捷键-re"><a href="#3-4-重生成模型-快捷键-re" class="headerlink" title="3.4 重生成模型 - 快捷键 re"></a>3.4 重生成模型 - 快捷键 re</h3><h3 id="3-5-多段线操作-快捷键-pe"><a href="#3-5-多段线操作-快捷键-pe" class="headerlink" title="3.5 多段线操作 - 快捷键 pe"></a>3.5 多段线操作 - 快捷键 pe</h3><h3 id="3-6-打断-快捷键-br"><a href="#3-6-打断-快捷键-br" class="headerlink" title="3.6 打断 - 快捷键 br"></a>3.6 打断 - 快捷键 br</h3><h3 id="3-7-合并-快捷键-j"><a href="#3-7-合并-快捷键-j" class="headerlink" title="3.7 合并 - 快捷键 j"></a>3.7 合并 - 快捷键 j</h3><h3 id="3-8-定距等分-快捷键-me"><a href="#3-8-定距等分-快捷键-me" class="headerlink" title="3.8 定距等分 - 快捷键 me"></a>3.8 定距等分 - 快捷键 me</h3><h3 id="3-9-定数等分-快捷键-div"><a href="#3-9-定数等分-快捷键-div" class="headerlink" title="3.9 定数等分 - 快捷键 div"></a>3.9 定数等分 - 快捷键 div</h3><h3 id="3-10-修订云线-快捷键-revc"><a href="#3-10-修订云线-快捷键-revc" class="headerlink" title="3.10 修订云线 - 快捷键 revc"></a>3.10 修订云线 - 快捷键 revc</h3><h3 id="3-11-射线-快捷键-ray"><a href="#3-11-射线-快捷键-ray" class="headerlink" title="3.11 射线 - 快捷键 ray"></a>3.11 射线 - 快捷键 ray</h3><h3 id="3-12-填充-快捷键-h"><a href="#3-12-填充-快捷键-h" class="headerlink" title="3.12 填充 - 快捷键 h"></a>3.12 填充 - 快捷键 h</h3><h3 id="3-13-绘图次序-快捷键-dr"><a href="#3-13-绘图次序-快捷键-dr" class="headerlink" title="3.13 绘图次序 - 快捷键 dr"></a>3.13 绘图次序 - 快捷键 dr</h3>]]></content>
+      <categories>
+        <category>cad</category>
+      </categories>
+      <tags>
+        <tag>CAD</tag>
       </tags>
   </entry>
   <entry>
@@ -911,6 +1110,36 @@
 <p>4、将<code>矢量图层</code>添加到地图容器</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 将矢量图层添加到地图容器</span></span><br><span class="line">map.<span class="title function_">addLayer</span>(layer)</span><br></pre></td></tr></table></figure>
 
+<h3 id="加载geojson数据"><a href="#加载geojson数据" class="headerlink" title="加载geojson数据"></a>加载geojson数据</h3><p><code>geojson</code>数据是矢量数据，是包含地理信息的json数据，格式是以key:value的形式存在的。后缀以<code>geojson</code>结尾</p>
+<ul>
+<li><p>geojson设置一个点要素</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230727232143141.png" alt="image-20230727232143141"></p>
+<p>1.点设置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> data = &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;FeatureCollection&#x27;</span>,</span><br><span class="line">        <span class="attr">features</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">type</span>: <span class="string">&#x27;Feature&#x27;</span>,</span><br><span class="line">            <span class="attr">geometry</span>: &#123;</span><br><span class="line">              <span class="attr">type</span>: <span class="string">&#x27;Point&#x27;</span>, <span class="comment">// 设置点要素</span></span><br><span class="line">              <span class="attr">coordinates</span>: [<span class="number">114.3</span>, <span class="number">30.5</span>],</span><br><span class="line">            &#125;,</span><br><span class="line">          &#125;,</span><br><span class="line">        ],</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">const</span> source = <span class="keyword">new</span> ol.<span class="property">source</span>.<span class="title class_">Vector</span>(&#123;</span><br><span class="line">        <span class="comment">/* 将geojson数据设置给实例数据源 */</span></span><br><span class="line">        <span class="attr">features</span>: <span class="keyword">new</span> ol.<span class="property">format</span>.<span class="title class_">GeoJSON</span>().<span class="title function_">readFeatures</span>(data),</span><br><span class="line">      &#125;)</span><br><span class="line">      <span class="keyword">const</span> layer = <span class="keyword">new</span> ol.<span class="property">layer</span>.<span class="title class_">Vector</span>(&#123;</span><br><span class="line">        source,</span><br><span class="line">      &#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2.样式设置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> style = <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Style</span>(&#123;</span><br><span class="line">       <span class="comment">//设置点样式</span></span><br><span class="line">       <span class="attr">image</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Circle</span>(&#123;</span><br><span class="line">         <span class="attr">radius</span>: <span class="number">8</span>,</span><br><span class="line">         <span class="attr">fill</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Fill</span>(&#123;</span><br><span class="line">           <span class="attr">color</span>: <span class="string">&#x27;#ff2d51&#x27;</span>,</span><br><span class="line">         &#125;),</span><br><span class="line">         <span class="attr">stroke</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Stroke</span>(&#123;</span><br><span class="line">           <span class="attr">color</span>: <span class="string">&#x27;#333&#x27;</span>,</span><br><span class="line">           <span class="attr">width</span>: <span class="number">2</span>,</span><br><span class="line">         &#125;),</span><br><span class="line">       &#125;),</span><br><span class="line">     &#125;)</span><br><span class="line">     layer.<span class="title function_">setStyle</span>(style)</span><br><span class="line">     map.<span class="title function_">addLayer</span>(layer)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>geojson设置一个线要素</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230727232043149.png" alt="image-20230727232043149"></p>
+<p>1.线设置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> data = &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;FeatureCollection&#x27;</span>,</span><br><span class="line">        <span class="attr">features</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">type</span>: <span class="string">&#x27;Feature&#x27;</span>,</span><br><span class="line">            <span class="attr">geometry</span>: &#123;</span><br><span class="line">              <span class="attr">type</span>: <span class="string">&#x27;LineString&#x27;</span>, <span class="comment">// 设置线</span></span><br><span class="line">              <span class="attr">coordinates</span>: [</span><br><span class="line">                [<span class="number">114.3</span>, <span class="number">30.5</span>],</span><br><span class="line">                [<span class="number">116</span>, <span class="number">30.5</span>],</span><br><span class="line">              ],</span><br><span class="line">            &#125;,</span><br><span class="line">          &#125;,</span><br><span class="line">        ],</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.样式设置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//设置样式</span></span><br><span class="line">     <span class="keyword">const</span> style = <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Style</span>(&#123;</span><br><span class="line">       <span class="comment">//边线颜色</span></span><br><span class="line">       <span class="attr">stroke</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Stroke</span>(&#123;</span><br><span class="line">         <span class="attr">color</span>: <span class="string">&#x27;#ff2d51&#x27;</span>,</span><br><span class="line">         <span class="attr">width</span>: <span class="number">4</span>,</span><br><span class="line">       &#125;),</span><br><span class="line">     &#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>geojson设置<code>Polygon</code>区</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230727232619978.png" alt="image-20230727232619978"></p>
+<p>1.polygon设置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> data = &#123;</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;FeatureCollection&quot;</span>,</span><br><span class="line">      <span class="attr">features</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                  <span class="attr">type</span>: <span class="string">&quot;Feature&quot;</span>,</span><br><span class="line">                  <span class="attr">geometry</span>: &#123;</span><br><span class="line">                        <span class="attr">type</span>: <span class="string">&quot;Polygon&quot;</span>,</span><br><span class="line">                        <span class="attr">coordinates</span>: [[[<span class="number">114.30</span>, <span class="number">30.50</span>], [<span class="number">116</span>, <span class="number">30.50</span>], [<span class="number">116</span>, <span class="number">30</span>]]]</span><br><span class="line">                  &#125;</span><br><span class="line">            &#125;</span><br><span class="line">      ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2.样式设置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//设置样式</span></span><br><span class="line"><span class="keyword">const</span> style = <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Style</span>(&#123;</span><br><span class="line">      <span class="comment">//边线颜色</span></span><br><span class="line">      <span class="attr">stroke</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Stroke</span>(&#123;</span><br><span class="line">            <span class="attr">color</span>: <span class="string">&#x27;#ff2d51&#x27;</span>,</span><br><span class="line">            <span class="attr">width</span>: <span class="number">2</span></span><br><span class="line">      &#125;),</span><br><span class="line">      <span class="comment">//设置填充色</span></span><br><span class="line">      <span class="attr">fill</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Fill</span>(&#123;</span><br><span class="line">            <span class="attr">color</span>: <span class="string">&quot;rgba(50, 50, 50, 0.3)&quot;</span></span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ul>
 <h2 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h2><h2 id="高德-API-调用"><a href="#高德-API-调用" class="headerlink" title="高德 API 调用"></a>高德 API 调用</h2><h2 id="Vue3-整合-Openlayers"><a href="#Vue3-整合-Openlayers" class="headerlink" title="Vue3 整合 Openlayers"></a>Vue3 整合 Openlayers</h2>]]></content>
       <categories>
         <category>gis</category>

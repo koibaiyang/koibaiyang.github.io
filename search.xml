@@ -1,9 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CAD操作快捷键</title>
+    <url>/cad/quickly/</url>
+    <content><![CDATA[<h2 id="1-入门"><a href="#1-入门" class="headerlink" title="1 入门"></a>1 入门</h2><h3 id="1-1-前言"><a href="#1-1-前言" class="headerlink" title="1.1 前言"></a>1.1 前言</h3><p>op 进入 option、选项功能，或空白右击，</p>
+<p>z+空格+e+空格 图形回到正中央</p>
+<h3 id="1-2-直线-快捷键-L"><a href="#1-2-直线-快捷键-L" class="headerlink" title="1.2 直线 - 快捷键 L"></a><strong>1.2 直线 - 快捷键 L</strong></h3><p><strong>定长直线正交</strong>（F8）–L + 空格 + 点一下确定起始点 + 输入数字 + 移动鼠标（横向或纵向）+ 空格结束</p>
+<p><strong>直线中点处直线的绘制</strong><br>前提：对象捕捉（F3）（打开对象捕捉然后右键设置对象捕捉设置的中点），–点绘图中直线+鼠标移至中点处+小三角出现+直线操作</p>
+<p><strong>直线绘制封闭图形</strong> –C 自动封闭图形（选中直线两端点绘制）</p>
+<h3 id="1-3-圆-快捷键-C"><a href="#1-3-圆-快捷键-C" class="headerlink" title="1.3 .圆 - 快捷键 C"></a><strong>1.3 .圆 - 快捷键 C</strong></h3><p><strong>R 定直径的圆</strong> –C+空格+输入半径+空格</p>
+<p>**D 定半径的圆 ** –C+空格+d+空格+输入半径+空格</p>
+<p><strong>（同心圆）</strong>打开对象捕捉设置圆心 –C+空格+输入 d+空格+输入直径+空格</p>
+<p><strong>2P 以已知线段为直径的圆</strong> –C+空格+输入 2p 或选择两点+空格+选择线段两点</p>
+<p><strong>T 与两条相交直线相切的圆</strong>（任选半径）–C+空格+输入 T+制定切点+输入半径+空格</p>
+<p><strong>3P(外切圆)</strong> 三角形的外切圆–C+空格+输入 3p 或选择三点+空格+选择图形三条线任意位置</p>
+<p><strong>tan（内切圆）</strong>三角形的内切圆–C+空格+输入 3p+输入 tan+空格+选择线段+重复输入 tan 和选择</p>
+<h3 id="1-4-圆弧-快捷键-ARC"><a href="#1-4-圆弧-快捷键-ARC" class="headerlink" title="1.4 圆弧 - 快捷键 ARC"></a><strong>1.4 圆弧 - 快捷键 ARC</strong></h3><p><strong>三个点绘制圆弧</strong>–arc+空格+选择三点</p>
+<p>二个点加半径绘制圆弧–arc+空格+e+空格（为了选择端点）+选择点+r+空格（为了选择半径）+输入半径</p>
+<p><font color=red>注意：<strong>圆弧始终为逆时针旋转</strong></font></p>
+<h3 id="1-5-多段线-快捷键-PL"><a href="#1-5-多段线-快捷键-PL" class="headerlink" title="1.5 多段线 - 快捷键 PL"></a><strong>1.5 多段线 - 快捷键 PL</strong></h3><p><strong>多段线绘制圆弧</strong>–先点击多段线+L+空格+确定起始点+a+空格快捷键：R 半径 D 切换圆弧弧度方向</p>
+<p><strong>多条线段合并成多段线</strong>–PE+空格+M 全选中+空格+y+空格+合并+空格空格<br>多线段宽度选择 PE+空格+W</p>
+<p><font color=red>多段线可以设置宽度</font>(练习：用多段线绘制一个箭头)</p>
+<h3 id="1-6-多边形-快捷键-POL"><a href="#1-6-多边形-快捷键-POL" class="headerlink" title="1.6 多边形 - 快捷键 POL"></a><strong>1.6 多边形 - 快捷键 POL</strong></h3><p><strong>指定中心点的多边形</strong>–POL+边数+中心点+半径（内接&#x2F;外切）</p>
+<p><strong>指定边的多边形</strong>–POL+空格+E+空格+先绘制一个有形状的多边形+输入边长+空格</p>
+<h3 id="1-7-移动-快捷键-M-和-复制-快捷键-CO"><a href="#1-7-移动-快捷键-M-和-复制-快捷键-CO" class="headerlink" title="1.7 移动 - 快捷键 M 和 复制 - 快捷键 CO"></a><strong>1.7 移动 - 快捷键 M 和 复制 - 快捷键 CO</strong></h3><p><strong>移动</strong>：m+空格+选中对象+空格+选基点+移动鼠标+点一下</p>
+<p><strong>复制</strong>：co+空格+选中对象+空格+选基点+移动鼠标+点一下(模式可以选择可复制多个 也可选择只复制一次)</p>
+<h3 id="1-8-拉伸-快捷键-S"><a href="#1-8-拉伸-快捷键-S" class="headerlink" title="1.8 拉伸 - 快捷键 S"></a><strong>1.8 拉伸 - 快捷键 S</strong></h3><p>s+空格+选中对象+空格+输入+空格</p>
+<h3 id="1-9-旋转-快捷键-RO"><a href="#1-9-旋转-快捷键-RO" class="headerlink" title="1.9 旋转 - 快捷键 RO"></a><strong>1.9 旋转 - 快捷键 RO</strong></h3><p><strong>复制对象进行旋转</strong>：ro+空格+选中对象+空格+选中基点+c+空格</p>
+<p><strong>参照图形进行旋转</strong>：ro+空格+选中对象+空格+选中基点+r+空格+选中参照</p>
+<h3 id="1-10-镜像-快捷键-MI-和-缩放-快捷键-SC-、对齐缩放-AL"><a href="#1-10-镜像-快捷键-MI-和-缩放-快捷键-SC-、对齐缩放-AL" class="headerlink" title="1.10 镜像 - 快捷键 MI 和 缩放 - 快捷键 SC 、对齐缩放 - AL"></a><strong>1.10 镜像 - 快捷键 MI 和 缩放 - 快捷键 SC 、对齐缩放 - AL</strong></h3><p><strong>镜像</strong>：mi+空格+选中对象+空格+找镜像线(点两下)+空格+直接空格(默认不删除源图像)<br>缩放</p>
+<p><strong>缩放</strong>：sc+空格+选中对象+指定基点+空格+比例因子+空格</p>
+<p><strong>参照缩放</strong>：sc+空格+选中对象+空格+选中基点(顶点位置)+空格+r+选中参照 1+选中参照 2+鼠标移动</p>
+<p>**<font color=red>对齐缩放</font>**（AL）：al+空格+指定第一个源点+指定第一个目标点+指定第二个源点+指定第二个目标点+点击是否缩放+空格(空格默认不锁放)</p>
+<h3 id="1-11-修剪-快捷键-TR-和-延申-快捷键-EX"><a href="#1-11-修剪-快捷键-TR-和-延申-快捷键-EX" class="headerlink" title="1.11 修剪 - 快捷键 TR 和 延申 - 快捷键 EX"></a><strong>1.11 修剪 - 快捷键 TR 和 延申 - 快捷键 EX</strong></h3><p><strong>修剪</strong>：tr+空格+选择基线+空格+需要修剪的线段</p>
+<p><strong>延伸</strong>：ex+空格+选择基线+空格+需要延伸对象+空格</p>
+<p>快速修剪和延申（不需要选择基线）<br>tr+空格+空格<br>ex+空格+空格</p>
+<h3 id="1-12-圆角-快捷键-F-和-倒角-快捷键-CHA"><a href="#1-12-圆角-快捷键-F-和-倒角-快捷键-CHA" class="headerlink" title="1.12 圆角 - 快捷键 F 和 倒角 - 快捷键 CHA"></a><strong>1.12 圆角 - 快捷键 F 和 倒角 - 快捷键 CHA</strong></h3><p><strong>圆角</strong>：f+空格+r+点击两条直线</p>
+<p><strong>倒角</strong>：cha+第一个倒角距离+空格+第二个倒角距离+空格+点击两条直线</p>
+<p>延申为一个角：f+空格+r+输入 0+点击两条直线 或者 cha+d+空格+空格+点击两条直线</p>
+<h3 id="1-13-样条曲线"><a href="#1-13-样条曲线" class="headerlink" title="1.13 样条曲线"></a>1.13 样条曲线</h3><p>样条曲线拟合</p>
+<p>样条曲线控制点</p>
+<h3 id="1-14-阵列"><a href="#1-14-阵列" class="headerlink" title="1.14 阵列"></a>1.14 阵列</h3><p>环形阵列</p>
+<p>矩形阵列</p>
+<p><font color=red>路径阵列</font></p>
+<h3 id="1-15-参数化"><a href="#1-15-参数化" class="headerlink" title="1.15 参数化"></a>1.15 参数化</h3><p>先点击的图形不动，后点击的图形变动</p>
+<p>ctrl 1 快速打开特性面板</p>
+<p>先将图像大概绘制出来,再添加约束</p>
+<h2 id="2-绘图练习"><a href="#2-绘图练习" class="headerlink" title="2 绘图练习"></a>2 绘图练习</h2><h3 id="2-1-偏移-快捷键-o"><a href="#2-1-偏移-快捷键-o" class="headerlink" title="2.1 偏移 - 快捷键 o"></a>2.1 偏移 - 快捷键 o</h3><h3 id="2-2-分解-快捷键-x"><a href="#2-2-分解-快捷键-x" class="headerlink" title="2.2 分解 - 快捷键 x"></a>2.2 分解 - 快捷键 x</h3><p>先选择对象，在输入 x 分解对象</p>
+<h3 id="2-3-绘制与圆相切的直线-tan"><a href="#2-3-绘制与圆相切的直线-tan" class="headerlink" title="2.3 绘制与圆相切的直线 tan"></a>2.3 绘制与圆相切的直线 tan</h3><p>L 空格 tan 选择与圆的切点</p>
+<h3 id="2-4-打断-快捷键-br"><a href="#2-4-打断-快捷键-br" class="headerlink" title="2.4 打断 - 快捷键 br"></a>2.4 打断 - 快捷键 br</h3><h3 id="2-5-构造线-快捷键-xl"><a href="#2-5-构造线-快捷键-xl" class="headerlink" title="2.5 构造线 - 快捷键 xl"></a>2.5 构造线 - 快捷键 xl</h3><p>可以设置角度辅助画图</p>
+<h2 id="3-进阶"><a href="#3-进阶" class="headerlink" title="3 进阶"></a>3 进阶</h2><h3 id="3-1-选择"><a href="#3-1-选择" class="headerlink" title="3.1 选择"></a>3.1 选择</h3><p>从左上开始选择为包选，从右下开始选择为全选，</p>
+<p>点击选择</p>
+<p>点击反选–shilft + 鼠标左键</p>
+<h3 id="3-2-匹配-快捷键-ma"><a href="#3-2-匹配-快捷键-ma" class="headerlink" title="3.2 匹配 - 快捷键 ma"></a>3.2 匹配 - 快捷键 ma</h3><p>快速复制目标样式到选择的元素上</p>
+<h3 id="3-3-点-快捷键-po"><a href="#3-3-点-快捷键-po" class="headerlink" title="3.3 点 - 快捷键 po"></a>3.3 点 - 快捷键 po</h3><h3 id="3-4-重生成模型-快捷键-re"><a href="#3-4-重生成模型-快捷键-re" class="headerlink" title="3.4 重生成模型 - 快捷键 re"></a>3.4 重生成模型 - 快捷键 re</h3><h3 id="3-5-多段线操作-快捷键-pe"><a href="#3-5-多段线操作-快捷键-pe" class="headerlink" title="3.5 多段线操作 - 快捷键 pe"></a>3.5 多段线操作 - 快捷键 pe</h3><h3 id="3-6-打断-快捷键-br"><a href="#3-6-打断-快捷键-br" class="headerlink" title="3.6 打断 - 快捷键 br"></a>3.6 打断 - 快捷键 br</h3><h3 id="3-7-合并-快捷键-j"><a href="#3-7-合并-快捷键-j" class="headerlink" title="3.7 合并 - 快捷键 j"></a>3.7 合并 - 快捷键 j</h3><h3 id="3-8-定距等分-快捷键-me"><a href="#3-8-定距等分-快捷键-me" class="headerlink" title="3.8 定距等分 - 快捷键 me"></a>3.8 定距等分 - 快捷键 me</h3><h3 id="3-9-定数等分-快捷键-div"><a href="#3-9-定数等分-快捷键-div" class="headerlink" title="3.9 定数等分 - 快捷键 div"></a>3.9 定数等分 - 快捷键 div</h3><h3 id="3-10-修订云线-快捷键-revc"><a href="#3-10-修订云线-快捷键-revc" class="headerlink" title="3.10 修订云线 - 快捷键 revc"></a>3.10 修订云线 - 快捷键 revc</h3><h3 id="3-11-射线-快捷键-ray"><a href="#3-11-射线-快捷键-ray" class="headerlink" title="3.11 射线 - 快捷键 ray"></a>3.11 射线 - 快捷键 ray</h3><h3 id="3-12-填充-快捷键-h"><a href="#3-12-填充-快捷键-h" class="headerlink" title="3.12 填充 - 快捷键 h"></a>3.12 填充 - 快捷键 h</h3><h3 id="3-13-绘图次序-快捷键-dr"><a href="#3-13-绘图次序-快捷键-dr" class="headerlink" title="3.13 绘图次序 - 快捷键 dr"></a>3.13 绘图次序 - 快捷键 dr</h3>]]></content>
+      <categories>
+        <category>cad</category>
+      </categories>
+      <tags>
+        <tag>CAD</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>OpenLayers</title>
+    <url>/gis/openlayers/</url>
+    <content><![CDATA[<h2 id="OpenLayers-基础学习"><a href="#OpenLayers-基础学习" class="headerlink" title="OpenLayers 基础学习"></a>OpenLayers 基础学习</h2><p>–快捷 <a href="https://openlayers.org/">OpenLayers 官网</a></p>
+<h3 id="WebGIS-简介"><a href="#WebGIS-简介" class="headerlink" title="WebGIS 简介"></a>WebGIS 简介</h3><ul>
+<li><p>GIS 的核心概念：</p>
+<p>GIS（Geographic Information System）是一种用于存储、分析、管理和展示地理数据的计算机系统。以下是 GIS 中的一些核心概念：</p>
+<ol>
+<li>坐标系：地理数据通常以某种坐标系的形式存储，如经纬度坐标系或投影坐标系。</li>
+<li>地理数据：GIS 中的数据是具有地理上的位置信息的数据，如地图、地形、道路、建筑物、人口数据等。</li>
+<li>地图投影：地图投影是将三维地球表示为二维地图的过程。</li>
+<li>叠加分析：叠加分析是在一张地图上查看多个图层的分析，以探究其相互关系。</li>
+<li>空间分析：空间分析是指使用地理数据分析空间关系，如距离、面积和方位等。</li>
+<li>地理信息数据库：GIS 的核心是地理信息数据库，用于存储和管理地理数据。</li>
+<li>可视化：GIS 的目的之一是提供可视化，以方便人们更好地理解地理数据。</li>
+</ol>
+</li>
+<li><p>地图组成结构</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722230958233.png" alt="image-20230722230958233"></p>
+</li>
+<li><p>Openlayers 的核心概念:</p>
+<p>1、一张<code>Map</code>是由很多<code>Layer</code>图层组成的。</p>
+<p>2、一个<code>Layer</code>对应一个<code>Source</code>矢量数据源</p>
+<p>3、一个<code>Source</code>由很多<code>Feature</code>组成</p>
+<p>4、<code>Feature</code>是<code>Geometry</code>和<code>Style</code>组成</p>
+</li>
+</ul>
+<h3 id="初始化地图"><a href="#初始化地图" class="headerlink" title="初始化地图"></a>初始化地图</h3><ul>
+<li><p>引入 OpenLayers 框架</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://lib.baomitu.com/ol3/4.6.5/ol.css&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://lib.baomitu.com/ol3/4.6.5/ol.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置高德地图 source</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> gaode = <span class="keyword">new</span> ol.<span class="property">layer</span>.<span class="title class_">Tile</span>(&#123;</span><br><span class="line">  <span class="attr">title</span>: <span class="string">&#x27;高德地图&#x27;</span>,</span><br><span class="line">  <span class="attr">source</span>: <span class="keyword">new</span> ol.<span class="property">source</span>.<span class="title function_">XYZ</span>(&#123;</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;http://wprd0&#123;1-4&#125;.is.autonavi.com/appmaptile?lang=zh_cn&amp;size=1&amp;style=7&amp;x=&#123;x&#125;&amp;y=&#123;y&#125;&amp;z=&#123;z&#125;&#x27;</span>,</span><br><span class="line">    <span class="attr">wrapX</span>: <span class="literal">false</span>,</span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>初始化地图</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> map = <span class="keyword">new</span> ol.<span class="title class_">Map</span>(&#123;</span><br><span class="line">  <span class="attr">target</span>: <span class="string">&#x27;map&#x27;</span>, <span class="comment">// 绑定到 map 元素上</span></span><br><span class="line">  <span class="attr">layers</span>: [gaode], <span class="comment">// 设置高德图层</span></span><br><span class="line">  <span class="attr">view</span>: <span class="keyword">new</span> ol.<span class="title class_">View</span>(&#123;</span><br><span class="line">    <span class="comment">// 初始化</span></span><br><span class="line">    <span class="attr">center</span>: [<span class="number">114.3</span>, <span class="number">30.5</span>],</span><br><span class="line">    <span class="attr">zoom</span>: <span class="number">12</span>,</span><br><span class="line">    <span class="attr">projection</span>: <span class="string">&#x27;EPSG:4326&#x27;</span>, <span class="comment">// EPSG:4326 的经纬度范围是：经度范围在 -180° 到 180° 之间，纬度范围在 -90° 到 90° 之间。</span></span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="拓展-EPSG-4326-和-EPSG-3857-的区别"><a href="#拓展-EPSG-4326-和-EPSG-3857-的区别" class="headerlink" title="拓展*EPSG:4326 和 EPSG:3857 的区别"></a>拓展*EPSG:4326 和 EPSG:3857 的区别</h4><p>EPSG:4326 和 EPSG:3857 是两个常用的坐标参考系代码，用于在 GIS 中表示地理位置。它们的主要区别如下：</p>
+<ul>
+<li>EPSG:4326 表示一个地理坐标系，使用经纬度来表示地理位置，通常用于地理位置的显示和制图。</li>
+<li>EPSG:3857 表示一个 Web 墨卡托坐标系，使用平面墨卡托投影来表示地理位置。</li>
+</ul>
+<p>因此，两个坐标系的主要区别在于它们使用的坐标系统不同：EPSG:4326 使用的是经纬度，而 EPSG:3857 使用的是平面墨卡托投影。</p>
+<p>EPSG:3857 在在线地图中被广泛使用，因为它能够在 Web 地图上提供更高的精度和更好的分辨率。然而，EPSG:4326 在网络上传输地理位置信息时被更多地使用，因为它使用的是标准的地理坐标系。</p>
+<p>总的来说，选择使用哪个坐标系取决于你的应用需求：如果需要高精度和分辨率，选择 EPSG:3857；如果需要标准的地理坐标系，选择 EPSG:4326</p>
+</li>
+</ul>
+<h3 id="地图控件"><a href="#地图控件" class="headerlink" title="地图控件"></a>地图控件</h3><ul>
+<li><p><em>视图跳转控件</em></p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000324181.png" alt="image-20230723000324181"></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//视图跳转控件</span></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">ZoomToExtent</span> = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">ZoomToExtent</span>(&#123;</span><br><span class="line">  <span class="attr">extent</span>: [<span class="number">110</span>, <span class="number">30</span>, <span class="number">160</span>, <span class="number">30</span>],</span><br><span class="line">&#125;)</span><br><span class="line">map.<span class="title function_">addControl</span>(<span class="title class_">ZoomToExtent</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>放大缩小控件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000628737.png" alt="image-20230723000628737"></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 放大缩小控件</span></span><br><span class="line"><span class="keyword">const</span> zoomslider = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">ZoomSlider</span>()</span><br><span class="line">map.<span class="title function_">addControl</span>(zoomslider)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>全屏控件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000902601.png" alt="image-20230723000902601"></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//全屏控件</span></span><br><span class="line"><span class="keyword">const</span> fullScreen = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">FullScreen</span>()</span><br><span class="line">map.<span class="title function_">addControl</span>(fullScreen)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="设置矢量图形"><a href="#设置矢量图形" class="headerlink" title="设置矢量图形"></a>设置矢量图形</h3><p>1、通过几何信息和样式信息构建要素</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> point = <span class="keyword">new</span> ol.<span class="title class_">Feature</span>(&#123;</span><br><span class="line">  <span class="comment">// 几何-点要素</span></span><br><span class="line">  <span class="attr">geometry</span>: <span class="keyword">new</span> ol.<span class="property">geom</span>.<span class="title class_">Point</span>([<span class="number">114.3</span>, <span class="number">30.5</span>]),</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">let</span> style = <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Style</span>(&#123;</span><br><span class="line">  <span class="comment">// 样式信息</span></span><br><span class="line">  <span class="attr">image</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Circle</span>(&#123;</span><br><span class="line">    <span class="attr">radius</span>: <span class="number">10</span>, <span class="comment">//半径</span></span><br><span class="line">    <span class="attr">fill</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Fill</span>(&#123;</span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#ff2d51&#x27;</span>, <span class="comment">// 填充</span></span><br><span class="line">    &#125;),</span><br><span class="line">    <span class="attr">stroke</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Stroke</span>(&#123;</span><br><span class="line">      <span class="comment">// 阴影</span></span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#333&#x27;</span>,</span><br><span class="line">      <span class="attr">width</span>: <span class="number">2</span>,</span><br><span class="line">    &#125;),</span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br><span class="line">point.<span class="title function_">setStyle</span>(style)</span><br></pre></td></tr></table></figure>
+
+<p>2、将要素添加到<code>矢量数据源</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 将要素添加到矢量数据源</span></span><br><span class="line"><span class="keyword">const</span> source = <span class="keyword">new</span> ol.<span class="property">source</span>.<span class="title class_">Vector</span>(&#123;</span><br><span class="line">  <span class="attr">features</span>: [point],</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>3、将矢量数据源添加到<code>矢量图层</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 将矢量数据源添加到矢量图层</span></span><br><span class="line"><span class="keyword">const</span> layer = <span class="keyword">new</span> ol.<span class="property">layer</span>.<span class="title class_">Vector</span>(&#123;</span><br><span class="line">  source,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>4、将<code>矢量图层</code>添加到地图容器</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 将矢量图层添加到地图容器</span></span><br><span class="line">map.<span class="title function_">addLayer</span>(layer)</span><br></pre></td></tr></table></figure>
+
+<h3 id="加载geojson数据"><a href="#加载geojson数据" class="headerlink" title="加载geojson数据"></a>加载geojson数据</h3><p><code>geojson</code>数据是矢量数据，是包含地理信息的json数据，格式是以key:value的形式存在的。后缀以<code>geojson</code>结尾</p>
+<ul>
+<li><p>geojson设置一个点要素</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230727232143141.png" alt="image-20230727232143141"></p>
+<p>1.点设置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> data = &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;FeatureCollection&#x27;</span>,</span><br><span class="line">        <span class="attr">features</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">type</span>: <span class="string">&#x27;Feature&#x27;</span>,</span><br><span class="line">            <span class="attr">geometry</span>: &#123;</span><br><span class="line">              <span class="attr">type</span>: <span class="string">&#x27;Point&#x27;</span>, <span class="comment">// 设置点要素</span></span><br><span class="line">              <span class="attr">coordinates</span>: [<span class="number">114.3</span>, <span class="number">30.5</span>],</span><br><span class="line">            &#125;,</span><br><span class="line">          &#125;,</span><br><span class="line">        ],</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">const</span> source = <span class="keyword">new</span> ol.<span class="property">source</span>.<span class="title class_">Vector</span>(&#123;</span><br><span class="line">        <span class="comment">/* 将geojson数据设置给实例数据源 */</span></span><br><span class="line">        <span class="attr">features</span>: <span class="keyword">new</span> ol.<span class="property">format</span>.<span class="title class_">GeoJSON</span>().<span class="title function_">readFeatures</span>(data),</span><br><span class="line">      &#125;)</span><br><span class="line">      <span class="keyword">const</span> layer = <span class="keyword">new</span> ol.<span class="property">layer</span>.<span class="title class_">Vector</span>(&#123;</span><br><span class="line">        source,</span><br><span class="line">      &#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2.样式设置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> style = <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Style</span>(&#123;</span><br><span class="line">       <span class="comment">//设置点样式</span></span><br><span class="line">       <span class="attr">image</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Circle</span>(&#123;</span><br><span class="line">         <span class="attr">radius</span>: <span class="number">8</span>,</span><br><span class="line">         <span class="attr">fill</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Fill</span>(&#123;</span><br><span class="line">           <span class="attr">color</span>: <span class="string">&#x27;#ff2d51&#x27;</span>,</span><br><span class="line">         &#125;),</span><br><span class="line">         <span class="attr">stroke</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Stroke</span>(&#123;</span><br><span class="line">           <span class="attr">color</span>: <span class="string">&#x27;#333&#x27;</span>,</span><br><span class="line">           <span class="attr">width</span>: <span class="number">2</span>,</span><br><span class="line">         &#125;),</span><br><span class="line">       &#125;),</span><br><span class="line">     &#125;)</span><br><span class="line">     layer.<span class="title function_">setStyle</span>(style)</span><br><span class="line">     map.<span class="title function_">addLayer</span>(layer)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>geojson设置一个线要素</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230727232043149.png" alt="image-20230727232043149"></p>
+<p>1.线设置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> data = &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;FeatureCollection&#x27;</span>,</span><br><span class="line">        <span class="attr">features</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">type</span>: <span class="string">&#x27;Feature&#x27;</span>,</span><br><span class="line">            <span class="attr">geometry</span>: &#123;</span><br><span class="line">              <span class="attr">type</span>: <span class="string">&#x27;LineString&#x27;</span>, <span class="comment">// 设置线</span></span><br><span class="line">              <span class="attr">coordinates</span>: [</span><br><span class="line">                [<span class="number">114.3</span>, <span class="number">30.5</span>],</span><br><span class="line">                [<span class="number">116</span>, <span class="number">30.5</span>],</span><br><span class="line">              ],</span><br><span class="line">            &#125;,</span><br><span class="line">          &#125;,</span><br><span class="line">        ],</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.样式设置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//设置样式</span></span><br><span class="line">     <span class="keyword">const</span> style = <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Style</span>(&#123;</span><br><span class="line">       <span class="comment">//边线颜色</span></span><br><span class="line">       <span class="attr">stroke</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Stroke</span>(&#123;</span><br><span class="line">         <span class="attr">color</span>: <span class="string">&#x27;#ff2d51&#x27;</span>,</span><br><span class="line">         <span class="attr">width</span>: <span class="number">4</span>,</span><br><span class="line">       &#125;),</span><br><span class="line">     &#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>geojson设置<code>Polygon</code>区</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230727232619978.png" alt="image-20230727232619978"></p>
+<p>1.polygon设置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> data = &#123;</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;FeatureCollection&quot;</span>,</span><br><span class="line">      <span class="attr">features</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                  <span class="attr">type</span>: <span class="string">&quot;Feature&quot;</span>,</span><br><span class="line">                  <span class="attr">geometry</span>: &#123;</span><br><span class="line">                        <span class="attr">type</span>: <span class="string">&quot;Polygon&quot;</span>,</span><br><span class="line">                        <span class="attr">coordinates</span>: [[[<span class="number">114.30</span>, <span class="number">30.50</span>], [<span class="number">116</span>, <span class="number">30.50</span>], [<span class="number">116</span>, <span class="number">30</span>]]]</span><br><span class="line">                  &#125;</span><br><span class="line">            &#125;</span><br><span class="line">      ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2.样式设置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//设置样式</span></span><br><span class="line"><span class="keyword">const</span> style = <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Style</span>(&#123;</span><br><span class="line">      <span class="comment">//边线颜色</span></span><br><span class="line">      <span class="attr">stroke</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Stroke</span>(&#123;</span><br><span class="line">            <span class="attr">color</span>: <span class="string">&#x27;#ff2d51&#x27;</span>,</span><br><span class="line">            <span class="attr">width</span>: <span class="number">2</span></span><br><span class="line">      &#125;),</span><br><span class="line">      <span class="comment">//设置填充色</span></span><br><span class="line">      <span class="attr">fill</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Fill</span>(&#123;</span><br><span class="line">            <span class="attr">color</span>: <span class="string">&quot;rgba(50, 50, 50, 0.3)&quot;</span></span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h2><h2 id="高德-API-调用"><a href="#高德-API-调用" class="headerlink" title="高德 API 调用"></a>高德 API 调用</h2><h2 id="Vue3-整合-Openlayers"><a href="#Vue3-整合-Openlayers" class="headerlink" title="Vue3 整合 Openlayers"></a>Vue3 整合 Openlayers</h2>]]></content>
+      <categories>
+        <category>gis</category>
+      </categories>
+      <tags>
+        <tag>GIS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Axios</title>
+    <url>/web/axios/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>web</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CSS</title>
     <url>/web/css/</url>
-    <content><![CDATA[<p><code>CSS 基础</code></p>
+    <content><![CDATA[<h2 id="CSS-自定义属性（变量）"><a href="#CSS-自定义属性（变量）" class="headerlink" title="CSS 自定义属性（变量）"></a>CSS 自定义属性（变量）</h2><p>由自定义属性标记设定值（比如： **<code>--main-color: black;</code>**），由 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/var">var()</a> 函数来获取值（比如： <code>color: var(--main-color);</code>）</p>
+<h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p>声明一个自定义属性，属性名需要以两个减号（<code>--</code>）开始，属性值则可以是任何有效的 CSS 值。和其他属性一样，自定义属性也是写在规则集之内的</p>
+<ul>
+<li><p>声明</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* -- 声明自定义属性 */</span></span><br><span class="line">element &#123;</span><br><span class="line">  <span class="attr">--main-bg-color</span>: brown;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* :root 全局生效 */</span></span><br><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">  <span class="attr">--main-bg-color</span>: brown;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 通过 var() 使用 */</span></span><br><span class="line">element &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">var</span>(--main-bg-color);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
 <h2 id="CSS-选择器"><a href="#CSS-选择器" class="headerlink" title="CSS 选择器"></a>CSS 选择器</h2><h3 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h3><ul>
 <li>通过标签名选择元素</li>
 <li>优点：可快速为同类型标签统一设置样式</li>
@@ -248,27 +435,59 @@
       </tags>
   </entry>
   <entry>
-    <title>React</title>
-    <url>/web/react/</url>
-    <content><![CDATA[]]></content>
+    <title>PicGo+GitHub搭建个人图床</title>
+    <url>/tools/picgo/</url>
+    <content><![CDATA[<h2 id="1-GitHub-创建图床仓库"><a href="#1-GitHub-创建图床仓库" class="headerlink" title="1. GitHub 创建图床仓库"></a>1. GitHub 创建图床仓库</h2><ul>
+<li><p>使用你的 GitHub 账号创建一个图床仓库</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720214539444.png" alt="image-20230720214539444"></p>
+<p>*注意仓库设置公开</p>
+</li>
+<li><p>复制图床仓库的路径</p>
+<p>koibaiyang&#x2F;demo</p>
+</li>
+</ul>
+<h2 id="2-下载安装-PicGo"><a href="#2-下载安装-PicGo" class="headerlink" title="2.下载安装 PicGo"></a>2.下载安装 PicGo</h2><ul>
+<li><p><a href="https://github.com/Molunerfinn/PicGo/releases">PicGo 下载地址</a>下载对应的应用程序并安装</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720215412958.png" alt="image-20230720215412958"></p>
+</li>
+</ul>
+<h2 id="3-配置-GitHub-图床设置"><a href="#3-配置-GitHub-图床设置" class="headerlink" title="3.配置 GitHub 图床设置"></a>3.配置 GitHub <strong>图床设置</strong></h2><ul>
+<li><p>在 GitHub 账户上新建一个 token，在 settings&#x2F;developer settings 目录下新建一个 token</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720221210439.png" alt="image-20230720221210439"></p>
+</li>
+<li><p>设置 token 的名称和有效时长 → 选择 repo 这一项 → 创建 token</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720221625707.png" alt="image-20230720221625707"></p>
+</li>
+<li><p>复制你的 token</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720222049480.png" alt="image-20230720222049480"></p>
+</li>
+<li><p>打开刚刚下载好的应用程序，在图床设置里找到 GitHub 并添加一个图床</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720220242316.png" alt="image-20230720220242316"></p>
+</li>
+<li><p>设置对应的配置</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">可以使用 https://cdn.jsdelivr.net/gh</span><br><span class="line">拼接你的仓库路径 koibaiyang/demo ，设置CDN加速</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720225922939.png" alt="image-20230720225922939"></p>
+</li>
+<li><p>设置完成，已经可以使用 PicGo 图床上传图片，转换为在线链接</p>
+</li>
+</ul>
+<h2 id="4-设置-Typora-快速上传偏好"><a href="#4-设置-Typora-快速上传偏好" class="headerlink" title="4.设置 Typora 快速上传偏好"></a>4.设置 Typora 快速上传偏好</h2><ul>
+<li><p>打开 Typora 的偏好设置 ，选择 PicGo 上传服务设定</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720224157081.png" alt="image-20230720224157081"></p>
+</li>
+<li><p>完成后就可以快捷上传文档里的本地图片并自动转换成在线地址</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720230821697.png" alt="image-20230720230821697"></p>
+</li>
+<li><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720230904282.png" alt="image-20230720230904282"></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>tools</category>
+      </categories>
       <tags>
-        <tag>react</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript</title>
-    <url>/web/js/</url>
-    <content><![CDATA[<h2 id="前端-javascript-学习"><a href="#前端-javascript-学习" class="headerlink" title="前端 javascript 学习"></a>前端 javascript 学习</h2>]]></content>
-      <tags>
-        <tag>web</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>TypeScript</title>
-    <url>/web/ts/</url>
-    <content><![CDATA[<h2 id="前端-ts-学习"><a href="#前端-ts-学习" class="headerlink" title="前端 ts 学习"></a>前端 ts 学习</h2>]]></content>
-      <tags>
-        <tag>web</tag>
+        <tag>tools</tag>
       </tags>
   </entry>
   <entry>
@@ -280,6 +499,22 @@
       </tags>
   </entry>
   <entry>
+    <title>React</title>
+    <url>/web/react/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>react</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TypeScript</title>
+    <url>/web/ts/</url>
+    <content><![CDATA[<h2 id="前端-ts-学习"><a href="#前端-ts-学习" class="headerlink" title="前端 ts 学习"></a>前端 ts 学习</h2>]]></content>
+      <tags>
+        <tag>web</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vue</title>
     <url>/web/vue/</url>
     <content><![CDATA[]]></content>
@@ -288,9 +523,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Axios</title>
-    <url>/web/axios/</url>
-    <content><![CDATA[]]></content>
+    <title>JavaScript</title>
+    <url>/web/js/</url>
+    <content><![CDATA[<h2 id="前端-javascript-学习"><a href="#前端-javascript-学习" class="headerlink" title="前端 javascript 学习"></a>前端 javascript 学习</h2>]]></content>
       <tags>
         <tag>web</tag>
       </tags>
@@ -298,8 +533,7 @@
   <entry>
     <title>小程序开发</title>
     <url>/web/xcx/</url>
-    <content><![CDATA[<p>小程序基础</p>
-<hr>
+    <content><![CDATA[<h1 id="小程序基础"><a href="#小程序基础" class="headerlink" title="小程序基础"></a>小程序基础</h1><hr>
 <h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h3 id="常用的视图容器类组件"><a href="#常用的视图容器类组件" class="headerlink" title="常用的视图容器类组件"></a>常用的视图容器类组件</h3><h4 id="view"><a href="#view" class="headerlink" title="view"></a>view</h4><ul>
 <li>普通视图区域</li>
 <li>类似于 HTML 中的 div，是一个块级元素</li>
@@ -458,7 +692,7 @@
 <td>页面打开到触发事件所经过的毫秒数</td>
 </tr>
 <tr>
-<td>target</td>
+<td><code>target</code></td>
 <td>Object</td>
 <td>触发事件的组件的一些属性值集合</td>
 </tr>
@@ -942,7 +1176,7 @@
 <li><p>页面生命周期函数: 在页面的 .js 文件中进行声明</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Page</span>(&#123;</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面加载</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onLoad</span>: <span class="keyword">function</span> (<span class="params">options</span>) &#123;</span><br><span class="line">    </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面初次渲染完成</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onReady</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面显示</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onShow</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面隐藏</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onHide</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 生命周期函数--监听页面卸载</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onUnload</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    </span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
 </ul>
-<h2 id="WXS"><a href="#WXS" class="headerlink" title="WXS"></a>WXS</h2><p>WXS（WeiXin Script）是小程序独有的一套脚本语言，结合 WXML，可以构建出页面的结构,典型应用场景就是“过滤器”。</p>
+<h2 id="WXS"><a href="#WXS" class="headerlink" title="WXS"></a><a href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxs/">WXS</a></h2><p>WXS（WeiXin Script）是小程序独有的一套脚本语言，结合 WXML，可以构建出页面的结构,典型应用场景就是“过滤器”。</p>
 <ul>
 <li><p>①wxs 有自己的数据类型</p>
 <p>number 数值类型、string 字符串类型、boolean 布尔类型、object 对象类型、</p>
@@ -969,239 +1203,353 @@
 <p>但是，在 wxs 中定义的函数<code>不能作为组件的事件回调函数</code>，如</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;button bindtap=&quot;m2.toLower&quot; &gt;按钮&lt;/button&gt;</span><br></pre></td></tr></table></figure>
 
-]]></content>
+<h1 id="小程序进阶"><a href="#小程序进阶" class="headerlink" title="小程序进阶"></a>小程序进阶</h1><hr>
+<h2 id="自定义组件"><a href="#自定义组件" class="headerlink" title="自定义组件"></a><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/">自定义组件</a></h2><h3 id="组件的创建与引用"><a href="#组件的创建与引用" class="headerlink" title="组件的创建与引用"></a><strong>组件的创建与引用</strong></h3><ul>
+<li><p><strong>创建组件</strong></p>
+<p>①在项目的根目录中，鼠标右键，创建 components -&gt; test 文件夹</p>
+<p>②在新建的 components -&gt; test 文件夹上，鼠标右键，点击“新建 Component”</p>
+<p>③键入组件的名称之后回车，会自动生成组件对应的 4 个文件，后缀名分别为 .js，.json， .wxml 和 .wxss</p>
+</li>
+<li><p><strong>引用组件</strong></p>
+<p>①局部引用</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230801192952353.png" alt="image-20230801192952353"></p>
+<p>②全局引用</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230801193012423.png" alt="image-20230801193012423"></p>
+</li>
+<li><p><strong><code>组件的事件处理函数需要定义到 methods 节点中</code></strong></p>
+</li>
+</ul>
+<h3 id="组件的样式隔离"><a href="#组件的样式隔离" class="headerlink" title="组件的样式隔离"></a>组件的样式隔离</h3><p>默认情况下，自定义组件的样式只对当前组件生效，不会影响到组件之外的 UI 结构。但是<code>只有 class 选择器会有样式隔离效果</code>，id 选择器、属性选择器、标签选择器不受样式隔离的影响</p>
+<ul>
+<li><p>可以在组件的 .js 文件中通过options配置项修改styleIsolation隔离效果</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// components/test/test.js</span></span><br><span class="line"><span class="title class_">Component</span>(&#123;</span><br><span class="line">  <span class="attr">options</span>: &#123;</span><br><span class="line">    <span class="attr">styleIsolation</span>: <span class="string">&quot;shared&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>styleIsolation</strong> <strong>的可选值</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>可选值</strong></th>
+<th><strong>默认值</strong></th>
+<th align="left"><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>isolated</td>
+<td>是</td>
+<td align="left">表示启用样式隔离，在自定义组件内外，使用 class 指定的样式将不会相互影响</td>
+</tr>
+<tr>
+<td>apply-shared</td>
+<td>否</td>
+<td align="left">表示页面 wxss  样式将影响到自定义组件，但自定义组件  wxss  中指定的样式不会影响页面</td>
+</tr>
+<tr>
+<td>shared</td>
+<td>否</td>
+<td align="left">表示页面 wxss 样式将影响到自定义组件，自定义组件 wxss 中指定的样式也会影响页面和其他设置了 apply-shared 或 shared 的自定义组件</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="methods"><a href="#methods" class="headerlink" title="methods"></a>methods</h3><p>事件处理函数和自定义方法需要定义到 methods 节点中</p>
+<ul>
+<li><p>自定义方法名称建议以_开头</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">methods</span>: &#123;</span><br><span class="line">    addCount () &#123; <span class="comment">// 事件处理函数</span></span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">        <span class="attr">count</span>: <span class="variable language_">this</span>.<span class="property">data</span>.<span class="property">count</span> + <span class="number">1</span></span><br><span class="line">      &#125;)</span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">_showToast</span>()</span><br><span class="line">    &#125;,</span><br><span class="line">    _showToast () &#123; <span class="comment">// 自定义方法</span></span><br><span class="line">      wx.<span class="title function_">showToast</span>(&#123;</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&#x27;count值是&#x27;</span> + <span class="variable language_">this</span>.<span class="property">data</span>.<span class="property">count</span>,</span><br><span class="line">        <span class="attr">icon</span>: <span class="string">&quot;none&quot;</span></span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="properties-属性"><a href="#properties-属性" class="headerlink" title="properties 属性"></a><strong>properties</strong> <strong>属性</strong></h3><p>properties 是组件的对外属性，用来接收外界传递到组件中的数据</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230802205612432.png" alt="image-20230802205612432"></p>
+<ul>
+<li><p>properties 中的值全等于（&#x3D;&#x3D;&#x3D;）data中的值，并且也是可读写的，修改方式与修改data中的值一样</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">        <span class="attr">max</span>: <span class="variable language_">this</span>.<span class="property">data</span>.<span class="property">max</span> + <span class="number">1</span></span><br><span class="line">      &#125;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="数据监听器"><a href="#数据监听器" class="headerlink" title="数据监听器"></a><strong>数据监听器</strong></h3><p>数据监听器用于监听和响应任何属性和数据字段的变化，从而执行特定的操作。它的作用类似于 vue 中的 watch 侦听器，在 observers 节点下声明监听器</p>
+<ul>
+<li>字段监听</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230802211408132.png" alt="image-20230802211408132"></p>
+<ul>
+<li><strong>监听对象属性的变化</strong></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230802211551556.png" alt="image-20230802211551556"></p>
+<h3 id="纯数据字段"><a href="#纯数据字段" class="headerlink" title="纯数据字段"></a>纯数据字段</h3><p>纯数据字段指的是那些不用于界面渲染的 data 字段，纯数据字段有助于提升页面更新的性能</p>
+<ul>
+<li><p>使用</p>
+<p>在 Component 构造器的 options 节点中，指定 pureDataPattern 为一个正则表达式，字段名符合这个正则表达式的字段将成为纯数据字段</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230802223101746.png" alt="image-20230802223101746"></p>
+</li>
+</ul>
+<h3 id="组件生命周期函数"><a href="#组件生命周期函数" class="headerlink" title="组件生命周期函数"></a>组件生命周期函数</h3><p>声明在Component 构造器的第一级参数中 lifetimes 字段内</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230802224238364.png" alt="image-20230802224238364"></p>
+<table>
+<thead>
+<tr>
+<th><strong>生命周期函数</strong></th>
+<th><strong>参数</strong></th>
+<th><strong>描述说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>created </code></td>
+<td>无</td>
+<td>在组件实例刚刚被创建时执行</td>
+</tr>
+<tr>
+<td><code>attached </code></td>
+<td>无</td>
+<td>在组件实例进入页面节点树时执行</td>
+</tr>
+<tr>
+<td>ready</td>
+<td>无</td>
+<td>在组件在视图层布局完成后执行</td>
+</tr>
+<tr>
+<td>moved</td>
+<td>无</td>
+<td>在组件实例被移动到节点树另一个位置时执行</td>
+</tr>
+<tr>
+<td><code>detached  </code></td>
+<td>无</td>
+<td>在组件实例被从页面节点树移除时执行</td>
+</tr>
+<tr>
+<td>error</td>
+<td>Object Error</td>
+<td>每当组件方法抛出错误时执行</td>
+</tr>
+</tbody></table>
+<p>① 组件实例刚被创建好的时候，created 生命周期函数会被触发</p>
+<ul>
+<li><p>不能调用 setData</p>
+</li>
+<li><p>通常在这个生命周期函数中，只应该用于给组件的 this 添加一些自定义的属性字段</p>
+</li>
+</ul>
+<p>② 在组件完全初始化完毕、进入页面节点树后， attached 生命周期函数会被触发</p>
+<ul>
+<li><p>此时， this.data 已被初始化完毕</p>
+</li>
+<li><p>这个生命周期很有用，绝大多数初始化的工作可以在这个时机进行（例如发请求获取初始数据）</p>
+</li>
+</ul>
+<p>③ 在组件离开页面节点树后， detached 生命周期函数会被触发</p>
+<ul>
+<li><p>退出一个页面时，会触发页面内每个自定义组件的 detached 生命周期函数</p>
+</li>
+<li><p>此时适合做一些清理性质的工作</p>
+</li>
+</ul>
+<h3 id="组件所在页面的生命周期"><a href="#组件所在页面的生命周期" class="headerlink" title="组件所在页面的生命周期"></a><strong>组件所在页面的生命周期</strong></h3><p>自定义组件的行为依赖于页面状态的变化，此时就需要用到组件所在页面的生命周期，定义在 pageLifetimes 节点中</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230802225326866.png" alt="image-20230802225326866"></p>
+<table>
+<thead>
+<tr>
+<th><strong>生命周期函数</strong></th>
+<th><strong>参数</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>show</td>
+<td>无</td>
+<td>组件所在的页面被展示时执行</td>
+</tr>
+<tr>
+<td>hide</td>
+<td>无</td>
+<td>组件所在的页面被隐藏时执行</td>
+</tr>
+<tr>
+<td>resize</td>
+<td>Object Size</td>
+<td>组件所在的页面尺寸变化时执行</td>
+</tr>
+</tbody></table>
+<h3 id="插槽"><a href="#插槽" class="headerlink" title="插槽"></a><strong>插槽</strong></h3><p>在自定义组件的 wxml 结构中，可以提供一个 <slot> 节点（插槽），用于承载组件使用者提供的 wxml 结构</p>
+<ul>
+<li><p>单个插槽</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230803093305463.png" alt="image-20230803093305463"></p>
+</li>
+<li><p>多个插槽</p>
+<p>需要使用多 <slot> 插槽时，可以在组件的 .js 文件中 options节点下将multipleSlots 设置为 true</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Component</span>(&#123;</span><br><span class="line">  <span class="attr">options</span>: &#123;</span><br><span class="line">    <span class="string">&quot;multipleSlots&quot;</span>: <span class="literal">true</span></span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>需要指定 slot 的 name 属性，在使用时通过 slot 属性指定插槽的位置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 指定组件的插槽名称</span><br><span class="line">&lt;slot name=&quot;before&quot;&gt;&lt;/slot&gt;</span><br><span class="line">  &lt;view&gt;</span><br><span class="line">    test3 - 插槽</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">&lt;slot name=&quot;after&quot;&gt;&lt;/slot&gt;</span><br><span class="line"></span><br><span class="line">// 通过slot属性使用插槽</span><br><span class="line">&lt;test3&gt;</span><br><span class="line">  &lt;view slot=&quot;before&quot;&gt;</span><br><span class="line">    插槽的内容 - 前</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">  &lt;text slot=&quot;after&quot;&gt; 后 &lt;/text&gt;</span><br><span class="line">&lt;/test3&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="组件通信"><a href="#组件通信" class="headerlink" title="组件通信"></a>组件通信</h3><h4 id="父传子"><a href="#父传子" class="headerlink" title="父传子"></a>父传子</h4><ul>
+<li><p>属性绑定：用于父组件向子组件的指定属性设置数据，仅能设置 JSON 兼容的数据（不能传递方法）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 父组件中</span><br><span class="line">&lt;test4 count=&quot;&#123;&#123;count&#125;&#125;&quot;&gt;&lt;/test4&gt;</span><br><span class="line"></span><br><span class="line">// 子组件的.js文件中</span><br><span class="line">Component(&#123;</span><br><span class="line">    properties: &#123;</span><br><span class="line">      count: Number</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;）</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="子传父"><a href="#子传父" class="headerlink" title="子传父"></a>子传父</h4><ul>
+<li><p>事件绑定：事件绑定用于实现子向父传值，可以传递任何类型的数据</p>
+<p>①在父组件的 js 中，定义一个函数，这个函数即将通过自定义事件的形式，传递给子组件</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// e.detail.value 可以获得子组件传递的数据</span></span><br><span class="line">syncCount (e) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">      <span class="attr">count</span>: e.<span class="property">detail</span>.<span class="property">value</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+
+
+<p>②在父组件的 wxml 中，通过自定义事件的形式，将步骤 1 中定义的函数引用，传递给子组件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;test4 count=&quot;&#123;&#123;count&#125;&#125;&quot; bind:syncCount=&quot;syncCount&quot;&gt;&lt;/test4&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>③在子组件的 js 中，通过调用 this.triggerEvent(‘自定义事件名称’, { &#x2F;* 参数对象 *&#x2F; }) ，将数据发送到父组件</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">addCount () &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">setData</span>(&#123;</span><br><span class="line">    <span class="attr">count</span>: <span class="variable language_">this</span>.<span class="property">properties</span>.<span class="property">count</span> + <span class="number">1</span></span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">triggerEvent</span>(<span class="string">&#x27;syncCount&#x27;</span>, &#123;<span class="attr">value</span>: 			<span class="variable language_">this</span>.<span class="property">properties</span>.<span class="property">count</span>&#125;) <span class="comment">// 传递的value也可以以是方法</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>④在父组件的 js 中，通过 e.detail 获取到子组件传递过来的数据</p>
+</li>
+<li><p>父组件还可以通过 this.selectComponent(“id或class选择器”)  获取子组件实例对象，这样就可以直接访问子组件的任意数据和方法</p>
+</li>
+</ul>
+<h3 id="behaviors"><a href="#behaviors" class="headerlink" title="behaviors"></a><strong>behaviors</strong></h3><p>behaviors 是小程序中，用于实现组件间代码共享的特性，类似于 Vue.js 中的 “mixins”</p>
+<ul>
+<li><p>创建behavior</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230803144218063.png" alt="image-20230803144218063"></p>
+</li>
+<li><p>导入behavior</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// components/test4/test4.js</span></span><br><span class="line"><span class="keyword">const</span> behavior = <span class="built_in">require</span>(<span class="string">&#x27;../../behaviors/behavior&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="title class_">Component</span>(&#123;</span><br><span class="line">  <span class="attr">behaviors</span>: [behavior],</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>共享的数据和方法会挂载到原型上，可以直接使用</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230803144543468.png" alt="image-20230803144543468"></p>
+</li>
+<li><p>behavior 可用的节点</p>
+<table>
+<thead>
+<tr>
+<th><strong>可用的节点</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>是否必填</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>properties  </code></td>
+<td>Object Map</td>
+<td>否</td>
+<td>同组件的属性</td>
+</tr>
+<tr>
+<td><code>data  </code></td>
+<td>Object</td>
+<td>否</td>
+<td>同组件的数据</td>
+</tr>
+<tr>
+<td><code>methods </code></td>
+<td>Object</td>
+<td>否</td>
+<td>同自定义组件的方法</td>
+</tr>
+<tr>
+<td><code>behaviors  </code></td>
+<td>String Array</td>
+<td>否</td>
+<td>引入其它的 behavior</td>
+</tr>
+<tr>
+<td>created</td>
+<td>Function</td>
+<td>否</td>
+<td>生命周期函数</td>
+</tr>
+<tr>
+<td>attached</td>
+<td>Function</td>
+<td>否</td>
+<td>生命周期函数</td>
+</tr>
+<tr>
+<td>ready</td>
+<td>Function</td>
+<td>否</td>
+<td>生命周期函数</td>
+</tr>
+<tr>
+<td>moved</td>
+<td>Function</td>
+<td>否</td>
+<td>生命周期函数</td>
+</tr>
+<tr>
+<td>detached</td>
+<td>Function</td>
+<td>否</td>
+<td>生命周期函数</td>
+</tr>
+</tbody></table>
+</li>
+<li><p><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/behaviors.html">同名字段的覆盖和组合规则</a></p>
+</li>
+</ul>
+<h2 id="使用-npm-包"><a href="#使用-npm-包" class="headerlink" title="使用 npm 包"></a>使用 npm 包</h2><h3 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h3><p>①不支持依赖于 Node.js 内置库的包</p>
+<p>②不支持依赖于浏览器内置对象的包</p>
+<p>③不支持依赖于 C++ 插件的包</p>
+<h3 id="vant-weapp"><a href="#vant-weapp" class="headerlink" title="vant weapp"></a>vant weapp</h3><ul>
+<li><p>在小程序项目中，安装<a href="https://vant-contrib.gitee.io/vant-weapp/#/quickstart"> Vant 组件库</a>主要分为如下 3 步：</p>
+<p>①通过 npm 安装</p>
+<p>②构建 npm 包</p>
+<p>③修改 app.json</p>
+</li>
+<li><p>定制vant weapp 全局主题样式，在 app.wxss 中，写入 CSS 变量，<a href="https://github.com/youzan/vant-weapp/blob/dev/packages/common/style/var.less">配置文件</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">page &#123;</span><br><span class="line">  --button-primary-background-color: pink;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230803161437494.png" alt="image-20230803161437494"></p>
+</li>
+</ul>
+<h3 id="API-Promise化"><a href="#API-Promise化" class="headerlink" title="API Promise化"></a><strong>API Promise</strong>化</h3><p>默认情况下，小程序官方提供的异步 API 都是基于回调函数实现的，容易造成回调地狱的问题，代码的可读性、维护性差。通过额外的配置，将官方提供的、基于回调函数的异步 API，升级改造为基于 Promise 的异步 API</p>
+<ul>
+<li><p><strong>实现</strong> <strong>API Promise</strong> <strong>化</strong>：依赖于 miniprogram-api-promise 这个第三方的 npm 包</p>
+<p>1、安装</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save miniprogram-api-promise</span><br></pre></td></tr></table></figure>
+
+<p>2、重构 npm</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230803165253431.png" alt="image-20230803165253431"></p>
+<p>3、 在 app.js 中，调用 promisifyAll()</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//app.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> &#123; promisifyAll &#125; <span class="keyword">from</span> <span class="string">&#x27;miniprogram-api-promise&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> wxp = wx.<span class="property">p</span> = &#123;&#125;</span><br><span class="line"><span class="title function_">promisifyAll</span>(wx, wxp)</span><br></pre></td></tr></table></figure>
+
+<p>4、使用</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="title function_">getInfo</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="keyword">const</span> &#123;<span class="attr">data</span>: res&#125; = <span class="keyword">await</span> wx.<span class="property">p</span>.<span class="title function_">request</span>(&#123;</span><br><span class="line">    <span class="attr">method</span>: <span class="string">&#x27;GET&#x27;</span>,</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;https://applet-base-api-t.itheima.net/api/get&#x27;</span>,</span><br><span class="line">    <span class="attr">data</span>: &#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;zs&#x27;</span>,</span><br><span class="line">      <span class="attr">age</span>: <span class="number">20</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(res);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="全局数据共享"><a href="#全局数据共享" class="headerlink" title="全局数据共享"></a>全局数据共享</h2><p>在小程序中，可使用 mobx-miniprogram 配合 mobx-miniprogram-bindings 实现全局数据共享。其中：</p>
+<ul>
+<li><p>lmobx-miniprogram 用来创建 Store 实例对象</p>
+</li>
+<li><p>mobx-miniprogram-bindings 用来把 Store 中的共享数据或方法，绑定到组件或页面中使用</p>
+</li>
+</ul>
+<h3 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a><a href="https://www.npmjs.com/package/mobx-miniprogram-bindings">安装包</a></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save mobx-miniprogram mobx-miniprogram-bindings</span><br></pre></td></tr></table></figure>
+
+<h3 id="定义store"><a href="#定义store" class="headerlink" title="定义store"></a>定义store</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// store.js</span></span><br><span class="line"><span class="keyword">import</span> &#123; observable, action &#125; <span class="keyword">from</span> <span class="string">&quot;mobx-miniprogram&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> store = <span class="title function_">observable</span>(&#123;</span><br><span class="line">  <span class="comment">// 数据字段</span></span><br><span class="line">  <span class="attr">numA</span>: <span class="number">1</span>,</span><br><span class="line">  <span class="attr">numB</span>: <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 计算属性</span></span><br><span class="line">  <span class="keyword">get</span> <span class="title function_">sum</span>() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">numA</span> + <span class="variable language_">this</span>.<span class="property">numB</span>;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// actions</span></span><br><span class="line">  <span class="attr">updateNumA</span>: <span class="title function_">action</span>(<span class="keyword">function</span> (<span class="params">step</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">numA</span> += step</span><br><span class="line">  &#125;),</span><br><span class="line">  <span class="attr">updateNumB</span>: <span class="title function_">action</span>(<span class="keyword">function</span> (<span class="params">step</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">numB</span> += step</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用-store"><a href="#使用-store" class="headerlink" title="使用 store"></a>使用 store</h3><ul>
+<li><p>在page页面使用store，在.js文件中</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 导入需要的包和store</span></span><br><span class="line"><span class="keyword">import</span> &#123; createStoreBindings &#125; <span class="keyword">from</span> <span class="string">&quot;mobx-miniprogram-bindings&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; store &#125; <span class="keyword">from</span> <span class="string">&quot;../../store/store&quot;</span>;</span><br><span class="line"><span class="comment">// 在 onload 生命周期给page页面实例挂载storeBindings</span></span><br><span class="line"><span class="attr">onLoad</span>: <span class="keyword">function</span> (<span class="params">options</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">storeBindings</span> = <span class="title function_">createStoreBindings</span>(<span class="variable language_">this</span>, &#123;</span><br><span class="line">      store,</span><br><span class="line">      <span class="attr">fields</span>: [<span class="string">&quot;numA&quot;</span>, <span class="string">&quot;numB&quot;</span>, <span class="string">&quot;sum&quot;</span>], <span class="comment">// 挂载数据</span></span><br><span class="line">      <span class="attr">actions</span>: [<span class="string">&quot;updateNumA&quot;</span>, <span class="string">&quot;updateNumB&quot;</span>], <span class="comment">// 方法</span></span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;,</span><br><span class="line"><span class="comment">// 清除挂载的方法    </span></span><br><span class="line"> <span class="attr">onUnload</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">storeBindings</span>.<span class="title function_">destroyStoreBindings</span>();</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- 可以直接使用store挂载的数据和方法 --&gt;</span><br><span class="line">&lt;view&gt;</span><br><span class="line">  &#123;&#123;numA&#125;&#125; + &#123;&#123;numB&#125;&#125; = &#123;&#123;sum&#125;&#125;</span><br><span class="line">&lt;/view&gt;</span><br><span class="line">&lt;van-button type=&quot;primary&quot; data-step=&quot;&#123;&#123;-1&#125;&#125;&quot; bindtap=&quot;changeNumA&quot;&gt; numA - 1&lt;/van-button&gt;</span><br><span class="line">&lt;van-button type=&quot;primary&quot; data-step=&quot;&#123;&#123;1&#125;&#125;&quot; bindtap=&quot;changeNumB&quot;&gt; numB + 1&lt;/van-button&gt;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>在组件中使用store，在.js文件中</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; storeBindingsBehavior &#125; <span class="keyword">from</span> <span class="string">&quot;mobx-miniprogram-bindings&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; store &#125; <span class="keyword">from</span> <span class="string">&quot;./store&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Component</span>(&#123;</span><br><span class="line">  <span class="attr">behaviors</span>: [storeBindingsBehavior],</span><br><span class="line"></span><br><span class="line">  <span class="attr">storeBindings</span>: &#123;</span><br><span class="line">    store,</span><br><span class="line">    <span class="attr">fields</span>: &#123;</span><br><span class="line">      <span class="attr">numA</span>: <span class="function">() =&gt;</span> store.<span class="property">numA</span>, <span class="comment">// 映射numA，也可以写成&quot;numA&quot;</span></span><br><span class="line">      <span class="attr">numB</span>: <span class="function">(<span class="params">store</span>) =&gt;</span> store.<span class="property">numB</span>, <span class="comment">// 或者&quot;numB&quot;</span></span><br><span class="line">      <span class="attr">sum</span>: <span class="string">&quot;sum&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">actions</span>: &#123;</span><br><span class="line">      <span class="attr">updateNumA</span>: <span class="string">&quot;updateNumA&quot;</span>,</span><br><span class="line">      <span class="attr">updateNumB</span>: <span class="string">&quot;updateNumB&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">methods</span>: &#123;</span><br><span class="line">    <span class="title function_">myMethod</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">data</span>.<span class="property">sum</span>; <span class="comment">// 来自于 MobX store 的字段</span></span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="分包"><a href="#分包" class="headerlink" title="分包"></a>分包</h2><p>分包指的是把一个完整的小程序项目，按照需求划分为不同的子包，在构建时打包成不同的分包，用户在使用时按需进行加载</p>
+<ul>
+<li><p><strong>分包后</strong> <strong>项目的构成</strong></p>
+<p>主包：一般只包含项目的启动页面或 TabBar 页面、以及所有分包都需要用到的一些公共资源</p>
+<p>分包：只包含和当前分包有关的页面和私有资源</p>
+</li>
+<li><p>整个小程序所有分包大小不超过 16M（主包 + 所有分包）,单个分包&#x2F;主包大小不能超过 2M</p>
+</li>
+</ul>
+<h3 id="使用分包"><a href="#使用分包" class="headerlink" title="使用分包"></a>使用分包</h3>]]></content>
       <categories>
         <category>web</category>
       </categories>
       <tags>
         <tag>miniapps</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CAD操作快捷键</title>
-    <url>/cad/quickly/</url>
-    <content><![CDATA[<h2 id="1-入门"><a href="#1-入门" class="headerlink" title="1 入门"></a>1 入门</h2><h3 id="1-1-前言"><a href="#1-1-前言" class="headerlink" title="1.1 前言"></a>1.1 前言</h3><p>op 进入 option、选项功能，或空白右击，</p>
-<p>z+空格+e+空格 图形回到正中央</p>
-<h3 id="1-2-直线-快捷键-L"><a href="#1-2-直线-快捷键-L" class="headerlink" title="1.2 直线 - 快捷键 L"></a><strong>1.2 直线 - 快捷键 L</strong></h3><p><strong>定长直线正交</strong>（F8）–L + 空格 + 点一下确定起始点 + 输入数字 + 移动鼠标（横向或纵向）+ 空格结束</p>
-<p><strong>直线中点处直线的绘制</strong><br>前提：对象捕捉（F3）（打开对象捕捉然后右键设置对象捕捉设置的中点），–点绘图中直线+鼠标移至中点处+小三角出现+直线操作</p>
-<p><strong>直线绘制封闭图形</strong> –C 自动封闭图形（选中直线两端点绘制）</p>
-<h3 id="1-3-圆-快捷键-C"><a href="#1-3-圆-快捷键-C" class="headerlink" title="1.3 .圆 - 快捷键 C"></a><strong>1.3 .圆 - 快捷键 C</strong></h3><p><strong>R 定直径的圆</strong> –C+空格+输入半径+空格</p>
-<p>**D 定半径的圆 ** –C+空格+d+空格+输入半径+空格</p>
-<p><strong>（同心圆）</strong>打开对象捕捉设置圆心 –C+空格+输入 d+空格+输入直径+空格</p>
-<p><strong>2P 以已知线段为直径的圆</strong> –C+空格+输入 2p 或选择两点+空格+选择线段两点</p>
-<p><strong>T 与两条相交直线相切的圆</strong>（任选半径）–C+空格+输入 T+制定切点+输入半径+空格</p>
-<p><strong>3P(外切圆)</strong> 三角形的外切圆–C+空格+输入 3p 或选择三点+空格+选择图形三条线任意位置</p>
-<p><strong>tan（内切圆）</strong>三角形的内切圆–C+空格+输入 3p+输入 tan+空格+选择线段+重复输入 tan 和选择</p>
-<h3 id="1-4-圆弧-快捷键-ARC"><a href="#1-4-圆弧-快捷键-ARC" class="headerlink" title="1.4 圆弧 - 快捷键 ARC"></a><strong>1.4 圆弧 - 快捷键 ARC</strong></h3><p><strong>三个点绘制圆弧</strong>–arc+空格+选择三点</p>
-<p>二个点加半径绘制圆弧–arc+空格+e+空格（为了选择端点）+选择点+r+空格（为了选择半径）+输入半径</p>
-<p><font color=red>注意：<strong>圆弧始终为逆时针旋转</strong></font></p>
-<h3 id="1-5-多段线-快捷键-PL"><a href="#1-5-多段线-快捷键-PL" class="headerlink" title="1.5 多段线 - 快捷键 PL"></a><strong>1.5 多段线 - 快捷键 PL</strong></h3><p><strong>多段线绘制圆弧</strong>–先点击多段线+L+空格+确定起始点+a+空格快捷键：R 半径 D 切换圆弧弧度方向</p>
-<p><strong>多条线段合并成多段线</strong>–PE+空格+M 全选中+空格+y+空格+合并+空格空格<br>多线段宽度选择 PE+空格+W</p>
-<p><font color=red>多段线可以设置宽度</font>(练习：用多段线绘制一个箭头)</p>
-<h3 id="1-6-多边形-快捷键-POL"><a href="#1-6-多边形-快捷键-POL" class="headerlink" title="1.6 多边形 - 快捷键 POL"></a><strong>1.6 多边形 - 快捷键 POL</strong></h3><p><strong>指定中心点的多边形</strong>–POL+边数+中心点+半径（内接&#x2F;外切）</p>
-<p><strong>指定边的多边形</strong>–POL+空格+E+空格+先绘制一个有形状的多边形+输入边长+空格</p>
-<h3 id="1-7-移动-快捷键-M-和-复制-快捷键-CO"><a href="#1-7-移动-快捷键-M-和-复制-快捷键-CO" class="headerlink" title="1.7 移动 - 快捷键 M 和 复制 - 快捷键 CO"></a><strong>1.7 移动 - 快捷键 M 和 复制 - 快捷键 CO</strong></h3><p><strong>移动</strong>：m+空格+选中对象+空格+选基点+移动鼠标+点一下</p>
-<p><strong>复制</strong>：co+空格+选中对象+空格+选基点+移动鼠标+点一下(模式可以选择可复制多个 也可选择只复制一次)</p>
-<h3 id="1-8-拉伸-快捷键-S"><a href="#1-8-拉伸-快捷键-S" class="headerlink" title="1.8 拉伸 - 快捷键 S"></a><strong>1.8 拉伸 - 快捷键 S</strong></h3><p>s+空格+选中对象+空格+输入+空格</p>
-<h3 id="1-9-旋转-快捷键-RO"><a href="#1-9-旋转-快捷键-RO" class="headerlink" title="1.9 旋转 - 快捷键 RO"></a><strong>1.9 旋转 - 快捷键 RO</strong></h3><p><strong>复制对象进行旋转</strong>：ro+空格+选中对象+空格+选中基点+c+空格</p>
-<p><strong>参照图形进行旋转</strong>：ro+空格+选中对象+空格+选中基点+r+空格+选中参照</p>
-<h3 id="1-10-镜像-快捷键-MI-和-缩放-快捷键-SC-、对齐缩放-AL"><a href="#1-10-镜像-快捷键-MI-和-缩放-快捷键-SC-、对齐缩放-AL" class="headerlink" title="1.10 镜像 - 快捷键 MI 和 缩放 - 快捷键 SC 、对齐缩放 - AL"></a><strong>1.10 镜像 - 快捷键 MI 和 缩放 - 快捷键 SC 、对齐缩放 - AL</strong></h3><p><strong>镜像</strong>：mi+空格+选中对象+空格+找镜像线(点两下)+空格+直接空格(默认不删除源图像)<br>缩放</p>
-<p><strong>缩放</strong>：sc+空格+选中对象+指定基点+空格+比例因子+空格</p>
-<p><strong>参照缩放</strong>：sc+空格+选中对象+空格+选中基点(顶点位置)+空格+r+选中参照 1+选中参照 2+鼠标移动</p>
-<p>**<font color=red>对齐缩放</font>**（AL）：al+空格+指定第一个源点+指定第一个目标点+指定第二个源点+指定第二个目标点+点击是否缩放+空格(空格默认不锁放)</p>
-<h3 id="1-11-修剪-快捷键-TR-和-延申-快捷键-EX"><a href="#1-11-修剪-快捷键-TR-和-延申-快捷键-EX" class="headerlink" title="1.11 修剪 - 快捷键 TR 和 延申 - 快捷键 EX"></a><strong>1.11 修剪 - 快捷键 TR 和 延申 - 快捷键 EX</strong></h3><p><strong>修剪</strong>：tr+空格+选择基线+空格+需要修剪的线段</p>
-<p><strong>延伸</strong>：ex+空格+选择基线+空格+需要延伸对象+空格</p>
-<p>快速修剪和延申（不需要选择基线）<br>tr+空格+空格<br>ex+空格+空格</p>
-<h3 id="1-12-圆角-快捷键-F-和-倒角-快捷键-CHA"><a href="#1-12-圆角-快捷键-F-和-倒角-快捷键-CHA" class="headerlink" title="1.12 圆角 - 快捷键 F 和 倒角 - 快捷键 CHA"></a><strong>1.12 圆角 - 快捷键 F 和 倒角 - 快捷键 CHA</strong></h3><p><strong>圆角</strong>：f+空格+r+点击两条直线</p>
-<p><strong>倒角</strong>：cha+第一个倒角距离+空格+第二个倒角距离+空格+点击两条直线</p>
-<p>延申为一个角：f+空格+r+输入 0+点击两条直线 或者 cha+d+空格+空格+点击两条直线</p>
-<h3 id="1-13-样条曲线"><a href="#1-13-样条曲线" class="headerlink" title="1.13 样条曲线"></a>1.13 样条曲线</h3><p>样条曲线拟合</p>
-<p>样条曲线控制点</p>
-<h3 id="1-14-阵列"><a href="#1-14-阵列" class="headerlink" title="1.14 阵列"></a>1.14 阵列</h3><p>环形阵列</p>
-<p>矩形阵列</p>
-<p><font color=red>路径阵列</font></p>
-<h3 id="1-15-参数化"><a href="#1-15-参数化" class="headerlink" title="1.15 参数化"></a>1.15 参数化</h3><p>先点击的图形不动，后点击的图形变动</p>
-<p>ctrl 1 快速打开特性面板</p>
-<p>先将图像大概绘制出来,再添加约束</p>
-<h2 id="2-绘图练习"><a href="#2-绘图练习" class="headerlink" title="2 绘图练习"></a>2 绘图练习</h2><h3 id="2-1-偏移-快捷键-o"><a href="#2-1-偏移-快捷键-o" class="headerlink" title="2.1 偏移 - 快捷键 o"></a>2.1 偏移 - 快捷键 o</h3><h3 id="2-2-分解-快捷键-x"><a href="#2-2-分解-快捷键-x" class="headerlink" title="2.2 分解 - 快捷键 x"></a>2.2 分解 - 快捷键 x</h3><p>先选择对象，在输入 x 分解对象</p>
-<h3 id="2-3-绘制与圆相切的直线-tan"><a href="#2-3-绘制与圆相切的直线-tan" class="headerlink" title="2.3 绘制与圆相切的直线 tan"></a>2.3 绘制与圆相切的直线 tan</h3><p>L 空格 tan 选择与圆的切点</p>
-<h3 id="2-4-打断-快捷键-br"><a href="#2-4-打断-快捷键-br" class="headerlink" title="2.4 打断 - 快捷键 br"></a>2.4 打断 - 快捷键 br</h3><h3 id="2-5-构造线-快捷键-xl"><a href="#2-5-构造线-快捷键-xl" class="headerlink" title="2.5 构造线 - 快捷键 xl"></a>2.5 构造线 - 快捷键 xl</h3><p>可以设置角度辅助画图</p>
-<h2 id="3-进阶"><a href="#3-进阶" class="headerlink" title="3 进阶"></a>3 进阶</h2><h3 id="3-1-选择"><a href="#3-1-选择" class="headerlink" title="3.1 选择"></a>3.1 选择</h3><p>从左上开始选择为包选，从右下开始选择为全选，</p>
-<p>点击选择</p>
-<p>点击反选–shilft + 鼠标左键</p>
-<h3 id="3-2-匹配-快捷键-ma"><a href="#3-2-匹配-快捷键-ma" class="headerlink" title="3.2 匹配 - 快捷键 ma"></a>3.2 匹配 - 快捷键 ma</h3><p>快速复制目标样式到选择的元素上</p>
-<h3 id="3-3-点-快捷键-po"><a href="#3-3-点-快捷键-po" class="headerlink" title="3.3 点 - 快捷键 po"></a>3.3 点 - 快捷键 po</h3><h3 id="3-4-重生成模型-快捷键-re"><a href="#3-4-重生成模型-快捷键-re" class="headerlink" title="3.4 重生成模型 - 快捷键 re"></a>3.4 重生成模型 - 快捷键 re</h3><h3 id="3-5-多段线操作-快捷键-pe"><a href="#3-5-多段线操作-快捷键-pe" class="headerlink" title="3.5 多段线操作 - 快捷键 pe"></a>3.5 多段线操作 - 快捷键 pe</h3><h3 id="3-6-打断-快捷键-br"><a href="#3-6-打断-快捷键-br" class="headerlink" title="3.6 打断 - 快捷键 br"></a>3.6 打断 - 快捷键 br</h3><h3 id="3-7-合并-快捷键-j"><a href="#3-7-合并-快捷键-j" class="headerlink" title="3.7 合并 - 快捷键 j"></a>3.7 合并 - 快捷键 j</h3><h3 id="3-8-定距等分-快捷键-me"><a href="#3-8-定距等分-快捷键-me" class="headerlink" title="3.8 定距等分 - 快捷键 me"></a>3.8 定距等分 - 快捷键 me</h3><h3 id="3-9-定数等分-快捷键-div"><a href="#3-9-定数等分-快捷键-div" class="headerlink" title="3.9 定数等分 - 快捷键 div"></a>3.9 定数等分 - 快捷键 div</h3><h3 id="3-10-修订云线-快捷键-revc"><a href="#3-10-修订云线-快捷键-revc" class="headerlink" title="3.10 修订云线 - 快捷键 revc"></a>3.10 修订云线 - 快捷键 revc</h3><h3 id="3-11-射线-快捷键-ray"><a href="#3-11-射线-快捷键-ray" class="headerlink" title="3.11 射线 - 快捷键 ray"></a>3.11 射线 - 快捷键 ray</h3><h3 id="3-12-填充-快捷键-h"><a href="#3-12-填充-快捷键-h" class="headerlink" title="3.12 填充 - 快捷键 h"></a>3.12 填充 - 快捷键 h</h3><h3 id="3-13-绘图次序-快捷键-dr"><a href="#3-13-绘图次序-快捷键-dr" class="headerlink" title="3.13 绘图次序 - 快捷键 dr"></a>3.13 绘图次序 - 快捷键 dr</h3>]]></content>
-      <categories>
-        <category>cad</category>
-      </categories>
-      <tags>
-        <tag>CAD</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OpenLayers</title>
-    <url>/gis/openlayers/</url>
-    <content><![CDATA[<h2 id="OpenLayers-基础学习"><a href="#OpenLayers-基础学习" class="headerlink" title="OpenLayers 基础学习"></a>OpenLayers 基础学习</h2><p>–快捷 <a href="https://openlayers.org/">OpenLayers 官网</a></p>
-<h3 id="WebGIS-简介"><a href="#WebGIS-简介" class="headerlink" title="WebGIS 简介"></a>WebGIS 简介</h3><ul>
-<li><p>GIS 的核心概念：</p>
-<p>GIS（Geographic Information System）是一种用于存储、分析、管理和展示地理数据的计算机系统。以下是 GIS 中的一些核心概念：</p>
-<ol>
-<li>坐标系：地理数据通常以某种坐标系的形式存储，如经纬度坐标系或投影坐标系。</li>
-<li>地理数据：GIS 中的数据是具有地理上的位置信息的数据，如地图、地形、道路、建筑物、人口数据等。</li>
-<li>地图投影：地图投影是将三维地球表示为二维地图的过程。</li>
-<li>叠加分析：叠加分析是在一张地图上查看多个图层的分析，以探究其相互关系。</li>
-<li>空间分析：空间分析是指使用地理数据分析空间关系，如距离、面积和方位等。</li>
-<li>地理信息数据库：GIS 的核心是地理信息数据库，用于存储和管理地理数据。</li>
-<li>可视化：GIS 的目的之一是提供可视化，以方便人们更好地理解地理数据。</li>
-</ol>
-</li>
-<li><p>地图组成结构</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230722230958233.png" alt="image-20230722230958233"></p>
-</li>
-<li><p>Openlayers 的核心概念:</p>
-<p>1、一张<code>Map</code>是由很多<code>Layer</code>图层组成的。</p>
-<p>2、一个<code>Layer</code>对应一个<code>Source</code>矢量数据源</p>
-<p>3、一个<code>Source</code>由很多<code>Feature</code>组成</p>
-<p>4、<code>Feature</code>是<code>Geometry</code>和<code>Style</code>组成</p>
-</li>
-</ul>
-<h3 id="初始化地图"><a href="#初始化地图" class="headerlink" title="初始化地图"></a>初始化地图</h3><ul>
-<li><p>引入 OpenLayers 框架</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://lib.baomitu.com/ol3/4.6.5/ol.css&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://lib.baomitu.com/ol3/4.6.5/ol.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置高德地图 source</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> gaode = <span class="keyword">new</span> ol.<span class="property">layer</span>.<span class="title class_">Tile</span>(&#123;</span><br><span class="line">  <span class="attr">title</span>: <span class="string">&#x27;高德地图&#x27;</span>,</span><br><span class="line">  <span class="attr">source</span>: <span class="keyword">new</span> ol.<span class="property">source</span>.<span class="title function_">XYZ</span>(&#123;</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;http://wprd0&#123;1-4&#125;.is.autonavi.com/appmaptile?lang=zh_cn&amp;size=1&amp;style=7&amp;x=&#123;x&#125;&amp;y=&#123;y&#125;&amp;z=&#123;z&#125;&#x27;</span>,</span><br><span class="line">    <span class="attr">wrapX</span>: <span class="literal">false</span>,</span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>初始化地图</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> map = <span class="keyword">new</span> ol.<span class="title class_">Map</span>(&#123;</span><br><span class="line">  <span class="attr">target</span>: <span class="string">&#x27;map&#x27;</span>, <span class="comment">// 绑定到 map 元素上</span></span><br><span class="line">  <span class="attr">layers</span>: [gaode], <span class="comment">// 设置高德图层</span></span><br><span class="line">  <span class="attr">view</span>: <span class="keyword">new</span> ol.<span class="title class_">View</span>(&#123;</span><br><span class="line">    <span class="comment">// 初始化</span></span><br><span class="line">    <span class="attr">center</span>: [<span class="number">114.3</span>, <span class="number">30.5</span>],</span><br><span class="line">    <span class="attr">zoom</span>: <span class="number">12</span>,</span><br><span class="line">    <span class="attr">projection</span>: <span class="string">&#x27;EPSG:4326&#x27;</span>, <span class="comment">// EPSG:4326 的经纬度范围是：经度范围在 -180° 到 180° 之间，纬度范围在 -90° 到 90° 之间。</span></span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<h4 id="拓展-EPSG-4326-和-EPSG-3857-的区别"><a href="#拓展-EPSG-4326-和-EPSG-3857-的区别" class="headerlink" title="拓展*EPSG:4326 和 EPSG:3857 的区别"></a>拓展*EPSG:4326 和 EPSG:3857 的区别</h4><p>EPSG:4326 和 EPSG:3857 是两个常用的坐标参考系代码，用于在 GIS 中表示地理位置。它们的主要区别如下：</p>
-<ul>
-<li>EPSG:4326 表示一个地理坐标系，使用经纬度来表示地理位置，通常用于地理位置的显示和制图。</li>
-<li>EPSG:3857 表示一个 Web 墨卡托坐标系，使用平面墨卡托投影来表示地理位置。</li>
-</ul>
-<p>因此，两个坐标系的主要区别在于它们使用的坐标系统不同：EPSG:4326 使用的是经纬度，而 EPSG:3857 使用的是平面墨卡托投影。</p>
-<p>EPSG:3857 在在线地图中被广泛使用，因为它能够在 Web 地图上提供更高的精度和更好的分辨率。然而，EPSG:4326 在网络上传输地理位置信息时被更多地使用，因为它使用的是标准的地理坐标系。</p>
-<p>总的来说，选择使用哪个坐标系取决于你的应用需求：如果需要高精度和分辨率，选择 EPSG:3857；如果需要标准的地理坐标系，选择 EPSG:4326</p>
-</li>
-</ul>
-<h3 id="地图控件"><a href="#地图控件" class="headerlink" title="地图控件"></a>地图控件</h3><ul>
-<li><p><em>视图跳转控件</em></p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000324181.png" alt="image-20230723000324181"></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//视图跳转控件</span></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">ZoomToExtent</span> = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">ZoomToExtent</span>(&#123;</span><br><span class="line">  <span class="attr">extent</span>: [<span class="number">110</span>, <span class="number">30</span>, <span class="number">160</span>, <span class="number">30</span>],</span><br><span class="line">&#125;)</span><br><span class="line">map.<span class="title function_">addControl</span>(<span class="title class_">ZoomToExtent</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>放大缩小控件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000628737.png" alt="image-20230723000628737"></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 放大缩小控件</span></span><br><span class="line"><span class="keyword">const</span> zoomslider = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">ZoomSlider</span>()</span><br><span class="line">map.<span class="title function_">addControl</span>(zoomslider)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>全屏控件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230723000902601.png" alt="image-20230723000902601"></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//全屏控件</span></span><br><span class="line"><span class="keyword">const</span> fullScreen = <span class="keyword">new</span> ol.<span class="property">control</span>.<span class="title class_">FullScreen</span>()</span><br><span class="line">map.<span class="title function_">addControl</span>(fullScreen)</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="设置矢量图形"><a href="#设置矢量图形" class="headerlink" title="设置矢量图形"></a>设置矢量图形</h3><p>1、通过几何信息和样式信息构建要素</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> point = <span class="keyword">new</span> ol.<span class="title class_">Feature</span>(&#123;</span><br><span class="line">  <span class="comment">// 几何-点要素</span></span><br><span class="line">  <span class="attr">geometry</span>: <span class="keyword">new</span> ol.<span class="property">geom</span>.<span class="title class_">Point</span>([<span class="number">114.3</span>, <span class="number">30.5</span>]),</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">let</span> style = <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Style</span>(&#123;</span><br><span class="line">  <span class="comment">// 样式信息</span></span><br><span class="line">  <span class="attr">image</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Circle</span>(&#123;</span><br><span class="line">    <span class="attr">radius</span>: <span class="number">10</span>, <span class="comment">//半径</span></span><br><span class="line">    <span class="attr">fill</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Fill</span>(&#123;</span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#ff2d51&#x27;</span>, <span class="comment">// 填充</span></span><br><span class="line">    &#125;),</span><br><span class="line">    <span class="attr">stroke</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Stroke</span>(&#123;</span><br><span class="line">      <span class="comment">// 阴影</span></span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#333&#x27;</span>,</span><br><span class="line">      <span class="attr">width</span>: <span class="number">2</span>,</span><br><span class="line">    &#125;),</span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br><span class="line">point.<span class="title function_">setStyle</span>(style)</span><br></pre></td></tr></table></figure>
-
-<p>2、将要素添加到<code>矢量数据源</code></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 将要素添加到矢量数据源</span></span><br><span class="line"><span class="keyword">const</span> source = <span class="keyword">new</span> ol.<span class="property">source</span>.<span class="title class_">Vector</span>(&#123;</span><br><span class="line">  <span class="attr">features</span>: [point],</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>3、将矢量数据源添加到<code>矢量图层</code></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 将矢量数据源添加到矢量图层</span></span><br><span class="line"><span class="keyword">const</span> layer = <span class="keyword">new</span> ol.<span class="property">layer</span>.<span class="title class_">Vector</span>(&#123;</span><br><span class="line">  source,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>4、将<code>矢量图层</code>添加到地图容器</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 将矢量图层添加到地图容器</span></span><br><span class="line">map.<span class="title function_">addLayer</span>(layer)</span><br></pre></td></tr></table></figure>
-
-<h3 id="加载geojson数据"><a href="#加载geojson数据" class="headerlink" title="加载geojson数据"></a>加载geojson数据</h3><p><code>geojson</code>数据是矢量数据，是包含地理信息的json数据，格式是以key:value的形式存在的。后缀以<code>geojson</code>结尾</p>
-<ul>
-<li><p>geojson设置一个点要素</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230727232143141.png" alt="image-20230727232143141"></p>
-<p>1.点设置</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> data = &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;FeatureCollection&#x27;</span>,</span><br><span class="line">        <span class="attr">features</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">type</span>: <span class="string">&#x27;Feature&#x27;</span>,</span><br><span class="line">            <span class="attr">geometry</span>: &#123;</span><br><span class="line">              <span class="attr">type</span>: <span class="string">&#x27;Point&#x27;</span>, <span class="comment">// 设置点要素</span></span><br><span class="line">              <span class="attr">coordinates</span>: [<span class="number">114.3</span>, <span class="number">30.5</span>],</span><br><span class="line">            &#125;,</span><br><span class="line">          &#125;,</span><br><span class="line">        ],</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">const</span> source = <span class="keyword">new</span> ol.<span class="property">source</span>.<span class="title class_">Vector</span>(&#123;</span><br><span class="line">        <span class="comment">/* 将geojson数据设置给实例数据源 */</span></span><br><span class="line">        <span class="attr">features</span>: <span class="keyword">new</span> ol.<span class="property">format</span>.<span class="title class_">GeoJSON</span>().<span class="title function_">readFeatures</span>(data),</span><br><span class="line">      &#125;)</span><br><span class="line">      <span class="keyword">const</span> layer = <span class="keyword">new</span> ol.<span class="property">layer</span>.<span class="title class_">Vector</span>(&#123;</span><br><span class="line">        source,</span><br><span class="line">      &#125;)</span><br></pre></td></tr></table></figure>
-
-
-
-<p>2.样式设置</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> style = <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Style</span>(&#123;</span><br><span class="line">       <span class="comment">//设置点样式</span></span><br><span class="line">       <span class="attr">image</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Circle</span>(&#123;</span><br><span class="line">         <span class="attr">radius</span>: <span class="number">8</span>,</span><br><span class="line">         <span class="attr">fill</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Fill</span>(&#123;</span><br><span class="line">           <span class="attr">color</span>: <span class="string">&#x27;#ff2d51&#x27;</span>,</span><br><span class="line">         &#125;),</span><br><span class="line">         <span class="attr">stroke</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Stroke</span>(&#123;</span><br><span class="line">           <span class="attr">color</span>: <span class="string">&#x27;#333&#x27;</span>,</span><br><span class="line">           <span class="attr">width</span>: <span class="number">2</span>,</span><br><span class="line">         &#125;),</span><br><span class="line">       &#125;),</span><br><span class="line">     &#125;)</span><br><span class="line">     layer.<span class="title function_">setStyle</span>(style)</span><br><span class="line">     map.<span class="title function_">addLayer</span>(layer)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>geojson设置一个线要素</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230727232043149.png" alt="image-20230727232043149"></p>
-<p>1.线设置</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> data = &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;FeatureCollection&#x27;</span>,</span><br><span class="line">        <span class="attr">features</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">type</span>: <span class="string">&#x27;Feature&#x27;</span>,</span><br><span class="line">            <span class="attr">geometry</span>: &#123;</span><br><span class="line">              <span class="attr">type</span>: <span class="string">&#x27;LineString&#x27;</span>, <span class="comment">// 设置线</span></span><br><span class="line">              <span class="attr">coordinates</span>: [</span><br><span class="line">                [<span class="number">114.3</span>, <span class="number">30.5</span>],</span><br><span class="line">                [<span class="number">116</span>, <span class="number">30.5</span>],</span><br><span class="line">              ],</span><br><span class="line">            &#125;,</span><br><span class="line">          &#125;,</span><br><span class="line">        ],</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
-
-<p>2.样式设置</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//设置样式</span></span><br><span class="line">     <span class="keyword">const</span> style = <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Style</span>(&#123;</span><br><span class="line">       <span class="comment">//边线颜色</span></span><br><span class="line">       <span class="attr">stroke</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Stroke</span>(&#123;</span><br><span class="line">         <span class="attr">color</span>: <span class="string">&#x27;#ff2d51&#x27;</span>,</span><br><span class="line">         <span class="attr">width</span>: <span class="number">4</span>,</span><br><span class="line">       &#125;),</span><br><span class="line">     &#125;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>geojson设置<code>Polygon</code>区</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230727232619978.png" alt="image-20230727232619978"></p>
-<p>1.polygon设置</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> data = &#123;</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;FeatureCollection&quot;</span>,</span><br><span class="line">      <span class="attr">features</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                  <span class="attr">type</span>: <span class="string">&quot;Feature&quot;</span>,</span><br><span class="line">                  <span class="attr">geometry</span>: &#123;</span><br><span class="line">                        <span class="attr">type</span>: <span class="string">&quot;Polygon&quot;</span>,</span><br><span class="line">                        <span class="attr">coordinates</span>: [[[<span class="number">114.30</span>, <span class="number">30.50</span>], [<span class="number">116</span>, <span class="number">30.50</span>], [<span class="number">116</span>, <span class="number">30</span>]]]</span><br><span class="line">                  &#125;</span><br><span class="line">            &#125;</span><br><span class="line">      ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>2.样式设置</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//设置样式</span></span><br><span class="line"><span class="keyword">const</span> style = <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Style</span>(&#123;</span><br><span class="line">      <span class="comment">//边线颜色</span></span><br><span class="line">      <span class="attr">stroke</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Stroke</span>(&#123;</span><br><span class="line">            <span class="attr">color</span>: <span class="string">&#x27;#ff2d51&#x27;</span>,</span><br><span class="line">            <span class="attr">width</span>: <span class="number">2</span></span><br><span class="line">      &#125;),</span><br><span class="line">      <span class="comment">//设置填充色</span></span><br><span class="line">      <span class="attr">fill</span>: <span class="keyword">new</span> ol.<span class="property">style</span>.<span class="title class_">Fill</span>(&#123;</span><br><span class="line">            <span class="attr">color</span>: <span class="string">&quot;rgba(50, 50, 50, 0.3)&quot;</span></span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h2><h2 id="高德-API-调用"><a href="#高德-API-调用" class="headerlink" title="高德 API 调用"></a>高德 API 调用</h2><h2 id="Vue3-整合-Openlayers"><a href="#Vue3-整合-Openlayers" class="headerlink" title="Vue3 整合 Openlayers"></a>Vue3 整合 Openlayers</h2>]]></content>
-      <categories>
-        <category>gis</category>
-      </categories>
-      <tags>
-        <tag>GIS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PicGo+GitHub搭建个人图床</title>
-    <url>/tools/picgo/</url>
-    <content><![CDATA[<h2 id="1-GitHub-创建图床仓库"><a href="#1-GitHub-创建图床仓库" class="headerlink" title="1. GitHub 创建图床仓库"></a>1. GitHub 创建图床仓库</h2><ul>
-<li><p>使用你的 GitHub 账号创建一个图床仓库</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720214539444.png" alt="image-20230720214539444"></p>
-<p>*注意仓库设置公开</p>
-</li>
-<li><p>复制图床仓库的路径</p>
-<p>koibaiyang&#x2F;demo</p>
-</li>
-</ul>
-<h2 id="2-下载安装-PicGo"><a href="#2-下载安装-PicGo" class="headerlink" title="2.下载安装 PicGo"></a>2.下载安装 PicGo</h2><ul>
-<li><p><a href="https://github.com/Molunerfinn/PicGo/releases">PicGo 下载地址</a>下载对应的应用程序并安装</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720215412958.png" alt="image-20230720215412958"></p>
-</li>
-</ul>
-<h2 id="3-配置-GitHub-图床设置"><a href="#3-配置-GitHub-图床设置" class="headerlink" title="3.配置 GitHub 图床设置"></a>3.配置 GitHub <strong>图床设置</strong></h2><ul>
-<li><p>在 GitHub 账户上新建一个 token，在 settings&#x2F;developer settings 目录下新建一个 token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720221210439.png" alt="image-20230720221210439"></p>
-</li>
-<li><p>设置 token 的名称和有效时长 → 选择 repo 这一项 → 创建 token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720221625707.png" alt="image-20230720221625707"></p>
-</li>
-<li><p>复制你的 token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720222049480.png" alt="image-20230720222049480"></p>
-</li>
-<li><p>打开刚刚下载好的应用程序，在图床设置里找到 GitHub 并添加一个图床</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720220242316.png" alt="image-20230720220242316"></p>
-</li>
-<li><p>设置对应的配置</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">可以使用 https://cdn.jsdelivr.net/gh</span><br><span class="line">拼接你的仓库路径 koibaiyang/demo ，设置CDN加速</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720225922939.png" alt="image-20230720225922939"></p>
-</li>
-<li><p>设置完成，已经可以使用 PicGo 图床上传图片，转换为在线链接</p>
-</li>
-</ul>
-<h2 id="4-设置-Typora-快速上传偏好"><a href="#4-设置-Typora-快速上传偏好" class="headerlink" title="4.设置 Typora 快速上传偏好"></a>4.设置 Typora 快速上传偏好</h2><ul>
-<li><p>打开 Typora 的偏好设置 ，选择 PicGo 上传服务设定</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720224157081.png" alt="image-20230720224157081"></p>
-</li>
-<li><p>完成后就可以快捷上传文档里的本地图片并自动转换成在线地址</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720230821697.png" alt="image-20230720230821697"></p>
-</li>
-<li><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720230904282.png" alt="image-20230720230904282"></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>tools</category>
-      </categories>
-      <tags>
-        <tag>tools</tag>
       </tags>
   </entry>
 </search>

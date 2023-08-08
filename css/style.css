@@ -46,7 +46,7 @@
   /* 分割线 */
   --hr-border: antiquewhite;
   --hr-before-color: #ce9c80;
-  --mark-bg: ;
+  --blockquote-color: #aa89c6;
 }
 
 /* 选中文字背景 */
@@ -224,4 +224,8 @@
 
 #article-container.post-content li::marker {
   color: #c4a7fa !important;
+}
+
+blockquote {
+  border-left: 3px solid #f47466 !important;
 }

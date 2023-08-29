@@ -1,73 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CAD操作快捷键</title>
-    <url>/koi/cad/quickly/</url>
-    <content><![CDATA[<h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><blockquote>
-<p>op 进入 option、选项功能，或空白右击，</p>
-</blockquote>
-<blockquote>
-<p>z+空格+e+空格 图形回到正中央</p>
-</blockquote>
-<h3 id="直线-快捷键-L"><a href="#直线-快捷键-L" class="headerlink" title="直线 - 快捷键 L"></a><strong>直线 - 快捷键 L</strong></h3><p><strong>定长直线正交</strong>（F8）–L + 空格 + 点一下确定起始点 + 输入数字 + 移动鼠标（横向或纵向）+ 空格结束</p>
-<p><strong>直线中点处直线的绘制</strong><br>前提：对象捕捉（F3）（打开对象捕捉然后右键设置对象捕捉设置的中点），–点绘图中直线+鼠标移至中点处+小三角出现+直线操作</p>
-<p><strong>直线绘制封闭图形</strong> –C 自动封闭图形（选中直线两端点绘制）</p>
-<h3 id="圆-快捷键-C"><a href="#圆-快捷键-C" class="headerlink" title="圆 - 快捷键 C"></a><strong>圆 - 快捷键 C</strong></h3><p><strong>R 定直径的圆</strong> –C+空格+输入半径+空格</p>
-<p>**D 定半径的圆 ** –C+空格+d+空格+输入半径+空格</p>
-<p><strong>（同心圆）</strong>打开对象捕捉设置圆心 –C+空格+输入 d+空格+输入直径+空格</p>
-<p><strong>2P 以已知线段为直径的圆</strong> –C+空格+输入 2p 或选择两点+空格+选择线段两点</p>
-<p><strong>T 与两条相交直线相切的圆</strong>（任选半径）–C+空格+输入 T+制定切点+输入半径+空格</p>
-<p><strong>3P(外切圆)</strong> 三角形的外切圆–C+空格+输入 3p 或选择三点+空格+选择图形三条线任意位置</p>
-<p><strong>tan（内切圆）</strong>三角形的内切圆–C+空格+输入 3p+输入 tan+空格+选择线段+重复输入 tan 和选择</p>
-<h3 id="圆弧-快捷键-ARC"><a href="#圆弧-快捷键-ARC" class="headerlink" title="圆弧 - 快捷键 ARC"></a><strong>圆弧 - 快捷键 ARC</strong></h3><p><strong>三个点绘制圆弧</strong>–arc+空格+选择三点</p>
-<p>二个点加半径绘制圆弧–arc+空格+e+空格（为了选择端点）+选择点+r+空格（为了选择半径）+输入半径</p>
-<p><font color=red>注意：<strong>圆弧始终为逆时针旋转</strong></font></p>
-<h3 id="多段线-快捷键-PL"><a href="#多段线-快捷键-PL" class="headerlink" title="多段线 - 快捷键 PL"></a><strong>多段线 - 快捷键 PL</strong></h3><p><strong>多段线绘制圆弧</strong>–先点击多段线+L+空格+确定起始点+a+空格快捷键：R 半径 D 切换圆弧弧度方向</p>
-<p><strong>多条线段合并成多段线</strong>–PE+空格+M 全选中+空格+y+空格+合并+空格空格<br>多线段宽度选择 PE+空格+W</p>
-<p><font color=red>多段线可以设置宽度</font>(练习：用多段线绘制一个箭头)</p>
-<h3 id="多边形-快捷键-POL"><a href="#多边形-快捷键-POL" class="headerlink" title="多边形 - 快捷键 POL"></a><strong>多边形 - 快捷键 POL</strong></h3><p><strong>指定中心点的多边形</strong>–POL+边数+中心点+半径（内接&#x2F;外切）</p>
-<p><strong>指定边的多边形</strong>–POL+空格+E+空格+先绘制一个有形状的多边形+输入边长+空格</p>
-<h3 id="移动-快捷键-M-和-复制-快捷键-CO"><a href="#移动-快捷键-M-和-复制-快捷键-CO" class="headerlink" title="** 移动 - 快捷键 M 和 复制 - 快捷键 CO**"></a>** 移动 - 快捷键 M 和 复制 - 快捷键 CO**</h3><p><strong>移动</strong>：m+空格+选中对象+空格+选基点+移动鼠标+点一下</p>
-<p><strong>复制</strong>：co+空格+选中对象+空格+选基点+移动鼠标+点一下(模式可以选择可复制多个 也可选择只复制一次)</p>
-<h3 id="拉伸-快捷键-S"><a href="#拉伸-快捷键-S" class="headerlink" title="拉伸 - 快捷键 S"></a><strong>拉伸 - 快捷键 S</strong></h3><p>s+空格+选中对象+空格+输入+空格</p>
-<h3 id="旋转-快捷键-RO"><a href="#旋转-快捷键-RO" class="headerlink" title="旋转 - 快捷键 RO"></a><strong>旋转 - 快捷键 RO</strong></h3><p><strong>复制对象进行旋转</strong>：ro+空格+选中对象+空格+选中基点+c+空格</p>
-<p><strong>参照图形进行旋转</strong>：ro+空格+选中对象+空格+选中基点+r+空格+选中参照</p>
-<h3 id="镜像-快捷键-MI-和-缩放-快捷键-SC-、对齐缩放-AL"><a href="#镜像-快捷键-MI-和-缩放-快捷键-SC-、对齐缩放-AL" class="headerlink" title="镜像 - 快捷键 MI 和 缩放 - 快捷键 SC 、对齐缩放 - AL"></a><strong>镜像 - 快捷键 MI 和 缩放 - 快捷键 SC 、对齐缩放 - AL</strong></h3><p><strong>镜像</strong>：mi+空格+选中对象+空格+找镜像线(点两下)+空格+直接空格(默认不删除源图像)<br>缩放</p>
-<p><strong>缩放</strong>：sc+空格+选中对象+指定基点+空格+比例因子+空格</p>
-<p><strong>参照缩放</strong>：sc+空格+选中对象+空格+选中基点(顶点位置)+空格+r+选中参照 1+选中参照 2+鼠标移动</p>
-<p>**<font color=red>对齐缩放</font>**（AL）：al+空格+指定第一个源点+指定第一个目标点+指定第二个源点+指定第二个目标点+点击是否缩放+空格(空格默认不锁放)</p>
-<h3 id="修剪-快捷键-TR-和-延申-快捷键-EX"><a href="#修剪-快捷键-TR-和-延申-快捷键-EX" class="headerlink" title="修剪 - 快捷键 TR 和 延申 - 快捷键 EX"></a><strong>修剪 - 快捷键 TR 和 延申 - 快捷键 EX</strong></h3><p><strong>修剪</strong>：tr+空格+选择基线+空格+需要修剪的线段</p>
-<p><strong>延伸</strong>：ex+空格+选择基线+空格+需要延伸对象+空格</p>
-<p>快速修剪和延申（不需要选择基线）<br>tr+空格+空格<br>ex+空格+空格</p>
-<h3 id="圆角-快捷键-F-和-倒角-快捷键-CHA"><a href="#圆角-快捷键-F-和-倒角-快捷键-CHA" class="headerlink" title="圆角 - 快捷键 F 和 倒角 - 快捷键 CHA"></a><strong>圆角 - 快捷键 F 和 倒角 - 快捷键 CHA</strong></h3><p><strong>圆角</strong>：f+空格+r+点击两条直线</p>
-<p><strong>倒角</strong>：cha+第一个倒角距离+空格+第二个倒角距离+空格+点击两条直线</p>
-<p>延申为一个角：f+空格+r+输入 0+点击两条直线 或者 cha+d+空格+空格+点击两条直线</p>
-<h3 id="样条曲线"><a href="#样条曲线" class="headerlink" title="样条曲线"></a>样条曲线</h3><p>样条曲线拟合</p>
-<p>样条曲线控制点</p>
-<h3 id="阵列"><a href="#阵列" class="headerlink" title="阵列"></a>阵列</h3><p>环形阵列</p>
-<p>矩形阵列</p>
-<p><font color=red>路径阵列</font></p>
-<h3 id="参数化"><a href="#参数化" class="headerlink" title="参数化"></a>参数化</h3><p>先点击的图形不动，后点击的图形变动</p>
-<p>ctrl 1 快速打开特性面板</p>
-<p>先将图像大概绘制出来,再添加约束</p>
-<h2 id="绘图练习"><a href="#绘图练习" class="headerlink" title="绘图练习"></a>绘图练习</h2><h3 id="偏移-快捷键-o"><a href="#偏移-快捷键-o" class="headerlink" title="偏移 - 快捷键 o"></a>偏移 - 快捷键 o</h3><h3 id="分解-快捷键-x"><a href="#分解-快捷键-x" class="headerlink" title="分解 - 快捷键 x"></a>分解 - 快捷键 x</h3><p>先选择对象，在输入 x 分解对象</p>
-<h3 id="绘制与圆相切的直线-tan"><a href="#绘制与圆相切的直线-tan" class="headerlink" title="绘制与圆相切的直线 tan"></a>绘制与圆相切的直线 tan</h3><p>L 空格 tan 选择与圆的切点</p>
-<h3 id="打断-快捷键-br"><a href="#打断-快捷键-br" class="headerlink" title="打断 - 快捷键 br"></a>打断 - 快捷键 br</h3><h3 id="构造线-快捷键-xl"><a href="#构造线-快捷键-xl" class="headerlink" title="构造线 - 快捷键 xl"></a>构造线 - 快捷键 xl</h3><p>可以设置角度辅助画图</p>
-<h2 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h2><h3 id="选择"><a href="#选择" class="headerlink" title="选择"></a>选择</h3><p>从左上开始选择为包选，从右下开始选择为全选，</p>
-<p>点击选择</p>
-<p>点击反选–shilft + 鼠标左键</p>
-<h3 id="匹配-快捷键-ma"><a href="#匹配-快捷键-ma" class="headerlink" title="匹配 - 快捷键 ma"></a>匹配 - 快捷键 ma</h3><p>快速复制目标样式到选择的元素上</p>
-<h3 id="点-快捷键-po"><a href="#点-快捷键-po" class="headerlink" title="点 - 快捷键 po"></a>点 - 快捷键 po</h3><h3 id="重生成模型-快捷键-re"><a href="#重生成模型-快捷键-re" class="headerlink" title="重生成模型 - 快捷键 re"></a>重生成模型 - 快捷键 re</h3><h3 id="多段线操作-快捷键-pe"><a href="#多段线操作-快捷键-pe" class="headerlink" title="多段线操作 - 快捷键 pe"></a>多段线操作 - 快捷键 pe</h3><h3 id="打断-快捷键-br-1"><a href="#打断-快捷键-br-1" class="headerlink" title="打断 - 快捷键 br"></a>打断 - 快捷键 br</h3><h3 id="合并-快捷键-j"><a href="#合并-快捷键-j" class="headerlink" title="合并 - 快捷键 j"></a>合并 - 快捷键 j</h3><h3 id="定距等分-快捷键-me"><a href="#定距等分-快捷键-me" class="headerlink" title="定距等分 - 快捷键 me"></a>定距等分 - 快捷键 me</h3><h3 id="定数等分-快捷键-div"><a href="#定数等分-快捷键-div" class="headerlink" title="定数等分 - 快捷键 div"></a>定数等分 - 快捷键 div</h3><h3 id="修订云线-快捷键-revc"><a href="#修订云线-快捷键-revc" class="headerlink" title="修订云线 - 快捷键 revc"></a>修订云线 - 快捷键 revc</h3><h3 id="射线-快捷键-ray"><a href="#射线-快捷键-ray" class="headerlink" title="射线 - 快捷键 ray"></a>射线 - 快捷键 ray</h3><h3 id="填充-快捷键-h"><a href="#填充-快捷键-h" class="headerlink" title="填充 - 快捷键 h"></a>填充 - 快捷键 h</h3><h3 id="绘图次序-快捷键-dr"><a href="#绘图次序-快捷键-dr" class="headerlink" title="绘图次序 - 快捷键 dr"></a>绘图次序 - 快捷键 dr</h3>]]></content>
-      <categories>
-        <category>cad</category>
-      </categories>
-      <tags>
-        <tag>CAD</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>OpenLayers</title>
-    <url>/koi/gis/openlayers/</url>
+    <url>/gis/openlayers/</url>
     <content><![CDATA[<h2 id="OpenLayers-基础学习"><a href="#OpenLayers-基础学习" class="headerlink" title="OpenLayers 基础学习"></a>OpenLayers 基础学习</h2><p>–快捷 <a href="https://openlayers.org/">OpenLayers 官网</a></p>
 <h3 id="WebGIS-简介"><a href="#WebGIS-简介" class="headerlink" title="WebGIS 简介"></a>WebGIS 简介</h3><ul>
 <li><p>GIS 的核心概念：</p>
@@ -176,142 +111,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Mock使用</title>
-    <url>/koi/tools/mock/</url>
-    <content><![CDATA[<blockquote>
-<p><a href="http://mockjs.com/">mock</a>生成随机数据，拦截 Ajax 请求</p>
-</blockquote>
-<h3 id="mock解决的问题"><a href="#mock解决的问题" class="headerlink" title="mock解决的问题"></a>mock解决的问题</h3><ol>
-<li>开发时，后端还没完成数据输出，前端只好写静态模拟数据。数据太长了，将数据写在js文件里，完成后挨个改url。某些逻辑复杂的代码，加入或去除模拟数据时得小心翼翼。想要尽可能还原真实的数据，要么编写更多代码，要么手动修改模拟数据。特殊的格式，例如IP,随机数，图片，地址，需要去收集</li>
-</ol>
-<h3 id="mock的优点"><a href="#mock的优点" class="headerlink" title="mock的优点"></a>mock的优点</h3><ol>
-<li><p>前后端分离</p>
-<p>让前端工程师独立于后端进行开发。</p>
-</li>
-<li><p>增加单元测试的真实性</p>
-<p>通过随机数据，模拟各种场景。</p>
-</li>
-<li><p>开发无侵入</p>
-<p>不需要修改既有代码，就可以拦截Ajax请求，返回模拟的响应数据。</p>
-</li>
-<li><p>用法简单</p>
-<p>符合直觉的接口。</p>
-</li>
-<li><p>数据类型丰富</p>
-<p>支持生成随机的文本、数字、布尔值、日期、邮箱、链接、图片、颜色等。</p>
-</li>
-<li><p>方便扩展</p>
-<p>支持支持扩展更多数据类型，支持自定义函数和正则。</p>
-</li>
-</ol>
-<h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a><a href="https://github.com/nuysoft/Mock/wiki/Getting-Started">基本使用</a></h3><ol>
-<li><p>安装</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install mockjs</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 使用 Mock</span></span><br><span class="line"><span class="keyword">var</span> <span class="title class_">Mock</span> = <span class="built_in">require</span>(<span class="string">&#x27;mockjs&#x27;</span>)</span><br><span class="line"><span class="keyword">var</span> data = <span class="title class_">Mock</span>.<span class="title function_">mock</span>(&#123;</span><br><span class="line">    <span class="comment">// 属性 list 的值是一个数组，其中含有 1 到 10 个元素</span></span><br><span class="line">    <span class="string">&#x27;list|1-10&#x27;</span>: [&#123;</span><br><span class="line">        <span class="comment">// 属性 id 是一个自增数，起始值为 1，每次增 1</span></span><br><span class="line">        <span class="string">&#x27;id|+1&#x27;</span>: <span class="number">1</span></span><br><span class="line">    &#125;]</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// 输出结果</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(data, <span class="literal">null</span>, <span class="number">4</span>))</span><br></pre></td></tr></table></figure></li>
-</ol>
-<blockquote>
-<p>更多用法 ：<a href="http://mockjs.com/examples.html">示例</a></p>
-</blockquote>
-<h3 id="常用整理"><a href="#常用整理" class="headerlink" title="常用整理"></a>常用整理</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> mockdata = <span class="title class_">Mock</span>.<span class="title function_">mock</span>(&#123;</span><br><span class="line">  <span class="string">&quot;arr|2-10&quot;</span>: [&#123;</span><br><span class="line">    <span class="string">&quot;name|1&quot;</span>: [</span><br><span class="line">      <span class="string">&quot;李四&quot;</span>,</span><br><span class="line">      <span class="string">&quot;张三&quot;</span></span><br><span class="line">  ],</span><br><span class="line">    <span class="string">&quot;gender|1&quot;</span>:[</span><br><span class="line">      <span class="string">&quot;男&quot;</span>,</span><br><span class="line">      <span class="string">&quot;女&quot;</span>,</span><br><span class="line">      <span class="string">&quot;秘密&quot;</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;],</span><br><span class="line">  <span class="string">&quot;obj&quot;</span>:&#123;</span><br><span class="line">    <span class="string">&quot;对象1&quot;</span>: <span class="number">123</span>,</span><br><span class="line">    <span class="string">&quot;对象2&quot;</span>: <span class="number">456</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">&quot;numId&quot;</span>:<span class="string">&quot;@natural(100)&quot;</span>,<span class="comment">// 随机生成一段数字</span></span><br><span class="line">  <span class="string">&quot;status|1&quot;</span>:[<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>],</span><br><span class="line">  <span class="string">&quot;price&quot;</span>:<span class="string">&quot;@float(100,200,2,2)&quot;</span>,<span class="comment">// 100-200 内的随机数.两位小数</span></span><br><span class="line">  <span class="string">&quot;date&quot;</span>:<span class="string">&quot;@datetime(yyyy/MM/dd HH:mm:ss)&quot;</span>,<span class="comment">// 获取随机时间</span></span><br><span class="line">  <span class="string">&quot;text&quot;</span>:<span class="string">&quot;@cparagraph(2)&quot;</span>, <span class="comment">//随机2句话</span></span><br><span class="line">  <span class="string">&quot;description&quot;</span>:<span class="string">&quot;@csentence(5)&quot;</span>, <span class="comment">// 随机五个字</span></span><br><span class="line">  <span class="string">&quot;rName&quot;</span>:<span class="string">&quot;@cname()&quot;</span>,<span class="comment">//随机一个名称</span></span><br><span class="line">  <span class="string">&quot;email&quot;</span>:<span class="string">&quot;@email()&quot;</span>,<span class="comment">//随机邮箱</span></span><br><span class="line">  <span class="string">&quot;ip&quot;</span>:<span class="string">&quot;@ip()&quot;</span>,<span class="comment">//随机ip地址</span></span><br><span class="line">  <span class="string">&quot;province&quot;</span>:<span class="string">&quot;@province()&quot;</span>,<span class="comment">//随机省份</span></span><br><span class="line">  <span class="string">&quot;city&quot;</span>:<span class="string">&quot;@city()&quot;</span>,<span class="comment">//随机城市</span></span><br><span class="line">  <span class="string">&quot;country&quot;</span>:<span class="string">&quot;@county()&quot;</span>,<span class="comment">//随机市区</span></span><br><span class="line">  <span class="string">&quot;detailAddress&quot;</span>:<span class="string">&quot;@county(true)&quot;</span>,<span class="comment">//随机地址</span></span><br><span class="line">  <span class="string">&quot;id&quot;</span>:<span class="string">&quot;@id()&quot;</span>, <span class="comment">//随机id</span></span><br><span class="line">  <span class="string">&quot;pic|10&quot;</span>:[</span><br><span class="line">    <span class="title class_">Mock</span>.<span class="property">Random</span>.<span class="title function_">image</span>(<span class="string">&#x27;200x100&#x27;</span>,<span class="string">&#x27;#efefef&#x27;</span>,<span class="string">&#x27;cs&#x27;</span>) <span class="comment">// 随机200X100图片 Random.image( size, background, foreground, format, text )</span></span><br><span class="line">  ]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230829180929915.png" alt="image-20230829180929915"></p>
-<h3 id="数据模板定义"><a href="#数据模板定义" class="headerlink" title="数据模板定义"></a>数据模板定义</h3><h4 id="String"><a href="#String" class="headerlink" title="String"></a>String</h4><ol>
-<li><p><code>&#39;name|min-max&#39;: &#39;string&#39;</code></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> mockdata = <span class="title class_">Mock</span>.<span class="title function_">mock</span>(&#123;</span><br><span class="line">  <span class="string">&quot;string|1-5&quot;</span>:<span class="string">&quot;y&quot;</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="attr">mockdata</span>:&#123;<span class="attr">string</span>: <span class="string">&quot;yyy&quot;</span>&#125; <span class="comment">// 随机1-5个&#x27;y&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>&#39;name|count&#39;: &#39;string&#39;</code></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> mockdata = <span class="title class_">Mock</span>.<span class="title function_">mock</span>(&#123;</span><br><span class="line">  <span class="string">&quot;string|5&quot;</span>:<span class="string">&quot;y&quot;</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="attr">mockdata</span>:&#123;<span class="attr">string</span>: <span class="string">&quot;yyyyy&quot;</span>&#125; <span class="comment">// 5个y</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h4><ol>
-<li><p><code>&#39;name|+1&#39;: number</code></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> mockdata = <span class="title class_">Mock</span>.<span class="title function_">mock</span>(&#123;</span><br><span class="line">  <span class="string">&quot;id|+1&quot;</span>:<span class="number">2</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="attr">mockdata</span>:&#123;<span class="attr">string</span>: <span class="number">2</span>&#125; <span class="comment">// 会自增</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h4><h4 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h4><h4 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h4><h4 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h4><h4 id="RegExp"><a href="#RegExp" class="headerlink" title="RegExp"></a>RegExp</h4><h4 id="Path"><a href="#Path" class="headerlink" title="Path"></a>Path</h4><h3 id="数据占位符定义"><a href="#数据占位符定义" class="headerlink" title="数据占位符定义"></a>数据占位符定义</h3><h4 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h4><h4 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h4><h4 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h4><h4 id="Color"><a href="#Color" class="headerlink" title="Color"></a>Color</h4><h4 id="Text"><a href="#Text" class="headerlink" title="Text"></a>Text</h4><h4 id="Name"><a href="#Name" class="headerlink" title="Name"></a>Name</h4><h4 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h4><h4 id="Address"><a href="#Address" class="headerlink" title="Address"></a>Address</h4><h4 id="Helper"><a href="#Helper" class="headerlink" title="Helper"></a>Helper</h4><h4 id="Miscellaneous"><a href="#Miscellaneous" class="headerlink" title="Miscellaneous"></a>Miscellaneous</h4>]]></content>
+    <title>javabase</title>
+    <url>/java/base/</url>
+    <content><![CDATA[]]></content>
       <categories>
-        <category>tools</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>tools</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>uniapp</title>
-    <url>/koi/tools/uniapp/</url>
-    <content><![CDATA[<h3 id="uniapp-简介"><a href="#uniapp-简介" class="headerlink" title="uniapp 简介"></a>uniapp 简介</h3><p><strong><a href="https://uniapp.dcloud.net.cn/">uni-app </a>是一个使用 <a href="https://cn.vuejs.org/guide/introduction.html">Vue.js</a> 开发所有前端应用的框架</strong>。开发者编写一套代码，可发布到 iOS、Android、H5、以及各种小程序（微信&#x2F;支付宝&#x2F;百度&#x2F;头条&#x2F;QQ&#x2F;钉钉&#x2F;淘宝）、快应用等多个平台。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230806191244667.png" alt="image-20230806191244667"></p>
-<h3 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h3><p>uni-app 官方推荐使用 <a href="https://www.dcloud.io/hbuilderx.html"><strong>HBuilderX</strong></a> 来开发 uni-app 类型的项目。主要好处：模板丰富、完善的智能提示、一键运行</p>
-<ul>
-<li><p>修改编辑器的基本设置</p>
-<p>打开 Settings.json 按需进行配置</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;editor.colorScheme&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Default&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.fontSize&quot;</span><span class="punctuation">:</span> <span class="number">12</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.fontFamily&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Consolas&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.fontFmyCHS&quot;</span><span class="punctuation">:</span> <span class="string">&quot;微软雅黑 Light&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.insertSpaces&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.lineHeight&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1.5&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.minimap.enabled&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.mouseWheelZoom&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.onlyHighlightWord&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.tabSize&quot;</span><span class="punctuation">:</span> <span class="number">2</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.wordWrap&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;explorer.iconTheme&quot;</span><span class="punctuation">:</span> <span class="string">&quot;vs-seti&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.codeassist.px2rem.enabel&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.codeassist.px2upx.enabel&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="uni-app项目"><a href="#uni-app项目" class="headerlink" title="uni-app项目"></a>uni-app项目</h3><h4 id="新建uniapp项目"><a href="#新建uniapp项目" class="headerlink" title="新建uniapp项目"></a>新建uniapp项目</h4><p>选择uni-ui项目模板</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230806193258158.png" alt="image-20230806193258158"></p>
-<h4 id="把项目运行到微信开发者工具"><a href="#把项目运行到微信开发者工具" class="headerlink" title="把项目运行到微信开发者工具"></a>把项目运行到微信开发者工具</h4><ul>
-<li><p>配置项目的小程序appid</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230808111648801.png" alt="image-20230808111648801"></p>
-</li>
-<li><p>设置HBuilder微信开发者工具的安装路径</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230808111836223.png" alt="image-20230808111836223"></p>
-</li>
-<li><p>打开微信开发者工具的服务端口设置</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230808111950026.png" alt="image-20230808111950026"></p>
-</li>
-<li><p>运行到小程序</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230808112110455.png" alt="image-20230808112110455"></p>
-</li>
-</ul>
-<h4 id="使用-git-管理仓库"><a href="#使用-git-管理仓库" class="headerlink" title="使用 git 管理仓库"></a>使用 git 管理仓库</h4><ul>
-<li>在项目根目录中新建 <code>.gitignore</code> 忽略文件，并配置如下：</li>
-</ul>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line"># 忽略 node_modules 目录</span><br><span class="line">/node_modules</span><br><span class="line">/unpackage/dist</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>注意：由于我们忽略了 unpackage 目录中<strong>仅有的</strong> dist 目录，因此默认情况下， unpackage 目录不会被 Git 追踪</p>
-</blockquote>
-<blockquote>
-<p>此时，为了让 Git 能够正常追踪 unpackage 目录，按照惯例，我们可以在 unpackage 目录下创建一个叫做 <code>.gitkeep</code> 的文件进行占位</p>
-</blockquote>
-<ol>
-<li>打开终端，切换到项目根目录中，运行如下的命令，初始化本地 Git 仓库：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>将所有文件都加入到暂存区：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>本地提交更新：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;init project&quot;</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>tools</category>
-      </categories>
-      <tags>
-        <tag>tools</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>小兔鲜购物网站</title>
-    <url>/koi/project/xtx/</url>
-    <content><![CDATA[<p><a href="https://github.com/koibaiyang/xtx-lx">小兔鲜购物网站</a></p>
-]]></content>
-      <categories>
-        <category>project</category>
-      </categories>
-      <tags>
-        <tag>vue3</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
     <title>uniappShop</title>
-    <url>/koi/project/shopping/</url>
+    <url>/project/shopping/</url>
     <content><![CDATA[<blockquote>
 <p>uniapp - 小程序购物</p>
 </blockquote>
@@ -944,78 +756,20 @@
       </tags>
   </entry>
   <entry>
-    <title>PicGo+GitHub搭建个人图床</title>
-    <url>/koi/tools/picgo/</url>
-    <content><![CDATA[<h2 id="1-GitHub-创建图床仓库"><a href="#1-GitHub-创建图床仓库" class="headerlink" title="1. GitHub 创建图床仓库"></a>1. GitHub 创建图床仓库</h2><ul>
-<li><p>使用你的 GitHub 账号创建一个图床仓库</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720214539444.png" alt="image-20230720214539444"></p>
-<p>*注意仓库设置公开</p>
-</li>
-<li><p>复制图床仓库的路径</p>
-<p>koibaiyang&#x2F;demo</p>
-</li>
-</ul>
-<h2 id="2-下载安装-PicGo"><a href="#2-下载安装-PicGo" class="headerlink" title="2.下载安装 PicGo"></a>2.下载安装 PicGo</h2><ul>
-<li><p><a href="https://github.com/Molunerfinn/PicGo/releases">PicGo 下载地址</a>下载对应的应用程序并安装</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720215412958.png" alt="image-20230720215412958"></p>
-</li>
-</ul>
-<h2 id="3-配置-GitHub-图床设置"><a href="#3-配置-GitHub-图床设置" class="headerlink" title="3.配置 GitHub 图床设置"></a>3.配置 GitHub <strong>图床设置</strong></h2><ul>
-<li><p>在 GitHub 账户上新建一个 token，在 settings&#x2F;developer settings 目录下新建一个 token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720221210439.png" alt="image-20230720221210439"></p>
-</li>
-<li><p>设置 token 的名称和有效时长 → 选择 repo 这一项 → 创建 token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720221625707.png" alt="image-20230720221625707"></p>
-</li>
-<li><p>复制你的 token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720222049480.png" alt="image-20230720222049480"></p>
-</li>
-<li><p>打开刚刚下载好的应用程序，在图床设置里找到 GitHub 并添加一个图床</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720220242316.png" alt="image-20230720220242316"></p>
-</li>
-<li><p>设置对应的配置</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">可以使用 https://cdn.jsdelivr.net/gh</span><br><span class="line">拼接你的仓库路径 koibaiyang/demo ，设置CDN加速</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720225922939.png" alt="image-20230720225922939"></p>
-</li>
-<li><p>设置完成，已经可以使用 PicGo 图床上传图片，转换为在线链接</p>
-</li>
-</ul>
-<h2 id="4-设置-Typora-快速上传偏好"><a href="#4-设置-Typora-快速上传偏好" class="headerlink" title="4.设置 Typora 快速上传偏好"></a>4.设置 Typora 快速上传偏好</h2><ul>
-<li><p>打开 Typora 的偏好设置 ，选择 PicGo 上传服务设定</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720224157081.png" alt="image-20230720224157081"></p>
-</li>
-<li><p>完成后就可以快捷上传文档里的本地图片并自动转换成在线地址</p>
-<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720230821697.png" alt="image-20230720230821697"></p>
-</li>
-<li><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720230904282.png" alt="image-20230720230904282"></p>
-</li>
-</ul>
+    <title>小兔鲜购物网站</title>
+    <url>/project/xtx/</url>
+    <content><![CDATA[<p><a href="https://github.com/koibaiyang/xtx-lx">小兔鲜购物网站</a></p>
 ]]></content>
       <categories>
-        <category>tools</category>
+        <category>project</category>
       </categories>
       <tags>
-        <tag>tools</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML</title>
-    <url>/koi/web/html/</url>
-    <content><![CDATA[<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h3 id="HTML-简介"><a href="#HTML-简介" class="headerlink" title="HTML 简介"></a>HTML 简介</h3><p>HTML 是用来描述网页的一种语言，指的是超文本标记语言 (<strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage)，HTML 不是一种编程语言。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>段落<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="HTML-标签"><a href="#HTML-标签" class="headerlink" title="HTML 标签"></a>HTML 标签</h3><h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2>]]></content>
-      <categories>
-        <category>web</category>
-      </categories>
-      <tags>
-        <tag>web</tag>
+        <tag>vue3</tag>
       </tags>
   </entry>
   <entry>
     <title>Axios</title>
-    <url>/koi/web/axios/</url>
+    <url>/web/axios/</url>
     <content><![CDATA[]]></content>
       <tags>
         <tag>web</tag>
@@ -1023,7 +777,7 @@
   </entry>
   <entry>
     <title>CSS</title>
-    <url>/koi/web/css/</url>
+    <url>/web/css/</url>
     <content><![CDATA[<h2 id="CSS-自定义属性（变量）"><a href="#CSS-自定义属性（变量）" class="headerlink" title="CSS 自定义属性（变量）"></a>CSS 自定义属性（变量）</h2><p>由自定义属性标记设定值（比如： **<code>--main-color: black;</code>**），由 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/var">var()</a> 函数来获取值（比如： <code>color: var(--main-color);</code>）</p>
 <h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p>声明一个自定义属性，属性名需要以两个减号（<code>--</code>）开始，属性值则可以是任何有效的 CSS 值。和其他属性一样，自定义属性也是写在规则集之内的</p>
 <ul>
@@ -1263,8 +1017,22 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML</title>
+    <url>/web/html/</url>
+    <content><![CDATA[<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h3 id="HTML-简介"><a href="#HTML-简介" class="headerlink" title="HTML 简介"></a>HTML 简介</h3><p>HTML 是用来描述网页的一种语言，指的是超文本标记语言 (<strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage)，HTML 不是一种编程语言。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>段落<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="HTML-标签"><a href="#HTML-标签" class="headerlink" title="HTML 标签"></a>HTML 标签</h3><h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2>]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>web</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>NodeJs</title>
-    <url>/koi/web/nodejs/</url>
+    <url>/web/nodejs/</url>
     <content><![CDATA[]]></content>
       <tags>
         <tag>NodeJS</tag>
@@ -1272,7 +1040,7 @@
   </entry>
   <entry>
     <title>JavaScript</title>
-    <url>/koi/web/js/</url>
+    <url>/web/js/</url>
     <content><![CDATA[<h2 id="内置对象"><a href="#内置对象" class="headerlink" title="内置对象"></a>内置对象</h2><h3 id="set"><a href="#set" class="headerlink" title="set"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set">set</a></h3><blockquote>
 <p><code>Set</code>对象是值的集合，你可以按照插入的顺序迭代它的元素。Set 中的元素只会<strong>出现一次</strong>，即 Set 中的元素是唯一的。</p>
 </blockquote>
@@ -1291,8 +1059,16 @@
       </tags>
   </entry>
   <entry>
+    <title>React</title>
+    <url>/web/react/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>react</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>TypeScript</title>
-    <url>/koi/web/ts/</url>
+    <url>/web/ts/</url>
     <content><![CDATA[<h2 id="前端-ts-学习"><a href="#前端-ts-学习" class="headerlink" title="前端 ts 学习"></a>前端 ts 学习</h2>]]></content>
       <tags>
         <tag>web</tag>
@@ -1300,23 +1076,80 @@
   </entry>
   <entry>
     <title>Vue</title>
-    <url>/koi/web/vue/</url>
+    <url>/web/vue/</url>
     <content><![CDATA[]]></content>
       <tags>
         <tag>Vue</tag>
       </tags>
   </entry>
   <entry>
-    <title>React</title>
-    <url>/koi/web/react/</url>
-    <content><![CDATA[]]></content>
+    <title>CAD操作快捷键</title>
+    <url>/cad/quickly/</url>
+    <content><![CDATA[<h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><blockquote>
+<p>op 进入 option、选项功能，或空白右击，</p>
+</blockquote>
+<blockquote>
+<p>z+空格+e+空格 图形回到正中央</p>
+</blockquote>
+<h3 id="直线-快捷键-L"><a href="#直线-快捷键-L" class="headerlink" title="直线 - 快捷键 L"></a><strong>直线 - 快捷键 L</strong></h3><p><strong>定长直线正交</strong>（F8）–L + 空格 + 点一下确定起始点 + 输入数字 + 移动鼠标（横向或纵向）+ 空格结束</p>
+<p><strong>直线中点处直线的绘制</strong><br>前提：对象捕捉（F3）（打开对象捕捉然后右键设置对象捕捉设置的中点），–点绘图中直线+鼠标移至中点处+小三角出现+直线操作</p>
+<p><strong>直线绘制封闭图形</strong> –C 自动封闭图形（选中直线两端点绘制）</p>
+<h3 id="圆-快捷键-C"><a href="#圆-快捷键-C" class="headerlink" title="圆 - 快捷键 C"></a><strong>圆 - 快捷键 C</strong></h3><p><strong>R 定直径的圆</strong> –C+空格+输入半径+空格</p>
+<p>**D 定半径的圆 ** –C+空格+d+空格+输入半径+空格</p>
+<p><strong>（同心圆）</strong>打开对象捕捉设置圆心 –C+空格+输入 d+空格+输入直径+空格</p>
+<p><strong>2P 以已知线段为直径的圆</strong> –C+空格+输入 2p 或选择两点+空格+选择线段两点</p>
+<p><strong>T 与两条相交直线相切的圆</strong>（任选半径）–C+空格+输入 T+制定切点+输入半径+空格</p>
+<p><strong>3P(外切圆)</strong> 三角形的外切圆–C+空格+输入 3p 或选择三点+空格+选择图形三条线任意位置</p>
+<p><strong>tan（内切圆）</strong>三角形的内切圆–C+空格+输入 3p+输入 tan+空格+选择线段+重复输入 tan 和选择</p>
+<h3 id="圆弧-快捷键-ARC"><a href="#圆弧-快捷键-ARC" class="headerlink" title="圆弧 - 快捷键 ARC"></a><strong>圆弧 - 快捷键 ARC</strong></h3><p><strong>三个点绘制圆弧</strong>–arc+空格+选择三点</p>
+<p>二个点加半径绘制圆弧–arc+空格+e+空格（为了选择端点）+选择点+r+空格（为了选择半径）+输入半径</p>
+<p><font color=red>注意：<strong>圆弧始终为逆时针旋转</strong></font></p>
+<h3 id="多段线-快捷键-PL"><a href="#多段线-快捷键-PL" class="headerlink" title="多段线 - 快捷键 PL"></a><strong>多段线 - 快捷键 PL</strong></h3><p><strong>多段线绘制圆弧</strong>–先点击多段线+L+空格+确定起始点+a+空格快捷键：R 半径 D 切换圆弧弧度方向</p>
+<p><strong>多条线段合并成多段线</strong>–PE+空格+M 全选中+空格+y+空格+合并+空格空格<br>多线段宽度选择 PE+空格+W</p>
+<p><font color=red>多段线可以设置宽度</font>(练习：用多段线绘制一个箭头)</p>
+<h3 id="多边形-快捷键-POL"><a href="#多边形-快捷键-POL" class="headerlink" title="多边形 - 快捷键 POL"></a><strong>多边形 - 快捷键 POL</strong></h3><p><strong>指定中心点的多边形</strong>–POL+边数+中心点+半径（内接&#x2F;外切）</p>
+<p><strong>指定边的多边形</strong>–POL+空格+E+空格+先绘制一个有形状的多边形+输入边长+空格</p>
+<h3 id="移动-快捷键-M-和-复制-快捷键-CO"><a href="#移动-快捷键-M-和-复制-快捷键-CO" class="headerlink" title="** 移动 - 快捷键 M 和 复制 - 快捷键 CO**"></a>** 移动 - 快捷键 M 和 复制 - 快捷键 CO**</h3><p><strong>移动</strong>：m+空格+选中对象+空格+选基点+移动鼠标+点一下</p>
+<p><strong>复制</strong>：co+空格+选中对象+空格+选基点+移动鼠标+点一下(模式可以选择可复制多个 也可选择只复制一次)</p>
+<h3 id="拉伸-快捷键-S"><a href="#拉伸-快捷键-S" class="headerlink" title="拉伸 - 快捷键 S"></a><strong>拉伸 - 快捷键 S</strong></h3><p>s+空格+选中对象+空格+输入+空格</p>
+<h3 id="旋转-快捷键-RO"><a href="#旋转-快捷键-RO" class="headerlink" title="旋转 - 快捷键 RO"></a><strong>旋转 - 快捷键 RO</strong></h3><p><strong>复制对象进行旋转</strong>：ro+空格+选中对象+空格+选中基点+c+空格</p>
+<p><strong>参照图形进行旋转</strong>：ro+空格+选中对象+空格+选中基点+r+空格+选中参照</p>
+<h3 id="镜像-快捷键-MI-和-缩放-快捷键-SC-、对齐缩放-AL"><a href="#镜像-快捷键-MI-和-缩放-快捷键-SC-、对齐缩放-AL" class="headerlink" title="镜像 - 快捷键 MI 和 缩放 - 快捷键 SC 、对齐缩放 - AL"></a><strong>镜像 - 快捷键 MI 和 缩放 - 快捷键 SC 、对齐缩放 - AL</strong></h3><p><strong>镜像</strong>：mi+空格+选中对象+空格+找镜像线(点两下)+空格+直接空格(默认不删除源图像)<br>缩放</p>
+<p><strong>缩放</strong>：sc+空格+选中对象+指定基点+空格+比例因子+空格</p>
+<p><strong>参照缩放</strong>：sc+空格+选中对象+空格+选中基点(顶点位置)+空格+r+选中参照 1+选中参照 2+鼠标移动</p>
+<p>**<font color=red>对齐缩放</font>**（AL）：al+空格+指定第一个源点+指定第一个目标点+指定第二个源点+指定第二个目标点+点击是否缩放+空格(空格默认不锁放)</p>
+<h3 id="修剪-快捷键-TR-和-延申-快捷键-EX"><a href="#修剪-快捷键-TR-和-延申-快捷键-EX" class="headerlink" title="修剪 - 快捷键 TR 和 延申 - 快捷键 EX"></a><strong>修剪 - 快捷键 TR 和 延申 - 快捷键 EX</strong></h3><p><strong>修剪</strong>：tr+空格+选择基线+空格+需要修剪的线段</p>
+<p><strong>延伸</strong>：ex+空格+选择基线+空格+需要延伸对象+空格</p>
+<p>快速修剪和延申（不需要选择基线）<br>tr+空格+空格<br>ex+空格+空格</p>
+<h3 id="圆角-快捷键-F-和-倒角-快捷键-CHA"><a href="#圆角-快捷键-F-和-倒角-快捷键-CHA" class="headerlink" title="圆角 - 快捷键 F 和 倒角 - 快捷键 CHA"></a><strong>圆角 - 快捷键 F 和 倒角 - 快捷键 CHA</strong></h3><p><strong>圆角</strong>：f+空格+r+点击两条直线</p>
+<p><strong>倒角</strong>：cha+第一个倒角距离+空格+第二个倒角距离+空格+点击两条直线</p>
+<p>延申为一个角：f+空格+r+输入 0+点击两条直线 或者 cha+d+空格+空格+点击两条直线</p>
+<h3 id="样条曲线"><a href="#样条曲线" class="headerlink" title="样条曲线"></a>样条曲线</h3><p>样条曲线拟合</p>
+<p>样条曲线控制点</p>
+<h3 id="阵列"><a href="#阵列" class="headerlink" title="阵列"></a>阵列</h3><p>环形阵列</p>
+<p>矩形阵列</p>
+<p><font color=red>路径阵列</font></p>
+<h3 id="参数化"><a href="#参数化" class="headerlink" title="参数化"></a>参数化</h3><p>先点击的图形不动，后点击的图形变动</p>
+<p>ctrl 1 快速打开特性面板</p>
+<p>先将图像大概绘制出来,再添加约束</p>
+<h2 id="绘图练习"><a href="#绘图练习" class="headerlink" title="绘图练习"></a>绘图练习</h2><h3 id="偏移-快捷键-o"><a href="#偏移-快捷键-o" class="headerlink" title="偏移 - 快捷键 o"></a>偏移 - 快捷键 o</h3><h3 id="分解-快捷键-x"><a href="#分解-快捷键-x" class="headerlink" title="分解 - 快捷键 x"></a>分解 - 快捷键 x</h3><p>先选择对象，在输入 x 分解对象</p>
+<h3 id="绘制与圆相切的直线-tan"><a href="#绘制与圆相切的直线-tan" class="headerlink" title="绘制与圆相切的直线 tan"></a>绘制与圆相切的直线 tan</h3><p>L 空格 tan 选择与圆的切点</p>
+<h3 id="打断-快捷键-br"><a href="#打断-快捷键-br" class="headerlink" title="打断 - 快捷键 br"></a>打断 - 快捷键 br</h3><h3 id="构造线-快捷键-xl"><a href="#构造线-快捷键-xl" class="headerlink" title="构造线 - 快捷键 xl"></a>构造线 - 快捷键 xl</h3><p>可以设置角度辅助画图</p>
+<h2 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h2><h3 id="选择"><a href="#选择" class="headerlink" title="选择"></a>选择</h3><p>从左上开始选择为包选，从右下开始选择为全选，</p>
+<p>点击选择</p>
+<p>点击反选–shilft + 鼠标左键</p>
+<h3 id="匹配-快捷键-ma"><a href="#匹配-快捷键-ma" class="headerlink" title="匹配 - 快捷键 ma"></a>匹配 - 快捷键 ma</h3><p>快速复制目标样式到选择的元素上</p>
+<h3 id="点-快捷键-po"><a href="#点-快捷键-po" class="headerlink" title="点 - 快捷键 po"></a>点 - 快捷键 po</h3><h3 id="重生成模型-快捷键-re"><a href="#重生成模型-快捷键-re" class="headerlink" title="重生成模型 - 快捷键 re"></a>重生成模型 - 快捷键 re</h3><h3 id="多段线操作-快捷键-pe"><a href="#多段线操作-快捷键-pe" class="headerlink" title="多段线操作 - 快捷键 pe"></a>多段线操作 - 快捷键 pe</h3><h3 id="打断-快捷键-br-1"><a href="#打断-快捷键-br-1" class="headerlink" title="打断 - 快捷键 br"></a>打断 - 快捷键 br</h3><h3 id="合并-快捷键-j"><a href="#合并-快捷键-j" class="headerlink" title="合并 - 快捷键 j"></a>合并 - 快捷键 j</h3><h3 id="定距等分-快捷键-me"><a href="#定距等分-快捷键-me" class="headerlink" title="定距等分 - 快捷键 me"></a>定距等分 - 快捷键 me</h3><h3 id="定数等分-快捷键-div"><a href="#定数等分-快捷键-div" class="headerlink" title="定数等分 - 快捷键 div"></a>定数等分 - 快捷键 div</h3><h3 id="修订云线-快捷键-revc"><a href="#修订云线-快捷键-revc" class="headerlink" title="修订云线 - 快捷键 revc"></a>修订云线 - 快捷键 revc</h3><h3 id="射线-快捷键-ray"><a href="#射线-快捷键-ray" class="headerlink" title="射线 - 快捷键 ray"></a>射线 - 快捷键 ray</h3><h3 id="填充-快捷键-h"><a href="#填充-快捷键-h" class="headerlink" title="填充 - 快捷键 h"></a>填充 - 快捷键 h</h3><h3 id="绘图次序-快捷键-dr"><a href="#绘图次序-快捷键-dr" class="headerlink" title="绘图次序 - 快捷键 dr"></a>绘图次序 - 快捷键 dr</h3>]]></content>
+      <categories>
+        <category>cad</category>
+      </categories>
       <tags>
-        <tag>react</tag>
+        <tag>CAD</tag>
       </tags>
   </entry>
   <entry>
     <title>小程序开发</title>
-    <url>/koi/web/xcx/</url>
+    <url>/web/xcx/</url>
     <content><![CDATA[<h1 id="小程序基础"><a href="#小程序基础" class="headerlink" title="小程序基础"></a>小程序基础</h1><hr>
 <h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h3 id="常用的视图容器类组件"><a href="#常用的视图容器类组件" class="headerlink" title="常用的视图容器类组件"></a>常用的视图容器类组件</h3><h4 id="view"><a href="#view" class="headerlink" title="view"></a>view</h4><ul>
 <li>普通视图区域</li>
@@ -2345,14 +2178,181 @@
       </tags>
   </entry>
   <entry>
-    <title>javabase</title>
-    <url>/koi/java/base/</url>
-    <content><![CDATA[]]></content>
+    <title>uniapp</title>
+    <url>/tools/uniapp/</url>
+    <content><![CDATA[<h3 id="uniapp-简介"><a href="#uniapp-简介" class="headerlink" title="uniapp 简介"></a>uniapp 简介</h3><p><strong><a href="https://uniapp.dcloud.net.cn/">uni-app </a>是一个使用 <a href="https://cn.vuejs.org/guide/introduction.html">Vue.js</a> 开发所有前端应用的框架</strong>。开发者编写一套代码，可发布到 iOS、Android、H5、以及各种小程序（微信&#x2F;支付宝&#x2F;百度&#x2F;头条&#x2F;QQ&#x2F;钉钉&#x2F;淘宝）、快应用等多个平台。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230806191244667.png" alt="image-20230806191244667"></p>
+<h3 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h3><p>uni-app 官方推荐使用 <a href="https://www.dcloud.io/hbuilderx.html"><strong>HBuilderX</strong></a> 来开发 uni-app 类型的项目。主要好处：模板丰富、完善的智能提示、一键运行</p>
+<ul>
+<li><p>修改编辑器的基本设置</p>
+<p>打开 Settings.json 按需进行配置</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;editor.colorScheme&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Default&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.fontSize&quot;</span><span class="punctuation">:</span> <span class="number">12</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.fontFamily&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Consolas&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.fontFmyCHS&quot;</span><span class="punctuation">:</span> <span class="string">&quot;微软雅黑 Light&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.insertSpaces&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.lineHeight&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1.5&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.minimap.enabled&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.mouseWheelZoom&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.onlyHighlightWord&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.tabSize&quot;</span><span class="punctuation">:</span> <span class="number">2</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.wordWrap&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;explorer.iconTheme&quot;</span><span class="punctuation">:</span> <span class="string">&quot;vs-seti&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.codeassist.px2rem.enabel&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;editor.codeassist.px2upx.enabel&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="uni-app项目"><a href="#uni-app项目" class="headerlink" title="uni-app项目"></a>uni-app项目</h3><h4 id="新建uniapp项目"><a href="#新建uniapp项目" class="headerlink" title="新建uniapp项目"></a>新建uniapp项目</h4><p>选择uni-ui项目模板</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230806193258158.png" alt="image-20230806193258158"></p>
+<h4 id="把项目运行到微信开发者工具"><a href="#把项目运行到微信开发者工具" class="headerlink" title="把项目运行到微信开发者工具"></a>把项目运行到微信开发者工具</h4><ul>
+<li><p>配置项目的小程序appid</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230808111648801.png" alt="image-20230808111648801"></p>
+</li>
+<li><p>设置HBuilder微信开发者工具的安装路径</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230808111836223.png" alt="image-20230808111836223"></p>
+</li>
+<li><p>打开微信开发者工具的服务端口设置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230808111950026.png" alt="image-20230808111950026"></p>
+</li>
+<li><p>运行到小程序</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230808112110455.png" alt="image-20230808112110455"></p>
+</li>
+</ul>
+<h4 id="使用-git-管理仓库"><a href="#使用-git-管理仓库" class="headerlink" title="使用 git 管理仓库"></a>使用 git 管理仓库</h4><ul>
+<li>在项目根目录中新建 <code>.gitignore</code> 忽略文件，并配置如下：</li>
+</ul>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line"># 忽略 node_modules 目录</span><br><span class="line">/node_modules</span><br><span class="line">/unpackage/dist</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：由于我们忽略了 unpackage 目录中<strong>仅有的</strong> dist 目录，因此默认情况下， unpackage 目录不会被 Git 追踪</p>
+</blockquote>
+<blockquote>
+<p>此时，为了让 Git 能够正常追踪 unpackage 目录，按照惯例，我们可以在 unpackage 目录下创建一个叫做 <code>.gitkeep</code> 的文件进行占位</p>
+</blockquote>
+<ol>
+<li>打开终端，切换到项目根目录中，运行如下的命令，初始化本地 Git 仓库：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>将所有文件都加入到暂存区：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>本地提交更新：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;init project&quot;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
       <categories>
-        <category>Java</category>
+        <category>tools</category>
       </categories>
       <tags>
-        <tag>Java</tag>
+        <tag>tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mock使用</title>
+    <url>/tools/mock/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="http://mockjs.com/">mock</a>生成随机数据，拦截 Ajax 请求</p>
+</blockquote>
+<h3 id="mock解决的问题"><a href="#mock解决的问题" class="headerlink" title="mock解决的问题"></a>mock解决的问题</h3><ol>
+<li>开发时，后端还没完成数据输出，前端只好写静态模拟数据。数据太长了，将数据写在js文件里，完成后挨个改url。某些逻辑复杂的代码，加入或去除模拟数据时得小心翼翼。想要尽可能还原真实的数据，要么编写更多代码，要么手动修改模拟数据。特殊的格式，例如IP,随机数，图片，地址，需要去收集</li>
+</ol>
+<h3 id="mock的优点"><a href="#mock的优点" class="headerlink" title="mock的优点"></a>mock的优点</h3><ol>
+<li><p>前后端分离</p>
+<p>让前端工程师独立于后端进行开发。</p>
+</li>
+<li><p>增加单元测试的真实性</p>
+<p>通过随机数据，模拟各种场景。</p>
+</li>
+<li><p>开发无侵入</p>
+<p>不需要修改既有代码，就可以拦截Ajax请求，返回模拟的响应数据。</p>
+</li>
+<li><p>用法简单</p>
+<p>符合直觉的接口。</p>
+</li>
+<li><p>数据类型丰富</p>
+<p>支持生成随机的文本、数字、布尔值、日期、邮箱、链接、图片、颜色等。</p>
+</li>
+<li><p>方便扩展</p>
+<p>支持支持扩展更多数据类型，支持自定义函数和正则。</p>
+</li>
+</ol>
+<h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a><a href="https://github.com/nuysoft/Mock/wiki/Getting-Started">基本使用</a></h3><ol>
+<li><p>安装</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install mockjs</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 使用 Mock</span></span><br><span class="line"><span class="keyword">var</span> <span class="title class_">Mock</span> = <span class="built_in">require</span>(<span class="string">&#x27;mockjs&#x27;</span>)</span><br><span class="line"><span class="keyword">var</span> data = <span class="title class_">Mock</span>.<span class="title function_">mock</span>(&#123;</span><br><span class="line">    <span class="comment">// 属性 list 的值是一个数组，其中含有 1 到 10 个元素</span></span><br><span class="line">    <span class="string">&#x27;list|1-10&#x27;</span>: [&#123;</span><br><span class="line">        <span class="comment">// 属性 id 是一个自增数，起始值为 1，每次增 1</span></span><br><span class="line">        <span class="string">&#x27;id|+1&#x27;</span>: <span class="number">1</span></span><br><span class="line">    &#125;]</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// 输出结果</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(data, <span class="literal">null</span>, <span class="number">4</span>))</span><br></pre></td></tr></table></figure></li>
+</ol>
+<blockquote>
+<p>更多用法 ：<a href="http://mockjs.com/examples.html">示例</a></p>
+</blockquote>
+<h3 id="常用整理"><a href="#常用整理" class="headerlink" title="常用整理"></a>常用整理</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> mockdata = <span class="title class_">Mock</span>.<span class="title function_">mock</span>(&#123;</span><br><span class="line">  <span class="string">&quot;arr|2-10&quot;</span>: [&#123;</span><br><span class="line">    <span class="string">&quot;name|1&quot;</span>: [</span><br><span class="line">      <span class="string">&quot;李四&quot;</span>,</span><br><span class="line">      <span class="string">&quot;张三&quot;</span></span><br><span class="line">  ],</span><br><span class="line">    <span class="string">&quot;gender|1&quot;</span>:[</span><br><span class="line">      <span class="string">&quot;男&quot;</span>,</span><br><span class="line">      <span class="string">&quot;女&quot;</span>,</span><br><span class="line">      <span class="string">&quot;秘密&quot;</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;],</span><br><span class="line">  <span class="string">&quot;obj&quot;</span>:&#123;</span><br><span class="line">    <span class="string">&quot;对象1&quot;</span>: <span class="number">123</span>,</span><br><span class="line">    <span class="string">&quot;对象2&quot;</span>: <span class="number">456</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">&quot;numId&quot;</span>:<span class="string">&quot;@natural(100)&quot;</span>,<span class="comment">// 随机生成一段数字</span></span><br><span class="line">  <span class="string">&quot;status|1&quot;</span>:[<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>],</span><br><span class="line">  <span class="string">&quot;price&quot;</span>:<span class="string">&quot;@float(100,200,2,2)&quot;</span>,<span class="comment">// 100-200 内的随机数.两位小数</span></span><br><span class="line">  <span class="string">&quot;date&quot;</span>:<span class="string">&quot;@datetime(yyyy/MM/dd HH:mm:ss)&quot;</span>,<span class="comment">// 获取随机时间</span></span><br><span class="line">  <span class="string">&quot;text&quot;</span>:<span class="string">&quot;@cparagraph(2)&quot;</span>, <span class="comment">//随机2句话</span></span><br><span class="line">  <span class="string">&quot;description&quot;</span>:<span class="string">&quot;@csentence(5)&quot;</span>, <span class="comment">// 随机五个字</span></span><br><span class="line">  <span class="string">&quot;rName&quot;</span>:<span class="string">&quot;@cname()&quot;</span>,<span class="comment">//随机一个名称</span></span><br><span class="line">  <span class="string">&quot;email&quot;</span>:<span class="string">&quot;@email()&quot;</span>,<span class="comment">//随机邮箱</span></span><br><span class="line">  <span class="string">&quot;ip&quot;</span>:<span class="string">&quot;@ip()&quot;</span>,<span class="comment">//随机ip地址</span></span><br><span class="line">  <span class="string">&quot;province&quot;</span>:<span class="string">&quot;@province()&quot;</span>,<span class="comment">//随机省份</span></span><br><span class="line">  <span class="string">&quot;city&quot;</span>:<span class="string">&quot;@city()&quot;</span>,<span class="comment">//随机城市</span></span><br><span class="line">  <span class="string">&quot;country&quot;</span>:<span class="string">&quot;@county()&quot;</span>,<span class="comment">//随机市区</span></span><br><span class="line">  <span class="string">&quot;detailAddress&quot;</span>:<span class="string">&quot;@county(true)&quot;</span>,<span class="comment">//随机地址</span></span><br><span class="line">  <span class="string">&quot;id&quot;</span>:<span class="string">&quot;@id()&quot;</span>, <span class="comment">//随机id</span></span><br><span class="line">  <span class="string">&quot;pic|10&quot;</span>:[</span><br><span class="line">    <span class="title class_">Mock</span>.<span class="property">Random</span>.<span class="title function_">image</span>(<span class="string">&#x27;200x100&#x27;</span>,<span class="string">&#x27;#efefef&#x27;</span>,<span class="string">&#x27;cs&#x27;</span>) <span class="comment">// 随机200X100图片 Random.image( size, background, foreground, format, text )</span></span><br><span class="line">  ]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/picgodemo/img/image-20230829180929915.png" alt="image-20230829180929915"></p>
+<h3 id="数据模板定义"><a href="#数据模板定义" class="headerlink" title="数据模板定义"></a>数据模板定义</h3><h4 id="String"><a href="#String" class="headerlink" title="String"></a>String</h4><ol>
+<li><p><code>&#39;name|min-max&#39;: &#39;string&#39;</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> mockdata = <span class="title class_">Mock</span>.<span class="title function_">mock</span>(&#123;</span><br><span class="line">  <span class="string">&quot;string|1-5&quot;</span>:<span class="string">&quot;y&quot;</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="attr">mockdata</span>:&#123;<span class="attr">string</span>: <span class="string">&quot;yyy&quot;</span>&#125; <span class="comment">// 随机1-5个&#x27;y&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>&#39;name|count&#39;: &#39;string&#39;</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> mockdata = <span class="title class_">Mock</span>.<span class="title function_">mock</span>(&#123;</span><br><span class="line">  <span class="string">&quot;string|5&quot;</span>:<span class="string">&quot;y&quot;</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="attr">mockdata</span>:&#123;<span class="attr">string</span>: <span class="string">&quot;yyyyy&quot;</span>&#125; <span class="comment">// 5个y</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h4><ol>
+<li><p><code>&#39;name|+1&#39;: number</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> mockdata = <span class="title class_">Mock</span>.<span class="title function_">mock</span>(&#123;</span><br><span class="line">  <span class="string">&quot;id|+1&quot;</span>:<span class="number">2</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="attr">mockdata</span>:&#123;<span class="attr">string</span>: <span class="number">2</span>&#125; <span class="comment">// 会自增</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h4><h4 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h4><h4 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h4><h4 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h4><h4 id="RegExp"><a href="#RegExp" class="headerlink" title="RegExp"></a>RegExp</h4><h4 id="Path"><a href="#Path" class="headerlink" title="Path"></a>Path</h4><h3 id="数据占位符定义"><a href="#数据占位符定义" class="headerlink" title="数据占位符定义"></a>数据占位符定义</h3><h4 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h4><h4 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h4><h4 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h4><h4 id="Color"><a href="#Color" class="headerlink" title="Color"></a>Color</h4><h4 id="Text"><a href="#Text" class="headerlink" title="Text"></a>Text</h4><h4 id="Name"><a href="#Name" class="headerlink" title="Name"></a>Name</h4><h4 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h4><h4 id="Address"><a href="#Address" class="headerlink" title="Address"></a>Address</h4><h4 id="Helper"><a href="#Helper" class="headerlink" title="Helper"></a>Helper</h4><h4 id="Miscellaneous"><a href="#Miscellaneous" class="headerlink" title="Miscellaneous"></a>Miscellaneous</h4>]]></content>
+      <categories>
+        <category>tools</category>
+      </categories>
+      <tags>
+        <tag>tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PicGo+GitHub搭建个人图床</title>
+    <url>/tools/picgo/</url>
+    <content><![CDATA[<h2 id="1-GitHub-创建图床仓库"><a href="#1-GitHub-创建图床仓库" class="headerlink" title="1. GitHub 创建图床仓库"></a>1. GitHub 创建图床仓库</h2><ul>
+<li><p>使用你的 GitHub 账号创建一个图床仓库</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720214539444.png" alt="image-20230720214539444"></p>
+<p>*注意仓库设置公开</p>
+</li>
+<li><p>复制图床仓库的路径</p>
+<p>koibaiyang&#x2F;demo</p>
+</li>
+</ul>
+<h2 id="2-下载安装-PicGo"><a href="#2-下载安装-PicGo" class="headerlink" title="2.下载安装 PicGo"></a>2.下载安装 PicGo</h2><ul>
+<li><p><a href="https://github.com/Molunerfinn/PicGo/releases">PicGo 下载地址</a>下载对应的应用程序并安装</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720215412958.png" alt="image-20230720215412958"></p>
+</li>
+</ul>
+<h2 id="3-配置-GitHub-图床设置"><a href="#3-配置-GitHub-图床设置" class="headerlink" title="3.配置 GitHub 图床设置"></a>3.配置 GitHub <strong>图床设置</strong></h2><ul>
+<li><p>在 GitHub 账户上新建一个 token，在 settings&#x2F;developer settings 目录下新建一个 token</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720221210439.png" alt="image-20230720221210439"></p>
+</li>
+<li><p>设置 token 的名称和有效时长 → 选择 repo 这一项 → 创建 token</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720221625707.png" alt="image-20230720221625707"></p>
+</li>
+<li><p>复制你的 token</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720222049480.png" alt="image-20230720222049480"></p>
+</li>
+<li><p>打开刚刚下载好的应用程序，在图床设置里找到 GitHub 并添加一个图床</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720220242316.png" alt="image-20230720220242316"></p>
+</li>
+<li><p>设置对应的配置</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">可以使用 https://cdn.jsdelivr.net/gh</span><br><span class="line">拼接你的仓库路径 koibaiyang/demo ，设置CDN加速</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720225922939.png" alt="image-20230720225922939"></p>
+</li>
+<li><p>设置完成，已经可以使用 PicGo 图床上传图片，转换为在线链接</p>
+</li>
+</ul>
+<h2 id="4-设置-Typora-快速上传偏好"><a href="#4-设置-Typora-快速上传偏好" class="headerlink" title="4.设置 Typora 快速上传偏好"></a>4.设置 Typora 快速上传偏好</h2><ul>
+<li><p>打开 Typora 的偏好设置 ，选择 PicGo 上传服务设定</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720224157081.png" alt="image-20230720224157081"></p>
+</li>
+<li><p>完成后就可以快捷上传文档里的本地图片并自动转换成在线地址</p>
+<p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720230821697.png" alt="image-20230720230821697"></p>
+</li>
+<li><p><img src="https://cdn.jsdelivr.net/gh/koibaiyang/demo/img/image-20230720230904282.png" alt="image-20230720230904282"></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>tools</category>
+      </categories>
+      <tags>
+        <tag>tools</tag>
       </tags>
   </entry>
 </search>
